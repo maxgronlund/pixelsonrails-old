@@ -16979,3 +16979,33 @@ Rendered shared/_topbanner.erb (1.2ms)
 Rendered shared/_footer.html.erb (0.2ms)
 Rendered home/index.html.erb within layouts/application (85.5ms)
 Completed 200 OK in 170ms (Views: 88.2ms | ActiveRecord: 2.7ms | Sphinx: 0.0ms)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2011-04-22 00:03:02 +0200
+  Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mPage Load (0.6ms)[0m  SELECT `pages`.* FROM `pages` WHERE (`pages`.`identity` = 'welcome_en') LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mCasestorry Load (0.9ms)[0m  SELECT `casestorries`.* FROM `casestorries` ORDER BY created_at DESC LIMIT 6
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT `blogs`.* FROM `blogs` ORDER BY created_at DESC LIMIT 6[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2173639480__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered home/index.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 168ms (Views: 85.5ms | ActiveRecord: 3.0ms | Sphinx: 0.0ms)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2011-04-22 00:04:52 +0200
+  Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE (`pages`.`identity` = 'welcome_en') LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mCasestorry Load (0.8ms)[0m  SELECT `casestorries`.* FROM `casestorries` ORDER BY created_at DESC LIMIT 6
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT `blogs`.* FROM `blogs` ORDER BY created_at DESC LIMIT 6[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2173122680__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered home/index.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 168ms (Views: 85.5ms | ActiveRecord: 2.8ms | Sphinx: 0.0ms)

@@ -24,7 +24,7 @@
 		<%else%>
 			<div class='grid_3 omega green_pn_hover top_margin_16'>
 		<%end%>
-			<%= index%>
+			<%= index %>: <%= index % 3 %>
 			<% if can?(:manage, Casestorry)%>
 				<div class='grid_3 alpha omega top_margin_8 text_right'>
 					<%= link_to 'Show', casestorry %> | 
