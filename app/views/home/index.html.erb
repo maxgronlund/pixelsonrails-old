@@ -19,10 +19,10 @@
 		
 		<% if (index % 3) == 0 %>
 			<div class='grid_3 alpha green_pn_hover top_margin_16'>
-		<% elsif (index % 3) == 2 %>
-			<div class='grid_3 omega green_pn_hover top_margin_16'>
-		<%else%>
+		<% elsif (index % 3) == 1 %>
 			<div class='grid_3 green_pn_hover top_margin_16'>
+		<%else%>
+			<div class='grid_3 omega green_pn_hover top_margin_16'>
 		<%end%>
 			<%= index%>
 			<% if can?(:manage, Casestorry)%>
