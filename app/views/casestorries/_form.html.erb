@@ -1,4 +1,3 @@
-
 <%= form_for(@casestorry, :html => { :multipart => true },:html => { :id => 'upload_form' }) do |f| %>
 	<div class="grid_12">
 		<% if @casestorry.errors.any? %>
@@ -24,9 +23,9 @@
 	<div class="grid_12">
 		<div class="grid_3 alpha ">		
 			<div class="field">
-			    <%= f.label :body%><br />
+			    <%= f.label :body %><br />
+				<%#= f.text_area :body %>
 			 	<textarea cols="26" id="casestorry_body" name="casestorry[body]" rows="48"><%= @casestorry.body %></textarea>
-				
 			</div>
 			
 			<div class="field">
@@ -39,16 +38,15 @@
 			  <%#= f.label :category %><br />
 			  <%#= f.text_field :category %>
 			</div>
+			
+			
+		</div>
+		<div class="grid_9 omega">			
+			<%= image_tag @casestorry.image.url(:full) %><br/>
 			<div class="field">
 			  	<%= t('illustration.image')%><br />
 				<%= f.file_field :image %>
 			</div>
-			
-		</div>
-		<div class="grid_9 omega">			
-
-			<%= image_tag @casestorry.image.url(:full) %><br/>
-
 		</div>	
 	</div>
 			

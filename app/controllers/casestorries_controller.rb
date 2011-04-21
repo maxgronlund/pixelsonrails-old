@@ -1,7 +1,6 @@
 class CasestorriesController < InheritedResources::Base
     load_and_authorize_resource
     respond_to :js, :only => [:create, :update]
-    uses_tiny_mce :only => [:new, :create, :edit, :update]
     
     helper_method :sort_column, :sort_direction 
 
@@ -17,12 +16,25 @@ class CasestorriesController < InheritedResources::Base
       update! {casestorry_path(@casestorry)}
     end
   
+#    def create  
+#      @casestorry = Casestorry.new(params[:casestorry])
+#      @casestorry.image_content_type = MIME::Types.type_for(@casestorry.image.original_filename).first.to_s if @casestorry.image.original_filename.present?
+#      @casestorry.save
+#      create! {casestorry_path(@casestorry)}
+#    end
     def create  
       @casestorry = Casestorry.new(params[:casestorry])
       @casestorry.image_content_type = MIME::Types.type_for(@casestorry.image.original_filename).first.to_s if @casestorry.image.original_filename.present?
       @casestorry.save
       create! {casestorry_path(@casestorry)}
     end
+    
+#    def create  
+#      @illustration = Illustration.new(params[:illustration])
+#      @illustration.image_content_type = MIME::Types.type_for(@illustration.image.original_filename).first.to_s if @illustration.image.original_filename.present?
+#      @illustration.save
+#      create! {illustration_path(@illustration)}
+#    end
   
 private  
   def sort_column  
