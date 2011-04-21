@@ -8,7 +8,7 @@ set :rvm_type, :user
 require 'bundler/capistrano'
 
 # main details
-set :application, "htxwiki"                                       # <<< change name
+set :application, "pixelsonrails"                                       # <<< change name
 server "46.4.64.81", :app, :web, :db, :primary => true
 
 # server details
@@ -21,7 +21,7 @@ set :use_sudo, false
 
 # repo details
 set :scm , :git
-set :repository, "git@github.com:maxgronlund/htxwiki.git"  # <<< change reposotory
+set :repository, "git@github.com:maxgronlund/pixelsonrails.git"  # <<< change reposotory
 set :branch, "master"
 set :git_enable_submodules, 1
 
