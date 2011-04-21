@@ -16299,3 +16299,640 @@ Rendered shared/_topbanner.erb (1.2ms)
 Rendered shared/_footer.html.erb (0.2ms)
 Rendered home/index.html.erb within layouts/application (33.8ms)
 Completed 200 OK in 119ms (Views: 37.1ms | ActiveRecord: 3.7ms | Sphinx: 0.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /Users/synthmax/Dropbox/pixelsonrails/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /Users/synthmax/Dropbox/pixelsonrails/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-04-21 23:41:22 +0200
+  Processing by HomeController#index as HTML
+  [1m[36mSQL (49.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT `pages`.* FROM `pages` WHERE (`pages`.`identity` = 'welcome_en') LIMIT 1
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mCasestorry Load (0.5ms)[0m  SELECT `casestorries`.* FROM `casestorries` ORDER BY created_at DESC LIMIT 6
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT `blogs`.* FROM `blogs` ORDER BY created_at DESC LIMIT 6[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2158472660__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered home/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 170ms (Views: 38.2ms | ActiveRecord: 52.3ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:41:25 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.4ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2152726680__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.0ms)
+Rendered shared/_topbanner.erb (1.4ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 60ms (Views: 17.1ms | ActiveRecord: 1.4ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:41:27 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (7.4ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2155753560__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 59ms (Views: 24.8ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:41:40 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"hansgrohe_fresh.jpg", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "utf8"=>"✓", "commit"=>"save", "_http_accept"=>"application/javascript", "folder"=>"/en/casestorries/", "casestorry"=>{"title"=>"asdf", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000010323f1f0 @original_filename="hansgrohe_fresh.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"hansgrohe_fresh.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-bo6r7>>}, "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i20110421-13861-1rqaabf' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i20110421-13861-1ogpkc' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i20110421-13861-1eyffpy' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-ln1s4i20110421-13861-1tei1be' 2>/dev/null
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q20110421-13861-1rds0b4' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q20110421-13861-myrksk' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q20110421-13861-t7vraj' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1jjnh8q20110421-13861-1lw9rs4' 2>/dev/null
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('asdf', NULL, NULL, '2011-04-21 21:41:41', '2011-04-21 21:41:41', 'hansgrohe_fresh.jpg', 'image/jpeg', 665211, '2011-04-21 21:41:40')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/1/original/hansgrohe_fresh.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/1/mini/hansgrohe_fresh.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/1/thumbnail/hansgrohe_fresh.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/1/full/hansgrohe_fresh.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/1/editing/hansgrohe_fresh.jpg
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.8ms)
+Completed 200 OK in 1329ms (Views: 51.3ms | ActiveRecord: 6.1ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/1" for 127.0.0.1 at 2011-04-21 23:41:41 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mCasestorry Load (0.6ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 1) LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2164773120__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.0ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/show.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 84ms (Views: 41.0ms | ActiveRecord: 1.5ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:41:44 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.8ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2152241700__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 72ms (Views: 28.3ms | ActiveRecord: 1.9ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:41:46 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (7.4ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2152579980__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 60ms (Views: 23.9ms | ActiveRecord: 1.3ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:41:57 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"white_tea.jpg", "folder"=>"/en/casestorries/", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "_http_accept"=>"application/javascript", "utf8"=>"✓", "commit"=>"save", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "casestorry"=>{"title"=>"wer", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000010266b928 @original_filename="white_tea.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"white_tea.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-1djll31>>}, "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc520110421-13861-1peqqv6' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc520110421-13861-130lcxa' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc520110421-13861-1q3nws0' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc5.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1rq2rc520110421-13861-145atfm' 2>/dev/null
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp20110421-13861-1k80dzb' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp20110421-13861-12o7bar' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp20110421-13861-1k6voq' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1txzzhp20110421-13861-1tt3v4j' 2>/dev/null
+  [1m[35mSQL (0.5ms)[0m  BEGIN
+  [1m[36mSQL (2.6ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('wer', NULL, NULL, '2011-04-21 21:41:58', '2011-04-21 21:41:58', 'white_tea.jpg', 'image/jpeg', 422786, '2011-04-21 21:41:58')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/2/original/white_tea.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/2/mini/white_tea.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/2/thumbnail/white_tea.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/2/full/white_tea.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/2/editing/white_tea.jpg
+  [1m[36mSQL (11.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.7ms)
+Completed 200 OK in 1023ms (Views: 15.2ms | ActiveRecord: 16.1ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/2" for 127.0.0.1 at 2011-04-21 23:41:58 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"2"}
+  [1m[35mCasestorry Load (0.6ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 2) LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2153139720__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.1ms)
+Rendered shared/_topbanner.erb (1.5ms)
+Rendered shared/_footer.html.erb (0.3ms)
+Rendered casestorries/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 67ms (Views: 27.3ms | ActiveRecord: 1.5ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:00 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.7ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2173985800__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.8ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 102ms (Views: 57.7ms | ActiveRecord: 1.9ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:42:03 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (8.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2173817820__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 92ms (Views: 25.5ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:20 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"TheOhZone.jpg", "commit"=>"save", "_http_accept"=>"application/javascript", "utf8"=>"✓", "folder"=>"/en/casestorries/", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "casestorry"=>{"title"=>"ghjk", "image"=>#<ActionDispatch::Http::UploadedFile:0x000001020fd860 @original_filename="TheOhZone.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"TheOhZone.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-1sqi3ks>>}, "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty20110421-13861-1pmvgs2' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty20110421-13861-eql5iu' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty20110421-13861-1yk3ofi' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-9739ty20110421-13861-1jp3f25' 2>/dev/null
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu120110421-13861-zj7wv' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu120110421-13861-ukgxkk' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu120110421-13861-15orepq' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu1.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1qv3pu120110421-13861-1gsfh6j' 2>/dev/null
+  [1m[35mSQL (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('ghjk', NULL, NULL, '2011-04-21 21:42:21', '2011-04-21 21:42:21', 'TheOhZone.jpg', 'image/jpeg', 44561, '2011-04-21 21:42:20')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/3/original/TheOhZone.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/3/mini/TheOhZone.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/3/thumbnail/TheOhZone.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/3/full/TheOhZone.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/3/editing/TheOhZone.jpg
+  [1m[36mSQL (45.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.8ms)
+Completed 200 OK in 644ms (Views: 14.3ms | ActiveRecord: 51.0ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/3" for 127.0.0.1 at 2011-04-21 23:42:21 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"3"}
+  [1m[35mCasestorry Load (1.8ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 3) LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2164783000__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.0ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 64ms (Views: 24.6ms | ActiveRecord: 2.8ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:23 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.7ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2154556740__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 75ms (Views: 31.1ms | ActiveRecord: 1.7ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:42:26 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (7.6ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2153392920__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.8ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 59ms (Views: 24.2ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:38 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"odorable.jpg", "_http_accept"=>"application/javascript", "utf8"=>"✓", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "commit"=>"save", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "casestorry"=>{"title"=>"tuk", "image"=>#<ActionDispatch::Http::UploadedFile:0x000001026b2148 @original_filename="odorable.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"odorable.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-17iivc7>>}, "folder"=>"/en/casestorries/", "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu20110421-13861-1gic5mt' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu20110421-13861-1353kuh' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu20110421-13861-19re2an' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-zpktu20110421-13861-p8dx61' 2>/dev/null
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs920110421-13861-6ch5qa' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs920110421-13861-1ur4pt7' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs920110421-13861-v4i105' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs9.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-86sfs920110421-13861-huspr7' 2>/dev/null
+  [1m[35mSQL (0.5ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('tuk', NULL, NULL, '2011-04-21 21:42:39', '2011-04-21 21:42:39', 'odorable.jpg', 'image/jpeg', 7369, '2011-04-21 21:42:39')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/4/original/odorable.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/4/mini/odorable.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/4/thumbnail/odorable.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/4/full/odorable.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/4/editing/odorable.jpg
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (1.0ms)
+Completed 200 OK in 487ms (Views: 14.5ms | ActiveRecord: 5.1ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/4" for 127.0.0.1 at 2011-04-21 23:42:39 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"4"}
+  [1m[35mCasestorry Load (0.7ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 4) LIMIT 1
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2172988380__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.2ms)
+Rendered shared/_topbanner.erb (1.4ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/show.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 112ms (Views: 29.5ms | ActiveRecord: 1.8ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:41 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.7ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167200140__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 105ms (Views: 33.5ms | ActiveRecord: 1.8ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:42:43 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (8.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2165514360__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.8ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 89ms (Views: 24.3ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:55 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"rosette_torregrosa.jpg", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "casestorry"=>{"title"=>"sfty", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000103288350 @original_filename="rosette_torregrosa.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"rosette_torregrosa.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-orx2ip>>}, "utf8"=>"✓", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "commit"=>"save", "_http_accept"=>"application/javascript", "folder"=>"/en/casestorries/", "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh20110421-13861-3i7u8l' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' -resize "238x" -crop "238x146+0+6" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh20110421-13861-qen1a1' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' -resize "x754" -crop "754x754+188+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh20110421-13861-1ljljve' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh.jpg[0]' -resize "x582" -crop "582x582+145+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-yoskxh20110421-13861-ggy590' 2>/dev/null
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws2920110421-13861-1ou3zos' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' -resize "238x" -crop "238x146+0+6" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws2920110421-13861-g79bly' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' -resize "x754" -crop "754x754+188+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws2920110421-13861-1hi6rcf' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws29.jpg[0]' -resize "x582" -crop "582x582+145+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-crws2920110421-13861-olwvrd' 2>/dev/null
+  [1m[35mSQL (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('sfty', NULL, NULL, '2011-04-21 21:42:56', '2011-04-21 21:42:56', 'rosette_torregrosa.jpg', 'image/jpeg', 104637, '2011-04-21 21:42:56')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/5/original/rosette_torregrosa.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/5/mini/rosette_torregrosa.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/5/thumbnail/rosette_torregrosa.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/5/full/rosette_torregrosa.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/5/editing/rosette_torregrosa.jpg
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.9ms)
+Completed 200 OK in 739ms (Views: 18.1ms | ActiveRecord: 4.9ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/5" for 127.0.0.1 at 2011-04-21 23:42:56 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"5"}
+  [1m[35mCasestorry Load (0.7ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 5) LIMIT 1
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2177875660__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.8ms)
+Rendered shared/_topbanner.erb (1.8ms)
+Rendered shared/_footer.html.erb (0.3ms)
+Rendered casestorries/show.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 119ms (Views: 69.3ms | ActiveRecord: 1.9ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:42:59 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.7ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167363240__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 114ms (Views: 37.9ms | ActiveRecord: 1.7ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:43:02 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (8.1ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167172960__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 100ms (Views: 26.3ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:43:17 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"Koblo_forever.jpg", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "casestorry"=>{"title"=>"ælkjhg", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000103238e68 @original_filename="Koblo_forever.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"Koblo_forever.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-5nee8o>>}, "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "_http_accept"=>"application/javascript", "utf8"=>"✓", "folder"=>"/en/casestorries/", "commit"=>"save", "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt20110421-13861-horsqb' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' -resize "238x" -crop "238x146+0+9" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt20110421-13861-ctvzeu' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' -resize "x754" -crop "754x754+167+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt20110421-13861-pwvlnu' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt.jpg[0]' -resize "x582" -crop "582x582+129+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-19k5mmt20110421-13861-1wlwbr' 2>/dev/null
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir20110421-13861-1p8v040' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' -resize "238x" -crop "238x146+0+9" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir20110421-13861-1o6kw04' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' -resize "x754" -crop "754x754+167+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir20110421-13861-wwxs7i' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir.jpg[0]' -resize "x582" -crop "582x582+129+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1is16ir20110421-13861-fakjhm' 2>/dev/null
+  [1m[35mSQL (0.6ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('ælkjhg', NULL, NULL, '2011-04-21 21:43:18', '2011-04-21 21:43:18', 'Koblo_forever.jpg', 'image/jpeg', 217960, '2011-04-21 21:43:18')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/6/original/Koblo_forever.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/6/mini/Koblo_forever.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/6/thumbnail/Koblo_forever.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/6/full/Koblo_forever.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/6/editing/Koblo_forever.jpg
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.9ms)
+Completed 200 OK in 1140ms (Views: 19.9ms | ActiveRecord: 6.1ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/6" for 127.0.0.1 at 2011-04-21 23:43:18 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"6"}
+  [1m[35mCasestorry Load (0.8ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 6) LIMIT 1
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2173608160__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.3ms)
+Rendered shared/_topbanner.erb (1.4ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 113ms (Views: 27.2ms | ActiveRecord: 1.9ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:43:22 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.8ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2165832880__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.8ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 116ms (Views: 40.8ms | ActiveRecord: 1.6ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:43:28 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (7.9ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2164908840__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.8ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 61ms (Views: 24.8ms | ActiveRecord: 0.9ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:43:38 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"Lightening_angled.jpg", "casestorry"=>{"title"=>"æølkjh", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000010323f1f0 @original_filename="Lightening_angled.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"Lightening_angled.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-orhnwp>>}, "folder"=>"/en/casestorries/", "_http_accept"=>"application/javascript", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "utf8"=>"✓", "commit"=>"save", "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd20110421-13861-10e9hf0' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd20110421-13861-6tf2c1' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd20110421-13861-h2nd3e' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-vh80vd20110421-13861-zc5jy3' 2>/dev/null
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt920110421-13861-1kqzpg0' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' -resize "238x" -crop "238x146+0+46" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt920110421-13861-1wlir8q' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' -resize "754x" -crop "754x754+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt920110421-13861-1vz4azt' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt9.jpg[0]' -resize "582x" -crop "582x582+0+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1ishzt920110421-13861-2r76cr' 2>/dev/null
+  [1m[35mSQL (0.5ms)[0m  BEGIN
+  [1m[36mSQL (2.4ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('æølkjh', NULL, NULL, '2011-04-21 21:43:39', '2011-04-21 21:43:39', 'Lightening_angled.jpg', 'image/jpeg', 39275, '2011-04-21 21:43:39')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/7/original/Lightening_angled.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/7/mini/Lightening_angled.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/7/thumbnail/Lightening_angled.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/7/full/Lightening_angled.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/7/editing/Lightening_angled.jpg
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (1.0ms)
+Completed 200 OK in 858ms (Views: 15.8ms | ActiveRecord: 6.6ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/7" for 127.0.0.1 at 2011-04-21 23:43:39 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"7"}
+  [1m[35mCasestorry Load (0.7ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 7) LIMIT 1
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2178221900__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.3ms)
+Rendered shared/_topbanner.erb (1.4ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/show.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 112ms (Views: 65.8ms | ActiveRecord: 2.0ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:43:41 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.9ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167326740__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.1ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 119ms (Views: 43.7ms | ActiveRecord: 2.0ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/new" for 127.0.0.1 at 2011-04-21 23:43:47 +0200
+  Processing by CasestorriesController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered casestorries/_form.html.erb (7.8ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167097860__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.7ms)
+Rendered shared/_topbanner.erb (1.2ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 89ms (Views: 23.9ms | ActiveRecord: 0.8ms | Sphinx: 0.0ms)
+
+
+Started POST "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:44:00 +0200
+  Processing by CasestorriesController#create as JS
+  Parameters: {"Filename"=>"Logo_on_folder.jpg", "_http_accept"=>"application/javascript", "casestorry"=>{"title"=>"98o7i", "image"=>#<ActionDispatch::Http::UploadedFile:0x000001039db350 @original_filename="Logo_on_folder.jpg", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"casestorry[image]\"; filename=\"Logo_on_folder.jpg\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/RackMultipart20110421-13861-19rr63k>>}, "authenticity_token"=>"9NiVfSHjq7f48/pUVOIBn/u03dFPtwvrFTwAxP0eqMo=", "commit"=>"save", "utf8"=>"✓", "folder"=>"/en/casestorries/", "_template_session"=>"BAh7CEkiEF9jc3JmX3Rva2VuBjoGRUZJIjE5TmlWZlNIanE3ZjQ4L3BVVk9JQm4vdTAzZEZQdHd2ckZUd0F4UDBlcU1vPQY7AEZJIhl3YXJkZW4udXNlci51c2VyLmtleQY7AFRbB0kiCVVzZXIGOwBGaQZJIg9zZXNzaW9uX2lkBjsARiIlYzM5OGU4OTYyMDA5YmU1YjRhNzQ1MzkyOGNiMGQyYzA=--2a60f7bc0ff7a41c7dc06e93fb5ab11701026bc1", "Upload"=>"Submit Query", "locale"=>"en"}
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed20110421-13861-1sxi7x0' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' -resize "x146" -crop "238x146+2+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed20110421-13861-ooqp7n' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' -resize "x754" -crop "754x754+251+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed20110421-13861-b7rdbs' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed.jpg[0]' -resize "x582" -crop "582x582+194+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-15jzed20110421-13861-hbcaf7' 2>/dev/null
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' -resize "32x32" '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a1220110421-13861-a96ttj' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' -resize "x146" -crop "238x146+2+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a1220110421-13861-494qog' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' -resize "x754" -crop "754x754+251+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a1220110421-13861-up7ngn' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a12.jpg[0]' -resize "x582" -crop "582x582+194+0" +repage '/var/folders/9D/9DqRwQuWH3yKQPppxNiM2++++TI/-Tmp-/stream20110421-13861-1g20a1220110421-13861-1lsilq7' 2>/dev/null
+  [1m[35mSQL (0.4ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `casestorries`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `casestorries` (`title`, `body`, `category`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES ('98o7i', NULL, NULL, '2011-04-21 21:44:01', '2011-04-21 21:44:01', 'Logo_on_folder.jpg', 'image/jpeg', 65117, '2011-04-21 21:44:01')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/8/original/Logo_on_folder.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/8/mini/Logo_on_folder.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/8/thumbnail/Logo_on_folder.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/8/full/Logo_on_folder.jpg
+[paperclip] saving /Users/synthmax/Dropbox/pixelsonrails/public/system/images/8/editing/Logo_on_folder.jpg
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Saving attachments.
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Rendered casestorries/create.js.erb (0.7ms)
+Completed 200 OK in 666ms (Views: 16.2ms | ActiveRecord: 4.4ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries/8" for 127.0.0.1 at 2011-04-21 23:44:01 +0200
+  Processing by CasestorriesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"8"}
+  [1m[35mCasestorry Load (0.9ms)[0m  SELECT `casestorries`.* FROM `casestorries` WHERE (`casestorries`.`id` = 8) LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2178448500__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (2.1ms)
+Rendered shared/_topbanner.erb (1.4ms)
+Rendered shared/_footer.html.erb (0.3ms)
+Rendered casestorries/show.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 101ms (Views: 57.3ms | ActiveRecord: 1.7ms | Sphinx: 0.0ms)
+
+
+Started GET "/en/casestorries" for 127.0.0.1 at 2011-04-21 23:44:04 +0200
+  Processing by CasestorriesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mCasestorry Load (0.9ms)[0m  [1mSELECT `casestorries`.* FROM `casestorries` ORDER BY created_at desc LIMIT 12 OFFSET 0[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_shared__navigation_html_erb___2991440430918582964_2167271920__1921656270406532743 at /Users/synthmax/Dropbox/pixelsonrails/app/views/shared/_navigation.html.erb:22)
+Rendered shared/_navigation.html.erb (1.9ms)
+Rendered shared/_topbanner.erb (1.3ms)
+Rendered shared/_footer.html.erb (0.2ms)
+Rendered casestorries/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 121ms (Views: 45.5ms | ActiveRecord: 1.9ms | Sphinx: 0.0ms)
