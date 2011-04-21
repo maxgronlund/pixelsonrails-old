@@ -1,0 +1,18 @@
+<div class="grid_12">
+	
+ 	<%if @about != nil%>
+		<h1><%=raw @about.title%></h1>
+		
+		<div class="grid_4 suffix_8 alpha omega">
+			<%=raw @about.body%>
+		</div>
+		
+		<% if can?(:edit, @about)%>
+			<div class="grid_4 suffix_8 alpha omega text_right">
+				<hr/>
+				<%= link_to t('admin.edit'), edit_page_path(@about)%>
+			</div>
+		<%end%>
+	<%end%>
+	
+</div>

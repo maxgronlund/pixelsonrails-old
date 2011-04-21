@@ -1,0 +1,13 @@
+<!-- comments/index.html.erb -->
+<h1>comments</h1>
+<% for comment in @comments %>
+  <div class="comment">
+	<%= comment.title%><br/>
+    <%= comment.body %>
+  </div>
+<% end %>
+<hr/>
+
+
+
+

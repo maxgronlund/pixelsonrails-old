@@ -1,0 +1,27 @@
+<%if blog.comments.length > 0 %>
+	<div class="grid_3 prefix_3 suffix_6 top_margin_10">
+		<h3><%= t('system.comments')%></h3>
+	</div>
+	<% for comment in blog.comments %>
+		<div class="grid_3 top_margin_10 text_right">
+			<%= link_to image_tag( comment.user.image.url(:micro), :border => 'none', :class => 'image_fix'), user_path(comment.user) %>
+		</div>
+		<div class="grid_2 suffix_7">
+		  <div class="round_corners color_white top_margin_10">
+			
+			<i><%= comment.user.name %></i><br/>
+			<%= l comment.created_at, :format => :date_month_and_year %><br/>
+			<%= comment.body %><br/>
+			<% if can?(:manage, comment)%>
+				<div class="text_right">
+					<%= link_to t('admin.edit'), edit_blog_comment_path(blog, comment) %> | 
+					<%= link_to t('admin.delete'), comment, :confirm => t('admin.are_you_sure'), :method => :delete %>
+				</div>
+			<%end%>
+		  </div>
+		</div>
+	<% end %>
+<%end%>
+<div class="grid_3 prefix_3 suffix_6 top_margin_10">
+<%= render :partial => "comments/new_form", :locals => { :comment_subject => blog } %><br/>
+</div>

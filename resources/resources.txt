@@ -1,0 +1,7 @@
+This folder contains resources relevant to the template project.
+
+logo.png
+upload this file to illustrations and you got a logo on the frontpage
+
+flags are downloaded from:
+http://www.iconfinder.com/search/?q=iconset%3Aflags

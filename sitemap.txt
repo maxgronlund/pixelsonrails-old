@@ -1,0 +1,291 @@
+SYSTEMET
+har en blog
+har dagens afirmation
+anbefalede bøger
+har en gavebod
+dagens smukke billed
+dagens video
+
+
+
+BLOG
+et blogindlæg kan indeholde youtube video, billeder en fil
+et blogindlæg kan få en smiley/thumps up
+et blogindlæg kan få et flag 
+en bruger kan skrive en kommentar til et blogindlæg
+et blog-indlæg kan rettes af bloggeren
+et blog-indlæg kan slettet af supercoach 
+
+
+BRUGER
+en bruger har en offentlig blog
+en bruger kan havde en coach-partner
+coach-partnere har hinandens skypenavn
+coach-partnere har en session kalender
+
+
+en bruger har et aktuelt coach-forløb
+en bruger kan havde mange gamle coach-forløb
+et coach-forløb har mange sessioner 
+et coach-forløb har to brugere som er hinandens coarch-partnere
+hver af de to brugere har en ønskebobbel
+en ønske bobbel kan havde en række bekreftigelser. f.eks: Jeg er i færd med at tiltrække xxx 
+en bekreftigelse kan sende en reminder (dagens mantra :-)
+en ønskebobbel kan havde et visionboard
+en ønskebobbel har mange områder, f.eks Kærlighed, Økonomi, Sunhed e.t.c
+
+
+SESSION
+en session består af en samling spørgsmål
+hvert spørgsmål tilhøre et område
+hvert område har et barometer
+hvert område kan havde mange spørgsmål
+et spårgsmål kan havde en smiley
+et spårgsmål kan havde et andet spørgsmål og et svar
+et spørgsmål kan havde mange handlinger
+
+en handling kan havde en deadline
+en handling har et "done" checkmark
+en handling kan sende en reminder
+
+en session har en rapport. (to dos.)
+en session har en smiley
+en session har et ønske til næste gang
+en session har en gave og et svar
+
+
+
+---------------------------------
+Roller
+bruger, kan bruge systemet til at blive coached
+supercoach kan oprette brugere
+supercoach kan forbinde to brugere
+
+
+
+----------------------------------
+Storries
+en bruger kan oprettes i systemet
+en bruger kan udfylde sin ønskebobbel
+en bruger kan få hjælp til vision board 
+en bruger skal kunne få coach partner
+en bruger skal kunne følge sin udvikling
+
+en supercoach skal kunne parre to brugere
+en supercoach skal kunne oprette en partner?
+
+
+maria skal kunne fremvise sit portefolie
+
+max skal kunne fremvise sit portefolie
+
+systemet skal tilbydes som en service til en virksomhed
+
+systemet har et indbygget scrum udviklings system dphoto booth
+
+
+----------------------------------
+
+
+
+piximaria.dk
+synthmax.dk
+	
+
+
+change
+portal
+
+
+
+http://changenetwork.com (maria, max, morten)
+
+http://piy/changenetwork.com
+http://synthmax/changenetwork.com
+http://piximaria/changenetwork.com
+
+
+
+
+
+
+
+----------------------
+SITE MAP
+- splash screen?
+
+- home (comming soon) (change you live, become ag coach, get a coach ) bad suggestions by a complete idiot(me max) 
+
+- introdution ( coatching? values, marias wishes, just something )
+	
+- beome a member ( part of the introduction )
+	play by the rules
+		- best pracis (maria know how)
+		- code of cunduct
+	get the most out of it
+		give give give
+		go giver
+		
+- coatch partner (live you drean)
+	-introduction
+	-examples
+	-become a member
+	-make your wishes
+		vision board (pris / personlige photo)
+		my coach 
+		my calendar
+		my sessions
+		
+- make your own local change group
+	- groups
+		-members
+		-projects
+		-calendar
+		-blog
+			-comments
+	-description
+	-values
+	-how toos
+		-getting starting
+		-finnd members
+
+-ide bank
+	-projects
+		- sprint's 
+		- backlog
+
+
+-partner
+	-banner
+	-headline
+	-sub-headline
+	-body
+	- blog
+		-comments
+	- pages
+
+-grafic adds
+	-pager
+	-graphics
+	-download
+	-title
+	-body
+	-url
+	-etc...
+	
+-blog
+	-title
+	-body
+	-graphic
+	-video
+	-link
+		-comments
+	-targets (inspirtion, inspirational people ), admin can promote to front 
+	-make sticy
+	
+- inspirationsal people
+	- wain
+	- louise
+	
+- books
+	You can heal your life
+	The go giver
+
+- coatches
+	Ulrik Shøts
+	Sifia manning
+
+- work shops
+	- vision art (maria)
+	- company network (max)
+	- piy (morten)
+	.
+- lectures
+	- morten
+	-louise hay
+- 
+	
+
+- add
+	- calender
+	- event
+	- lectures
+	- contact
+	- maria
+	- morten
+	- max
+	- books
+	etc...
+
+- user
+	-email
+	-Skype
+	-www
+	-cv
+	-video
+	-portrair
+	-role
+	-language
+	
+-role
+	super
+	admin
+	moderator
+	super coach
+	
+- super coach
+	calender
+	timezone
+	
+- engle kort
+	dagens fede afirmation
+
+
+- Marias hjemmeis
+	identites
+	hjelp til vision
+	potefolie
+	kontakt
+	profil
+
+
+- alhdf ahkldsf
+
+
+- ajskldæfaj ksdf
+	
+
+
+embed a shop
+ - 
+
+Marias site (partner)
+	-front page
+	-cases (thumbnails)
+		-ibc
+		-gopublish
+		-e.t.c
+		- visionboard
+		- latest design to dsb
+
+	profile
+	
+
+Marias site (partner)
+	-front page
+	-cases (thumbnails)
+		-danfor
+		-terma
+		-e.t.c
+		
+
+	- profile 
+		
+
+
+
+
+
+
+
+

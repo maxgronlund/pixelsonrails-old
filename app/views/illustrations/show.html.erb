@@ -1,0 +1,15 @@
+<div class="grid_12 ">
+  <h1><%= @illustration.title %></h1>
+</div>
+
+<div class="grid_12 top_margin_10 ">
+	<%= image_tag @illustration.image.url() %>
+</div><br/>
+
+<div class="grid_12 top_margin_10 ">
+	<hr/>
+	<%= link_to t('navigation.back'), :back %> | 
+	<%= link_to t('illustration.index'), illustrations_path %> | 
+	<%= link_to t('admin.edit'), edit_illustration_path(@illustration) %>
+	
+</div>

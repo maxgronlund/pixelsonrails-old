@@ -1,0 +1,41 @@
+<div class="grid_12">
+
+	<h1>Opret konto</h1>
+	<%= form_for(@user, :html => { :multipart => true },:html => { :id => 'user_form' }) do |f| %>
+	<%#= form_for(@user) do |f| %>
+	  <%#= devise_error_messages! %>
+	
+		<p><%= f.label :name %><br />
+		<%= f.text_field :name %></p>
+	
+		<p><%= f.label :email %><br />
+		<%= f.text_field :email %></p>
+		
+		<div class="field">
+			<p>Billed<br />
+				<%= f.file_field :image %>
+			</p>
+		</div>
+		
+		<% if current_user.super?  %>
+			Rolle: <%= f.select(:role, User::ROLES)%><br/><br/>
+		<%elsif current_user.admin?%>
+			Rolle: <%= f.select(:role, User::ROLES - ['super'])%><br/><br/>
+		<%end%>
+	
+	  <p><%= f.label :password %><br />
+	  <%= f.password_field :password %></p>
+	
+	  <p><%= f.label :password_confirmation %><br />
+	  <%= f.password_field :password_confirmation %></p>
+	
+	  <p><%= f.submit 'Opret konto'%></p>
+	<% end %>
+</div>
+
+<script type="text/javascript">// <![CDATA[
+  $(document).ready(function() {
+    uploadify_form('#user_form');
+  });
+// ]]></script>
+

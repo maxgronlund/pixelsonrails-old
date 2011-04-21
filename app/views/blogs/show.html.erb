@@ -1,0 +1,26 @@
+<div class="grid_12">
+
+	 <h1> <%= @blog.title %></h1>
+	<i> <%= @blog.user.name %></i><br/>
+</div>
+
+<div class="grid_4 suffix_8">
+  <%= @blog.body %>
+</div>
+
+<div class="grid_4 suffix_8 text_right">
+	<%if can?(:manage, @blog)%>
+		<%= link_to 'rediger', edit_blog_path(@blog) %> | 
+		<%= link_to 'slet', @blog, :confirm => t('admin.are_you_sure'), :method => :delete %>
+	<%end%>
+</div>
+
+<div class="grid_4 suffix_8">
+	<hr/>
+</div>
+
+<div class="grid_2 prefix_2 suffix_8">
+	<%= render :partial => "comments/index", :locals => { :comment_subject => @blog } %><br/>
+</div>
+
+

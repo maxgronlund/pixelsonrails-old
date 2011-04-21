@@ -1,0 +1,21 @@
+<div class='grid_12'>
+
+	<h1>Gibbon Lists</h1>
+	<p>Total number of lists: <%= @lists["total"] %></p>
+	<ul>
+	  <% @lists["data"].each do |list| -%>
+	    <li>
+	      <h2>Default Subject: <%= list["default_subject"] %></h2>
+	      <h3>Default from: <%= list["default_from_name"] %>&lt;Subject: <%= list["default_from_email"] %>&gt;</h3>
+	      Created: <%= list["date_created"] %>
+	      <p>
+	        Stats:
+	        <%= list["stats"] %>
+	      <p>
+	      <%= link_to "Members", gibbon_list_members_path(list["id"]) %>
+	    </li>
+	  <% end -%>
+	</ul>
+	
+	
+</div>

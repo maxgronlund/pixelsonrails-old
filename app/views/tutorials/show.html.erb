@@ -1,0 +1,26 @@
+<div class="grid_12">
+
+	<p id="notice"><%= notice %></p>
+</div>
+<div class="grid_12">	
+	<h1>
+	  <%= @tutorial.title %>
+	</h1>
+	<b>
+	  <%= @tutorial.tutorial_type %>
+	</b>
+</div>	
+
+<div class="grid_5 suffix_7">
+	<p>
+	  <%= @tutorial.body %>
+	</p>
+</div>	
+	
+<div class="grid_12">
+	<hr/>	
+	<% if can? :manage, Tutorial %>
+		<%= link_to 'Edit', edit_tutorial_path(@tutorial) %> | 
+	<%end%>
+	<%= link_to 'Back', tutorials_path %>
+</div>

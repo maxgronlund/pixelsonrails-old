@@ -1,0 +1,10 @@
+<% if can? :manage, Comment %>
+	<b><%= t('comment.new')%></b><br/>
+	
+	<% form_for [ comment_subject, Comment.new] do |f| %>
+	
+	    <textarea cols="17" id="comment_body" name="comment[body]" rows="10"></textarea>
+	
+	  <p><%= f.submit t('admin.save') %></p>
+	<% end %>
+<%end%>

@@ -1,0 +1,66 @@
+<div class='grid_12'>
+	<h1>Tutorials</h1>
+</div>
+
+<div class="grid_12 top_margin_24 bottom_margin_6">
+	<div class="grid_12 alpha omega color_gray">
+	<b>
+		<div class="grid_3 alpha "><%= sortable 'title', t('system.title')%></div>
+		<div class="grid_3"><%= sortable 'tutorial_type', 'Subject'%></div>
+		<div class="grid_3"><%= sortable 'created_at', t('admin.created_at')%></div>
+		<div class="grid_3 omega"></div>
+	</b>
+	<hr/>
+	</div>
+</div>
+
+
+<% @tutorials.each do |tutorial| %>
+	
+
+		<div class="grid_12 <%= cycle("color_light_gray", "color_gray") %>">
+			<div class="grid_3 alpha ">
+				<strong><%= link_to tutorial.title, tutorial %></strong>
+			</div>
+			<div class="grid_3 ">
+				<%= tutorial.tutorial_type %>
+			</div>
+			<div class="grid_3">
+				<%= l tutorial.created_at, :format => :date_month_and_year %>
+			</div>
+			<div class="grid_3 omega text_right">
+			<%#= tutorial.body %>
+				<%= link_to 'Show', tutorial %>
+				<% if can? :manage, Tutorial %>
+					 | <%= link_to 'Edit', edit_tutorial_path(tutorial) %> 
+					 | <%= link_to 'Destroy', tutorial, :confirm => 'Are you sure?', :method => :delete %><br>
+				<%end%>
+			</div>
+			<hr/>
+		</div>
+
+
+<% end %>
+
+
+
+<div class="grid_12">
+	<%= will_paginate @tutorials %>
+</div>
+
+<% if can? :manage, Tutorial %>
+	<div class="grid_12 top_margin_10">
+		<%= link_to 'New tutorial', new_tutorial_path %>
+	</div>
+<%end%>
+
+
+
+
+
+
+
+
+
+
+

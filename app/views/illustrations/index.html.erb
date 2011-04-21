@@ -1,0 +1,43 @@
+<% if can_edit? %>
+
+	<div class="grid_12">
+		<h1><%= t('illustration.headline')%></h1>
+	</div>
+	
+	<div class="grid_10 prefix_1 suffix_1">
+		<b>
+			<div class="grid_3 alpha"><%= sortable 'title'%></div>
+			<div class="grid_3"><%= sortable 'identity'%></div>
+			<div class="grid_2"><%= sortable 'created_at', t('admin.created_at')%></div>
+			<div class="grid_2 suffix_2 omega"></div>
+		</b>
+		<hr/>
+	</div>
+	
+	
+	<div class="grid_10 prefix_1 suffix_1">
+		<% @illustrations.each do |illustration| %>
+		
+			<div class="grid_3 alpha">	
+				<%= link_to image_tag( illustration.image.url(:mini), :border => 'none', :class => 'image_fix'), illustration %>
+				<%#= link_to image_tag(illustration.image.url(:mini)) , illustration %></div>
+			<div class="grid_3"><%= illustration.title %></div>
+			<div class="grid_2"><%= l illustration.created_at, :format => :date_month_and_year %></div>
+			
+			<div class="grid_2 omega text_right">
+				<%= link_to t('admin.show'), illustration %> | 
+				<%= link_to t('admin.edit'), edit_illustration_path(illustration) %> | 
+				<%= link_to t('admin.delete'), illustration, :confirm => t('admin.are_you_sure'), :method => :delete %>
+			</div>
+			<hr/>
+		
+		<% end %>
+		
+		
+		<%= link_to t('illustration.create_new'), new_illustration_path %>
+	</div>
+<%else%>
+	<%= render :partial => "shared/no_access" %>
+<%end%>
+
+

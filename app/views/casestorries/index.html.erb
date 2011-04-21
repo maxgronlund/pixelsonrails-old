@@ -1,0 +1,51 @@
+<div class='grid_12'>
+
+	<h1>Case Storries</h1>
+	
+	
+	<% @casestorries.each_with_index do |casestorry, index| %>
+		
+		<% if (index % 4) == 0 %>
+			<div class='grid_3 alpha green_pn_hover'>
+		<% elsif (index % 4) == 3 %>
+			<div class='grid_3 omega green_pn_hover'>
+		<%else%>
+			<div class='grid_3 green_pn_hover'>
+		<%end%>
+			<% if can?(:manage, Casestorry)%>
+				<div class='grid_3 alpha omega top_margin_8 text_right'>
+					<%= link_to 'Show', casestorry %> | 
+					<%= link_to 'Edit', edit_casestorry_path(casestorry) %> | 
+					<%= link_to 'Destroy', casestorry, :confirm => 'Are you sure?', :method => :delete %>
+				</div>
+			<%end%>
+			<%= link_to image_tag( casestorry.image.url(:thumbnail), 
+						:border => 'none', 
+						:class => 'transparent_on_hover'), 
+						casestorry,
+						:class => 'image_fix' %>
+								
+			<%#= link_to image_tag casestorry.image.url(:thumbnail) %>
+			
+			<div class='grid_3 alpha omega top_margin_16 height_56'>
+				<b><%= link_to casestorry.title, casestorry %></b><br>
+				<%= link_to excerpt( casestorry.body, '', :radius => 100), casestorry %>
+			</div>
+			<div class='grid_3 alpha omega top_margin_8'>
+				<%= casestorry.category %>
+			</div>
+		</div>
+	<% end %>
+	<div class="grid_12 text_center top_margin_16">
+		<%= will_paginate @casestorries %>
+	</div>
+	
+</div>	
+	
+<% if can?(:manage, Casestorry)%>	
+	<div class='grid_12 top_margin_16'>
+		<hr/>
+		<%= link_to 'New Casestorry', new_casestorry_path %>
+	</div>
+<%end%>
+

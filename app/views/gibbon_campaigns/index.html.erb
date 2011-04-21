@@ -1,0 +1,13 @@
+<div class='grid_12'>
+	<h1>Gibbon Campaigns</h1>
+	<p>Total number of campaigns: <%= @campaigns["total"] %></p>
+	<ul>
+	  <% @campaigns["data"].each do |campaign| -%>
+	    <li>
+	      <h2><%= campaign["title"] %></h2>
+	      <h3>Subject: <%= campaign["subject"] %></h3>
+	      Created: <%= campaign["create_time"] %>
+	    </li>
+	  <% end -%>
+	</ul>
+</div>

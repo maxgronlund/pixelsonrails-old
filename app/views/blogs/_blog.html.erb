@@ -1,0 +1,17 @@
+
+
+	<h3><%= link_to ellement.title, blog_path(ellement) %></h3>
+	<%= excerpt(ellement.body, '', :radius => 100) %>
+	<div class="text_right">
+		<%= link_to t('admin.show'), ellement %>
+		<%if can?(:manage, ellement)%>
+			 |<%= link_to t('admin.edit'), edit_blog_path(ellement) %> | 
+			<%= link_to t('admin.delete'), ellement, :confirm => t('admin.are_you_sure'), :method => :delete %>
+		<%end%>
+	</div>
+
+
+	
+	<%#= will_paginate @blogs %>
+	
+

@@ -1,0 +1,56 @@
+[Wed Jan 19 17:16:02.911 2011] [17030] accepting connections
+[Wed Jan 19 17:31:54.536 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 17:31:54.591 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 17:31:54.591 2011] [17030] rotating finished
+[Wed Jan 19 18:03:09.144 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 18:03:09.149 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 18:03:09.149 2011] [17030] rotating finished
+[Wed Jan 19 18:11:58.225 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 18:11:58.235 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 18:11:58.235 2011] [17030] rotating finished
+[Wed Jan 19 18:13:02.392 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 18:13:02.415 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 18:13:02.415 2011] [17030] rotating finished
+[Wed Jan 19 18:49:47.425 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 18:49:47.442 2011] [17030] rotating index 'page_core': success
+[Wed Jan 19 18:49:47.450 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 18:49:47.451 2011] [17030] rotating finished
+[Wed Jan 19 19:03:06.842 2011] [17030] rotating indices (seamless=1)
+[Wed Jan 19 19:03:06.860 2011] [17030] rotating index 'page_core': success
+[Wed Jan 19 19:03:06.868 2011] [17030] rotating index 'blog_core': success
+[Wed Jan 19 19:03:06.868 2011] [17030] rotating finished
+[Fri Jan 21 15:01:14.732 2011] [17030] rotating indices (seamless=1)
+[Fri Jan 21 15:01:14.835 2011] [17030] rotating index 'page_core': success
+[Fri Jan 21 15:01:14.839 2011] [17030] rotating index 'blog_core': success
+[Fri Jan 21 15:01:14.839 2011] [17030] rotating finished
+[Fri Jan 21 22:12:05.950 2011] [17030] caught SIGTERM, shutting down
+[Fri Jan 21 22:12:05.950 2011] [17030] shutdown complete
+[Sun Jan 23 21:30:04.995 2011] [11373] accepting connections
+[Mon Jan 24 00:04:46.708 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:04:46.722 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:04:46.728 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:04:46.728 2011] [11373] rotating finished
+[Mon Jan 24 00:06:56.518 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:06:56.524 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:06:56.529 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:06:56.529 2011] [11373] rotating finished
+[Mon Jan 24 00:10:48.377 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:10:48.382 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:10:48.420 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:10:48.421 2011] [11373] rotating finished
+[Mon Jan 24 00:12:25.267 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:12:25.276 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:12:25.286 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:12:25.286 2011] [11373] rotating finished
+[Mon Jan 24 00:29:36.030 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:29:36.063 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:29:36.217 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:29:36.217 2011] [11373] rotating finished
+[Mon Jan 24 00:31:41.846 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:31:41.856 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:31:41.861 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:31:41.861 2011] [11373] rotating finished
+[Mon Jan 24 00:33:43.512 2011] [11373] rotating indices (seamless=1)
+[Mon Jan 24 00:33:43.516 2011] [11373] rotating index 'page_core': success
+[Mon Jan 24 00:33:43.521 2011] [11373] rotating index 'blog_core': success
+[Mon Jan 24 00:33:43.521 2011] [11373] rotating finished

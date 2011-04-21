@@ -1,0 +1,407 @@
+[Wed Jan 19 17:22:51.870 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:23:26.296 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:28:00.793 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:28:14.530 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Lorem
+[Wed Jan 19 17:28:19.573 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Lorem
+[Wed Jan 19 17:28:20.962 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:31:23.066 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Excepteur
+[Wed Jan 19 17:32:21.308 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Excepteur
+[Wed Jan 19 17:32:24.100 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:33:02.194 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:36:00.666 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 17:36:41.244 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:00:53.611 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:01:01.967 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:01:08.115 2011] 0.022 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:01:20.030 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] nytxxx
+[Wed Jan 19 18:01:25.017 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:02:03.892 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Wed Jan 19 18:02:06.537 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:02:16.002 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:02:19.087 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:02:45.918 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:02:49.540 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:03:17.793 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:03:24.041 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:05:30.771 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:05:37.518 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:10:55.601 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:11:00.451 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:11:07.529 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:11:15.425 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:11:18.984 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:11:24.401 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:11:36.299 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:12:06.487 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:12:26.119 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] Dette
+[Wed Jan 19 18:12:36.713 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] amet
+[Wed Jan 19 18:13:48.238 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] amet
+[Wed Jan 19 18:13:56.188 2011] 0.001 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:14:07.282 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Wed Jan 19 18:14:16.595 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:20:17.726 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:20:30.415 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:20:43.456 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:21:04.161 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:21:32.015 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:25:10.201 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:25:44.887 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:25:46.872 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:26:07.791 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:26:10.074 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:32:31.352 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:32:59.871 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] minim
+[Wed Jan 19 18:33:59.025 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:33:59.225 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:34:41.415 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Wed Jan 19 18:34:41.563 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:35:40.295 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Wed Jan 19 18:35:43.216 2011] 0.000 sec [scan/2/rel 2 (0,20)] [blog_core]
+[Wed Jan 19 18:37:48.386 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Wed Jan 19 18:38:04.211 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Wed Jan 19 18:39:54.029 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:44:28.715 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:51:39.354 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:51:39.382 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:51:47.326 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] max
+[Wed Jan 19 18:51:47.346 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] max
+[Wed Jan 19 18:52:03.748 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:52:03.776 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:52:14.451 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] formålet
+[Wed Jan 19 18:52:14.454 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] formålet
+[Wed Jan 19 18:52:46.592 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] formålet
+[Wed Jan 19 18:52:46.595 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] formålet
+[Wed Jan 19 18:53:33.393 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] alle
+[Wed Jan 19 18:53:33.396 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] alle
+[Wed Jan 19 18:53:39.538 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:53:39.566 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:53:52.604 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] max
+[Wed Jan 19 18:53:52.623 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] max
+[Wed Jan 19 18:54:09.564 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:54:34.445 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 18:55:01.231 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] Endnu
+[Wed Jan 19 18:55:01.251 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] Endnu
+[Wed Jan 19 18:55:26.598 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Om denne
+[Wed Jan 19 18:55:26.600 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] Om denne
+[Wed Jan 19 18:55:32.140 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] Om denne
+[Wed Jan 19 18:55:32.143 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] Om denne
+[Wed Jan 19 18:57:59.445 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] formålet
+[Wed Jan 19 18:57:59.448 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] formålet
+[Wed Jan 19 18:58:05.873 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:58:05.900 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:58:12.614 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] dolor
+[Wed Jan 19 18:58:12.637 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] dolor
+[Wed Jan 19 18:58:19.198 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:58:19.284 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:58:32.967 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 18:58:32.996 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 18:58:51.582 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 19:00:11.630 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 19:00:11.659 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 19:01:06.548 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 19:01:06.566 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 19:02:13.070 2011] 0.000 sec [all/2/rel 3 (0,20)] [blog_core] nyt
+[Wed Jan 19 19:02:13.090 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 19:02:22.503 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] denne
+[Wed Jan 19 19:02:22.506 2011] 0.000 sec [all/2/rel 2 (0,20)] [page_core] denne
+[Wed Jan 19 19:02:54.771 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Wed Jan 19 19:03:40.056 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] denne
+[Wed Jan 19 19:03:40.070 2011] 0.000 sec [all/2/rel 2 (0,20)] [page_core] denne
+[Wed Jan 19 19:09:00.763 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Wed Jan 19 19:09:00.777 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Wed Jan 19 19:10:31.283 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] æalsdkf
+[Wed Jan 19 19:10:31.286 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] æalsdkf
+[Wed Jan 19 19:10:39.874 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Wed Jan 19 19:10:39.890 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nyt
+[Wed Jan 19 19:10:56.371 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] denne
+[Wed Jan 19 19:10:56.389 2011] 0.000 sec [all/2/rel 2 (0,20)] [page_core] denne
+[Wed Jan 19 19:12:01.122 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] likujaef
+[Wed Jan 19 19:12:01.125 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] likujaef
+[Wed Jan 19 19:12:14.411 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] likujaef
+[Wed Jan 19 19:12:14.413 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] likujaef
+[Wed Jan 19 19:12:24.964 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] likujaef
+[Wed Jan 19 19:12:24.966 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] likujaef
+[Wed Jan 19 19:15:51.369 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] likujaef
+[Wed Jan 19 19:15:51.372 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] likujaef
+[Wed Jan 19 19:16:01.868 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] likujaef
+[Wed Jan 19 19:16:01.871 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] likujaef
+[Wed Jan 19 19:16:07.990 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] nu
+[Wed Jan 19 19:16:07.993 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] nu
+[Wed Jan 19 19:16:12.504 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Wed Jan 19 19:16:12.519 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Wed Jan 19 19:16:19.608 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] DENNE
+[Wed Jan 19 19:16:19.622 2011] 0.000 sec [all/2/rel 2 (0,20)] [page_core] DENNE
+[Fri Jan 21 14:56:45.577 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] alle
+[Fri Jan 21 14:56:45.611 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] alle
+[Fri Jan 21 14:56:56.401 2011] 0.021 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 14:56:56.729 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Fri Jan 21 14:58:10.733 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 14:58:10.804 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Fri Jan 21 14:58:50.518 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 14:58:50.725 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Fri Jan 21 14:59:43.411 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 14:59:43.419 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Fri Jan 21 15:00:11.780 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 15:00:11.786 2011] 0.000 sec [all/2/rel 0 (0,20)] [page_core] ny
+[Fri Jan 21 15:00:35.672 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Fri Jan 21 15:01:23.533 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Fri Jan 21 15:01:23.540 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:30:11.442 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:30:11.479 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:35:22.571 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:35:22.578 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:35:38.249 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:35:38.255 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:36:54.829 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:36:54.836 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:39:21.496 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:39:21.502 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:39:51.601 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:39:51.607 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:40:10.213 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:40:10.219 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:41:26.899 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:41:26.906 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:41:39.353 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:41:39.362 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:41:56.353 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:41:56.359 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:42:13.876 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:42:13.882 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:46:32.207 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:46:32.213 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:46:51.818 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:46:51.826 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:47:00.960 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:47:00.966 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:47:37.679 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:47:37.685 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:48:04.014 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:48:04.020 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:48:23.203 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:48:23.209 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:56:51.510 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:56:51.517 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 21:57:44.764 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 21:57:44.772 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:00:15.446 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:00:15.452 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:00:34.627 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Sun Jan 23 22:00:42.495 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:00:42.502 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:02:14.238 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:02:14.244 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:02:24.577 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:02:24.585 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:03:59.245 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:03:59.252 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:05:27.584 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:05:27.591 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:06:19.422 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:06:19.428 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:07:03.247 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:07:03.254 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:07:16.373 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:07:16.385 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:08:30.525 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:08:30.534 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:09:12.584 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:09:12.590 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:09:27.280 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:09:27.286 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:09:34.765 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:09:34.772 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:10:34.329 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:10:34.338 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:10:52.237 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:10:52.244 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:12:14.159 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:12:14.165 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:12:37.876 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:12:37.882 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:13:42.058 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:13:42.064 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:13:54.745 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:13:54.751 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:14:01.665 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:14:01.671 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:15:19.268 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:15:19.275 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:20:33.803 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:20:33.807 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:20:46.811 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Sun Jan 23 22:20:56.340 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:20:56.343 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:21:59.435 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Sun Jan 23 22:22:06.626 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:22:06.629 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:23:29.160 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:23:29.165 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 22:23:32.199 2011] 0.000 sec [scan/2/rel 4 (0,20)] [blog_core]
+[Sun Jan 23 22:23:32.204 2011] 0.000 sec [scan/2/rel 4 (0,20)] [page_core]
+[Sun Jan 23 22:28:36.899 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:29:30.774 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 22:29:30.778 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 23:49:09.105 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 23:49:09.109 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 23:50:24.555 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Sun Jan 23 23:50:24.559 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 23:50:28.417 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:50:28.421 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 23:50:30.293 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:50:30.297 2011] 0.000 sec [all/2/rel 1 (0,20)] [page_core] ny
+[Sun Jan 23 23:52:26.424 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:52:26.428 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Sun Jan 23 23:52:34.224 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:52:34.228 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Sun Jan 23 23:52:42.845 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:52:42.849 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Sun Jan 23 23:52:53.968 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Sun Jan 23 23:53:57.690 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Sun Jan 23 23:53:57.694 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:56:39.647 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Sun Jan 23 23:56:39.651 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:56:50.388 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Sun Jan 23 23:56:50.392 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:57:03.760 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:57:03.763 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:57:12.159 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Sun Jan 23 23:57:12.163 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:58:15.946 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 23:58:15.969 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:58:21.918 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 23:58:21.941 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:58:31.839 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Sun Jan 23 23:58:51.003 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Sun Jan 23 23:58:51.007 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:02:02.658 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] opl
+[Mon Jan 24 00:02:02.662 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] opl @language dk
+[Mon Jan 24 00:02:15.054 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] opl
+[Mon Jan 24 00:02:15.058 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] opl @language en
+[Mon Jan 24 00:02:38.517 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] endnu
+[Mon Jan 24 00:02:38.521 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] endnu @language en
+[Mon Jan 24 00:03:07.037 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] gammelt
+[Mon Jan 24 00:03:07.041 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] gammelt @language en
+[Mon Jan 24 00:03:19.482 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] indlæg
+[Mon Jan 24 00:03:19.486 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] indlæg @language en
+[Mon Jan 24 00:03:31.696 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] nyt
+[Mon Jan 24 00:03:31.700 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] nyt @language en
+[Mon Jan 24 00:03:39.418 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:03:39.422 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:04:57.331 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:04:57.335 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:05:08.075 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:08.079 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:05:12.497 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:12.502 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:05:21.576 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:21.580 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:05:26.147 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:26.151 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:05:33.457 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:33.461 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:05:41.268 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Mon Jan 24 00:05:48.119 2011] 0.001 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:05:48.123 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:06:21.067 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:06:21.071 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:06:45.801 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Mon Jan 24 00:07:08.477 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:07:08.482 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:07:13.686 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:07:13.690 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:07:19.959 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:07:19.963 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:09:11.890 2011] 0.000 sec [all/2/rel 0 (0,20)] [blog_core] en
+[Mon Jan 24 00:09:11.892 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] en @language dk
+[Mon Jan 24 00:09:17.954 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] dk
+[Mon Jan 24 00:09:17.958 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] dk @language dk
+[Mon Jan 24 00:09:31.920 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:09:31.924 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:09:37.209 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:09:37.213 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:10:02.771 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] Lorem ipsum
+[Mon Jan 24 00:10:02.776 2011] 0.001 sec [ext/2/rel 0 (0,20)] [page_core] Lorem ipsum @language en
+[Mon Jan 24 00:10:07.874 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] Lorem ipsum
+[Mon Jan 24 00:10:07.878 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] Lorem ipsum @language en
+[Mon Jan 24 00:10:21.433 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Mon Jan 24 00:10:27.581 2011] 0.000 sec [all/2/rel 2 (0,20)] [blog_core] Lorem ipsum
+[Mon Jan 24 00:10:27.585 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] Lorem ipsum @language en
+[Mon Jan 24 00:10:35.894 2011] 0.000 sec [scan/2/rel 1 (0,20)] [blog_core]
+[Mon Jan 24 00:11:13.430 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:11:13.434 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:12:33.073 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:12:33.077 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:12:40.005 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:12:40.010 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:13:30.455 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:13:30.462 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:13:34.296 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:13:34.303 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:13:35.882 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:13:35.890 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:13:38.869 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:13:38.875 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:14:09.364 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:14:09.372 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:14:12.673 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:14:12.680 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:14:14.944 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:14:14.951 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:15:14.556 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:15:14.564 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:15:20.230 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:15:20.283 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:15:23.576 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ny
+[Mon Jan 24 00:15:23.584 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:15:33.183 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ikke
+[Mon Jan 24 00:15:33.190 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language dk
+[Mon Jan 24 00:15:36.963 2011] 0.000 sec [all/2/rel 1 (0,20)] [blog_core] ikke
+[Mon Jan 24 00:15:36.970 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language en
+[Mon Jan 24 00:16:07.825 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] ikke @language en
+[Mon Jan 24 00:16:07.827 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language en
+[Mon Jan 24 00:16:10.556 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ikke @language dk
+[Mon Jan 24 00:16:10.563 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language dk
+[Mon Jan 24 00:16:12.751 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] ikke @language en
+[Mon Jan 24 00:16:12.754 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language en
+[Mon Jan 24 00:16:15.336 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ikke @language dk
+[Mon Jan 24 00:16:15.343 2011] 0.000 sec [ext/2/rel 0 (0,20)] [page_core] ikke @language dk
+[Mon Jan 24 00:17:02.128 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:17:02.135 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:17:07.644 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] ny @language en
+[Mon Jan 24 00:17:07.646 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:17:11.743 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:17:11.749 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:17:17.500 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] ny @language en
+[Mon Jan 24 00:17:17.503 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:17:19.797 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:17:19.804 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:31:01.422 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Mon Jan 24 00:31:01.432 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:31:12.777 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language en
+[Mon Jan 24 00:31:12.783 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:31:15.180 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:31:15.186 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:32:08.517 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:32:08.523 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:32:13.017 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] ny @language en
+[Mon Jan 24 00:32:13.020 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language en
+[Mon Jan 24 00:32:16.398 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] ny @language dk
+[Mon Jan 24 00:32:16.404 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] ny @language dk
+[Mon Jan 24 00:32:23.067 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] en @language dk
+[Mon Jan 24 00:32:23.069 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] en @language dk
+[Mon Jan 24 00:32:31.062 2011] 0.000 sec [ext/2/rel 2 (0,20)] [blog_core] dk @language dk
+[Mon Jan 24 00:32:31.069 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] dk @language dk
+[Mon Jan 24 00:32:44.069 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] en @language dk
+[Mon Jan 24 00:32:44.072 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] en @language dk
+[Mon Jan 24 00:33:26.241 2011] 0.000 sec [scan/2/rel 0 (0,20)] [blog_core]
+[Mon Jan 24 00:33:48.420 2011] 0.000 sec [ext/2/rel 0 (0,20)] [blog_core] en @language dk
+[Mon Jan 24 00:33:48.424 2011] 0.000 sec [ext/2/rel 1 (0,20)] [page_core] en @language dk
+[Mon Jan 24 00:33:55.233 2011] 0.000 sec [ext/2/rel 1 (0,20)] [blog_core] en @language en
+[Mon Jan 24 00:33:55.239 2011] 0.000 sec [ext/2/rel 2 (0,20)] [page_core] en @language en
+[Tue Jan 25 15:53:13.262 2011] 0.012 sec [scan/2/rel 1 (0,20)] [page_core]
+[Tue Jan 25 15:53:13.278 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Tue Jan 25 15:53:13.294 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Tue Jan 25 15:53:13.307 2011] 0.000 sec [scan/2/rel 1 (0,20)] [page_core]
+[Tue Jan 25 18:08:46.404 2011] 0.035 sec [scan/2/rel 1 (0,20)] [page_core]
+[Tue Jan 25 18:09:22.781 2011] 0.048 sec [scan/2/rel 1 (0,20)] [blog_core]

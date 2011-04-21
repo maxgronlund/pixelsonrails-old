@@ -1,0 +1,14 @@
+<div class="grid_12">
+  <h3><%= t('system.comments')%></h3>
+</div>
+
+<div class="grid_4 suffix_8">
+  <%= @comment.body %>
+</div>
+
+
+<div class="grid_12">
+
+	<%= link_to 'Edit', edit_comment_path(@comment) %> |
+	<%= link_to t('navigation.back'), :back %>
+</div>

@@ -1,0 +1,17 @@
+<h1>Listing tutorial_posts</h1>
+
+
+
+<% @tutorial_posts.each do |tutorial_post| %>
+
+	<%= tutorial_post.title %><br>
+	<%= tutorial_post.body %><br>
+	<%#= link_to 'Show', tutorial_post %>
+	<%#= link_to 'Edit', edit_tutorial_post_path(tutorial_post) %>
+	<%#= link_to 'Destroy', tutorial_post, :confirm => 'Are you sure?', :method => :delete %>
+	<hr/>
+
+<% end %>
+
+
+<%#= link_to 'New Tutorial post', new_tutorial_post_path %>

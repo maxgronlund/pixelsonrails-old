@@ -1,0 +1,24 @@
+<div class="grid_12">
+	<h1><%= @page.title %></h1>
+</div>
+<div class="grid_4 suffix_7">
+	<%= @page.body.html_safe %>		
+</div>
+
+<%if can?(:manage, @page)%>
+	<div class="grid_4 suffix_8 text_right">
+		<br/>
+		<%= link_to t('navigation.back'), :back %> | 
+		<%= link_to t('page.all_pages'), pages_path %> | 
+		<%= link_to t('admin.edit'), edit_page_path(@page) %>
+		
+	</div>
+<%end%>
+
+
+
+
+
+
+
+

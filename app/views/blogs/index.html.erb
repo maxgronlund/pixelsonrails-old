@@ -1,0 +1,41 @@
+<div class="grid_11 prefix_1">
+	<h1><%= t('blog.posts')%></h1>
+	<% if can? :manage, Blog %>
+		<%= link_to t('blog.create'), new_blog_path %>
+	<%end%>
+</div>
+
+
+
+
+<% @blogs.each do |blog| %>
+ 
+	<div class="grid_1 top_margin_24">
+		<%= link_to image_tag( blog.user.image.url(:small), 
+					:border => 'none', 
+					:class => 'image_fix'), 
+					user_path(blog.user) %>
+	</div>
+	<div class="grid_4 suffix_7 top_margin_24">
+		<div class=<%= cycle("color_light_gray", "color_gray") %>>
+			<h3><%= blog.title %></h3>
+			<i> <%= blog.user.name %></i><br/>
+			<%= l blog.created_at, :format => :date_month_and_year %><br/>
+			<%= blog.body %><br/>
+			<div class="text_right">
+				<%= link_to t('admin.show'), blog %>
+				<%if can?(:manage, blog)%>
+					 |<%= link_to t('admin.edit'), edit_blog_path(blog) %> | 
+					<%= link_to t('admin.delete'), blog, :confirm => t('admin.are_you_sure'), :method => :delete %>
+				<%end%>
+			</div>
+		</div>	
+	</div>
+	
+	<%= render :partial => "comments", :locals => { :blog => blog } %><br/>
+
+<% end %>
+
+<div class="grid_10 prefix_1 suffix_1">
+	<%= will_paginate @blogs %>
+</div>

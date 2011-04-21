@@ -1,0 +1,98 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+    time:
+      formats:
+        default: "%e. %B %Y, %H:%M"
+        short: "%e. %b %Y, %H:%M"
+        long: "%A, %e. %B %Y, %H:%M"
+        date_month_and_year: "%d %B %Y"
+        year: "%Y"
+      am: ""
+      pm: ""
+    
+    
+    user:
+        title: "Create account"
+        edit_account: "Edit account"
+        update_password: "Change password"
+        name: "user name"
+        portrait: "portrait"
+        email: "email"
+        password: "password"
+        password_nyt: "new password"
+        password_current: "old password"
+        password_confimation: "repete password"
+        sign_up: "sign up"
+        log_in: "log in"
+        remember_me: "remember me"
+        leave_blank: "(leave blank if you don't want to change password)"
+        confirm_changes: "(please confirm password)"
+        role: "role"
+        language: "language"
+        users: "Users"
+        create: "create user"
+        
+    password:
+        send_instructions: "send instructions"
+        forgotten: "Forgot your password?"
+        
+        #
+    previous: "<< Previous" 
+        #
+    next: "Next >>"
+         
+    admin:
+        edit: 'edit'
+        show: 'show'
+        delete: 'delete'
+        save: 'save'
+        search: 'search'
+        nothing_found: 'Nothing found'
+        try_again: 'Please try again with another search string'
+        administration: "Administration"
+        users: "users"
+        illustrations: "illustrations"
+        pages: "texts"
+        are_you_sure: 'Are you sure?'
+        created_at: 'created'
+        cases: 'cases'
+    blog:
+        posts: 'Posts'
+        new: 'New post'
+        edit: 'Edit post'
+        create: 'create new post'
+    comment:
+        edit: 'RedigerEdit comment'
+        new: 'New comment'
+    system:
+        title: 'title'
+        body: 'body'
+        identity: 'identitet'
+        language: 'language'
+        comments: 'comments'
+    navigation:
+        back: 'back'
+        home: 'home'
+        about: 'about'
+        blog: 'blog'
+        sign_in: 'sign in'
+        sign_out: 'sign out'
+    illustration:
+        title: 'title'
+        image: 'image'
+        edit: 'Edit illustration'
+        new: 'New illustration'
+        create_new: 'create new illustration'
+        headline: 'Illustrations'
+        index: 'all illustrations'
+    page:
+        identification: 'identifikation !DO NOT EDIT'
+        edit_page: 'Edit text'
+        new_page: 'New text'
+        new: 'new text'
+        text:  'Text'
+        all_pages: 'all text'
+    tutorial:
+        type: 'type'

@@ -1,0 +1,63 @@
+<% if can_edit? %>
+	<div class="grid_12">
+		<h1><%= t('page.text')%></h1>
+	</div>
+	
+		
+	<div class="grid_10 prefix_1 suffix_1 top_margin_24 bottom_margin_6">
+		<div class="grid_10 alpha omega color_gray">
+		<b>
+			<div class="grid_2 alpha "><%= sortable 'title', t('system.title')%></div>
+			<div class="grid_2"><%= sortable 'identity', t('system.identity')%></div>
+			<div class="grid_2"><%= sortable 'created_at', t('admin.created_at')%></div>
+			<div class="grid_2 omega"><%= sortable 'language', t('system.language')%></div>
+		</b>
+		<hr/>
+		</div>
+	</div>
+	
+		
+	<% @pages.each do |page| %>
+	<div class="grid_10 prefix_1 suffix_1" >
+		<div class="grid_10 alpha omega <%= cycle("color_light_gray", "color_gray") %>">
+				
+	    	<div class="grid_2 alpha">
+				<b><%= page.title %></b>
+	    	</div>
+	    
+			<div class="grid_2">
+				<%= page.identity %>
+	    	</div>
+	    
+			<div class="grid_2">
+				<%= l page.created_at, :format => :date_month_and_year %>
+			</div>
+			
+			<div class="grid_2">
+				<%= page.language %>
+	    	</div>
+	    	
+			<div class="grid_2 omega text_right">
+				<% if can? :manage, page %>
+					<%= link_to t('admin.show'), page %> | 
+					<%= link_to t('admin.edit'), edit_page_path(page) %> | 
+					<%= link_to t('admin.delete'), page, :confirm => t('admin.are_you_sure'), :method => :delete %>
+				<%end%>
+			</div>
+		</div>
+	</div>
+	<% end %>
+	<div class="grid_10 prefix_1 suffix_1">
+		<%= will_paginate @pages %>
+	</div>
+	
+	<% if can? :manage, Page %>
+		<div class="grid_10 prefix_1 suffix_1 top_margin_10">
+			<%= link_to t('page.new'), new_page_path %>
+		</div>
+	<%end%>
+
+<%else%>
+	<%= render :partial => "shared/no_access" %>
+<%end%>
+

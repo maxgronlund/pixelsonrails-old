@@ -1,0 +1,17 @@
+<% if @blogs.empty? && @pages.empty?%>
+	<div class="grid_12 top_margin_24">
+	<h1><%= t('admin.nothing_found')%></h1>
+	<p><%= t('admin.try_again')%></p>
+	</div>
+<%else%>
+
+	<% (@blogs+@pages).each do |elm| %>
+		<div class="grid_4 prefix_1 suffix_7 top_margin_24 ">
+			<div class="grid_4 alpha omega <%= cycle("color_light_gray", "color_gray") %>">
+				<%= render :partial => elm, :locals => { :ellement => elm }  %>
+			</div>
+		</div>
+	<% end -%>
+
+<%end%>
+

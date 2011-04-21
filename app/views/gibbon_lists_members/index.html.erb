@@ -1,0 +1,31 @@
+<div class='grid_12'>
+
+	<h1>Gibbon List Members</h1>
+	<div class='flash'>
+		<%= flash[:info]%>
+		<%= flash[:error]%>
+	</div>
+	<p>Total number of members: <%= @members["total"] %></p>
+	<div class='grid_7 suffix_5 alppha omega'>
+		<% @members["data"].each do |member| %>
+			<div class='grid_4 alpha'>
+		      <%= member["email"] %>
+			</div>
+			<div class='grid_3 omega'>
+				<%#= link_to member["email"], gibbon_list_member_path(@list_id, member["email"]) %>
+				<%= link_to 'Unsubscribe', url_for(	:gibbon_list_id => @list_id, 
+													:id => 0, 
+													:action => :destroy, 
+													:email_address => member["email"]), 
+													:confirm => 'Are you sure?', 
+													:method => :delete %>
+			</div>
+			<hr/>
+		<% end -%>
+	</div>
+</div>
+
+<div class='grid_12 top_margin_24'>
+	<%= render :partial => "shared/subscribe_to_news", :locals => { :list_id => @list_id } %>
+	<%= render :partial => "shared/unsubscribe_to_news", :locals => { :list_id => @list_id } %>
+</div>

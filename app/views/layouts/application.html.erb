@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pixel&Dot</title>
+	<%= stylesheet_link_tag :all %>
+	<%= javascript_include_tag 'jquery.tools.min.js', 'rails', 'application' %>
+	<%= javascript_include_tag 'uploadify/swfobject', 'uploadify/jquery.uploadify.v2.1.0.min' %>
+	<%= csrf_meta_tag %>
+	<%= include_tiny_mce_if_needed %>
+
+	<script type="text/javascript">
+	    var session_key      = '<%= cookies[Rails.application.config.session_options[:key]] %>';
+	    var session_key_name = '<%= Rails.application.config.session_options[:key] %>';
+	</script>
+	
+</head>
+
+<body class="color_white background_image">
+	
+	<div class="container_12 background_grid">
+		<%= render :partial => "shared/navigation" %>
+		<%= render :partial => "shared/topbanner" %>
+		<div class="grid_12 height_24"></div>
+		<%= yield %>
+		<div class="grid_12 height_24"></div>
+		<%= render :partial => "shared/footer" %>
+		<div class="clear"></div>
+	</div>
+</body>
+
+</html>

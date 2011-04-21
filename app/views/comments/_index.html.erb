@@ -1,0 +1,22 @@
+<% if comment_subject.comments.length != 0 %>
+	<h4><h3><%= t('system.comments')%></h3></h4>
+<%end%>
+
+<% for comment in comment_subject.comments %>
+	<div class="round_corners">
+	  
+		<i><%= comment.user.name %></i><br/>
+		<%= l comment.created_at, :format => :date_month_and_year %><br/>
+		<%= comment.body %><br/>
+		<% if can?(:manage, comment)%>
+			<div class="text_right">
+				<%= link_to t('admin.edit'), edit_blog_comment_path(@blog, comment) %> | 
+				<%= link_to t('admin.delete'), comment, :confirm => t('admin.are_you_sure'), :method => :delete %>
+			</div>
+		<%end%>
+		<hr/>
+	</div>
+<% end %>
+
+
+<%= render :partial => "comments/new_form", :locals => { :comment_subject => comment_subject } %><br/>

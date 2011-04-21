@@ -1,0 +1,35 @@
+<%= form_for(@illustration, :html => { :multipart => true },:html => { :id => 'illustration_form' }) do |f| %>
+	<% if @illustration.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@illustration.errors.count, "error") %> prohibited this illustration from being saved:</h2>
+			
+			<ul>
+			<% @illustration.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+	
+	<div class="field">
+		<p><%= t('illustration.title')%><br/>
+			<%= f.text_field :title %>
+		</p>
+	</div>
+	
+	<div class="field">
+		<p><%= t('illustration.image')%><br />
+			<%= f.file_field :image %>
+		</p>
+	</div>
+	
+	<div class="actions">
+	  <%= f.submit t('admin.save') %>
+	</div>
+<% end %>
+
+<script type="text/javascript">// <![CDATA[
+  $(document).ready(function() {
+    uploadify_form('#illustration_form');
+  });
+// ]]></script>

@@ -1,0 +1,88 @@
+<div class="grid_12">
+	<h1><%= @welcome.title%></h1>
+
+	<div class="grid_4 suffix_5 alpha omega">
+		<%=raw @welcome.body%>
+	</div>
+
+	<% if can?(:edit, @welcome)%>
+		<div class="grid_4 suffix_5 alpha omega text_right">
+			<hr/>
+			<%= link_to t('admin.edit'), edit_page_path(@welcome)%>
+		</div>
+	<%end%>
+</div>
+	
+<div class="grid_12">
+	<div class='grid_9 alpha'>
+	<% @casestorries.each_with_index do |casestorry, index| %>
+		
+		<% if (index % 3) == 0 %>
+			
+			<div class='grid_3 alpha green_pn_hover top_margin_16'>
+		<% elsif (index % 3) == 1 %>
+			<div class='grid_3 omega green_pn_hover top_margin_16'>
+		<%else%>
+			<div class='grid_3 green_pn_hover top_margin_16'>
+		<%end%>
+			<% if can?(:manage, Casestorry)%>
+				<div class='grid_3 alpha omega top_margin_8 text_right'>
+					<%= link_to 'Show', casestorry %> | 
+					<%= link_to 'Edit', edit_casestorry_path(casestorry) %> | 
+					<%= link_to 'Destroy', casestorry, :confirm => 'Are you sure?', :method => :delete %>
+				</div>
+			<%end%>
+			<%= link_to image_tag( casestorry.image.url(:thumbnail), 
+						:border => 'none', 
+						:class => 'transparent_on_hover'), 
+						casestorry,
+						:class => 'image_fix' %>
+								
+			<div class='grid_3 alpha omega top_margin_16 height_56'>
+				<h3><%= link_to casestorry.title, casestorry %></h3><br>
+				<%= link_to excerpt( casestorry.body, '', :radius => 100), casestorry %>
+			</div>
+			<div class='grid_3 alpha omega top_margin_8'>
+				<%= casestorry.category %>
+			</div>
+		</div>
+		
+	<% end %>
+	</div>	
+	
+	<div class="grid_3 omega">
+		<h3>On the blog</h3>
+		<% @blogs.each do |blog| %>
+		
+				<div class="grid_3 alpha omega top_margin_8">
+					<div class="grid_1 alpha">
+						<%= link_to image_tag( blog.user.image.url(:micro), 
+												:border => 'none', 
+												:class => 'image_fix'), 
+												user_path(blog.user) %>
+					</div>
+					<div class="grid_2 omega">
+						<b><%= link_to blog.title, blog %></b><br>
+						<i> <%= blog.user.name %></i><br/>
+						<%= l blog.created_at, :format => :date_month_and_year %><br/>
+					</div>
+				</div>
+				
+				<div class="grid_3 alpha omega top_margin_8">
+					<div class=<%= cycle("color_light_gray", "color_gray") %>>
+
+						<%= excerpt( blog.body, '', :radius => 100) %>
+						<div class="text_right">
+							<%= link_to t('admin.show'), blog %>
+							<%if can?(:manage, blog)%>
+								 |<%= link_to t('admin.edit'), edit_blog_path(blog) %> | 
+								<%= link_to t('admin.delete'), blog, :confirm => t('admin.are_you_sure'), :method => :delete %>
+							<%end%>
+						</div>
+					</div>	
+				</div>
+				<hr/>
+				
+		<% end %>
+	</div>
+</div>

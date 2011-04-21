@@ -1,0 +1,2 @@
+module TutorialPostsHelper
+end

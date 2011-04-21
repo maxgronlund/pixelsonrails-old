@@ -1,0 +1,42 @@
+A lean rails template suitable as a starting point for websites with user accounts, uploads and cool layout
+
+The following is installed and configured
+* user sign up based on devise
+* rolle based permisions based on cancan
+* flash uoloader based on uploadify
+* pagination for <-- prev og next --> based on wilpaginate
+* wysisyg editor based on tinyMCE 
+* inherited resources for dry controllers
+* 960.gs for robust css styling 
+* i18n translation for danish and english 
+* JQuery
+* search based on sphinx 
+* sortable lists
+
+
+Default models, views and controllers
+* home#index
+* admin#index administrations page
+* pages: text for embedding in the site
+* illustrations: illustrations for embedding in to the site
+* topbar with navigation links
+* bottom bar
+* user with image
+* blog with comments 
+* comments can be used on different models
+* site is 1024/1032 pixels wide and 
+* 12 column grid system  
+
+How to use
+* modify the database.yml file
+* run bundle install
+* run rake:db create, rake db:migrate rake db:seed
+* install sphinx
+* rake ts:index
+* rake ts:start
+* open illustrations and upload the logo, it's located in the image folder
+
+Wishlist
+* a better way to present search results from many different models in one list
+* language flags so guests can select language
+

@@ -1,0 +1,2 @@
+module EditPasswordHelper
+end

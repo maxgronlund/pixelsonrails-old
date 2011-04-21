@@ -1,0 +1,66 @@
+<div class="grid_12">
+	<h1><%= t('user.users')%></h1>
+</div>
+	
+<div class="grid_10  prefix_1 suffix_1">
+	<b>
+		
+		<div class="grid_2 prefix_1 alpha">
+			<%= sortable t('user.name')%>
+		</div>
+		<div class="grid_3">
+			<%= sortable t('user.email')%>
+			<%#= link_to 'email',:sort => "email"%>
+		</div>
+		<div class="grid_2 omega suffix_2">
+			<%= sortable 'role'%>
+			<%#= link_to 'role',:sort => "role"%>
+		</div>
+	</b>
+	<hr/>
+</div>
+
+<% @users.each do |user| %>
+	<div class="grid_10 prefix_1 suffix_1" >
+		<div class="grid_10 alpha omega <%= cycle("color_light_gray", "color_gray") %>">
+			<div class="grid_1 alpha">
+				<%= link_to image_tag( user.image.url(:micro), :border => 'none', :class => 'image_fix'), user_path(user) %>
+			</div>
+		
+			<div class="grid_2 top_margin_6">
+				<%= link_to user.name, user_path(user) %>
+			</div>
+			
+			<div class="grid_3 top_margin_6">
+				<%= user.email %>
+			</div>
+			
+			<div class="grid_2 top_margin_6"> 
+				<%= user.role %><br/>
+			</div>
+			
+			<div class="grid_2 omega top_margin_6 text_right ">	
+	    		
+				<% if can_edit?  %>
+					<%= link_to t('admin.edit'), edit_user_path(user)%>
+					<% unless user.super?  %>
+					 | <%= link_to t('admin.delete'), user_path(user), :confirm => t('admin.are_you_sure'), :method => :delete %>
+					<%end%>
+					
+				<%end%>
+			</div>
+		
+			<hr/>
+			
+		</div>
+	</div>
+<%end%>
+
+<div class="grid_10 prefix_1 suffix_1" >
+	<%= will_paginate @users %>
+</div>	
+<% if can?(:manage,User)%>
+	<div class="grid_10 prefix_1 suffix_1 top_margin_12" >
+		<%= link_to t('user.create'), new_user_path %><br />
+	</div>
+<%end%>
