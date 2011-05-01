@@ -3,7 +3,7 @@
 	
 	<% form_for [ comment_subject, Comment.new] do |f| %>
 	
-	    <textarea cols="17" id="comment_body" name="comment[body]" rows="10"></textarea>
+	    <textarea cols="39" id="comment_body" name="comment[body]" rows="3"></textarea>
 	
 	  <p><%= f.submit t('admin.save') %></p>
 	<% end %>

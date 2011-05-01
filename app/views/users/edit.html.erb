@@ -29,8 +29,13 @@
 		  <%#= t('user.language') %><br />
 		  <%= f.select(:language, User::LANGUAGE)%>
 		</div>
+		<% if current_user && current_user.admin_or_super?  %>
+			<div class="field">
+		    	<%= f.label :grid %><br />
+		    	<%= f.check_box :grid %>
+			</div>
+		<%end%>
 
-		
 		<div class="field">
 			<p>Billed<br />
 				<%= f.file_field :image %>

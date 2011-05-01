@@ -8,10 +8,13 @@ dk:
           username: Navn
           email: E-mail
           password: Adgangskode
+          password_new: Ny adgangskode
+          update_password: Skift adgangskode
           password_confirmation: Bekræft adgangskode
           current_password: Gammel adgangskode
           remember_me: Forbliv logget på
           avatar: Profilbillede
+
     errors:
       messages:
         not_found: "ikke fundet"
@@ -271,6 +274,7 @@ dk:
         are_you_sure: 'Er du sikker?'
         created_at: 'oprettet'
         cases: 'cases'
+        videos: 'videos'
     blog:
         posts: 'Indlæg'
         new: 'Nyt indlæg'
@@ -309,5 +313,6 @@ dk:
         all_pages: 'alle tekster'
     tutorial:
         type: 'type'
+        new_section: 'Nyt afsnit'
         
     

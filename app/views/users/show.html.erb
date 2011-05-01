@@ -10,16 +10,19 @@
 <div class="grid_12  top_margin_4">
 	<%= image_tag  @user.image.url(:medium) %>
 </div>
-<div class="grid_12  top_margin_4">
-	<%= link_to 'blog', user_blogs_path(@user)%>
-</div>
+
 
 
 <% if can?(:manage, @user)%>
 	
 	<div class="grid_6 suffix_6">
-		<%#= link_to 'Skift adgangskode', edit_user_registration_path  %>  
-		<%= link_to t('admin.edit'), edit_user_path(@user)%>
+		<%= link_to t('admin.edit'), edit_user_path(@user)%><br>
+		<%= link_to t('user.update_password'), user_password_path(:id => @user)  %> <br> 
+		
 	</div>
 <%end%>
+
+<div class="grid_12  top_margin_4">
+	<%= link_to 'blog', user_blogs_path(@user)%>
+</div>
 

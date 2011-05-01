@@ -5,6 +5,8 @@ Rails_template::Application.routes.draw do
 
 
 
+  resources :videos
+
   resources :gibbon_campaigns, :only => :index
 
   resources :gibbon_lists, :only => :index do
@@ -21,7 +23,7 @@ Rails_template::Application.routes.draw do
   
   get "about/index"
   get "contact/index"
-
+  get 'users/password'
 
   scope "/:locale" do
     resources :users do

@@ -21,9 +21,9 @@ en:
         portrait: "portrait"
         email: "email"
         password: "password"
-        password_nyt: "new password"
+        password_new: "New password"
         password_current: "old password"
-        password_confimation: "repete password"
+        password_confimation: "Repete password"
         sign_up: "sign up"
         log_in: "log in"
         remember_me: "remember me"
@@ -58,6 +58,7 @@ en:
         are_you_sure: 'Are you sure?'
         created_at: 'created'
         cases: 'cases'
+        videos: 'videos'
     blog:
         posts: 'Posts'
         new: 'New post'
@@ -96,3 +97,4 @@ en:
         all_pages: 'all text'
     tutorial:
         type: 'type'
+        new_section: 'New section'

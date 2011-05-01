@@ -27,7 +27,6 @@ class BlogsController < InheritedResources::Base
   end
   
   def create
-    
     create! {blogs_path}
   end
   

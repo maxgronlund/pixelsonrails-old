@@ -12,6 +12,7 @@ class Ability
         can :manage, Illustration
         can :manage, Page
         can :manage, Tutorial
+        can :manage, TutorialPost
         can :manage, User
         
         
@@ -26,6 +27,7 @@ class Ability
         can :read, Illustration
         can :read, Page
         can :read, Tutorial
+        can :manage, TutorialPost, :user_id => user.id 
         can :read, User
         can :manage, User, :id => user.id
        
