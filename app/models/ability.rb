@@ -14,6 +14,7 @@ class Ability
         can :manage, Tutorial
         can :manage, TutorialPost
         can :manage, User
+        can :manage, Video
         
         
       elsif user.member?#ordinary user
@@ -30,6 +31,7 @@ class Ability
         can :manage, TutorialPost, :user_id => user.id 
         can :read, User
         can :manage, User, :id => user.id
+        can :read, Video
        
       end
     # When not logged in
@@ -41,6 +43,7 @@ class Ability
      can :read, Page
      can :read, Tutorial
      can :read, User
+     can :read, Video
      #can :create, User# <----------- Uncomment this to alow users to signup by them self 
     end
   end
