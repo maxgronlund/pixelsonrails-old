@@ -9,7 +9,6 @@
 //= require jquery.Jcrop.min
 //  require_tree .
 //= require_directory .
-//- require tiny_mce/tiny_mce
 //= require rails.validations
 
 

@@ -127,8 +127,8 @@ a, a:hover, a:active, a:visited, a:link {
 	h1{ margin:8px;}
 }
 
-.body-color{ @include body-color($color_dark_gray, 100);}
-.content-color{ @include content-color($color_gray, 100);}
+.body-color{ @include body-color($color_white, 100);}
+.content-color{ @include content-color($color_white, 100);}
 
 .top-margin{
 	margin-top:8px;

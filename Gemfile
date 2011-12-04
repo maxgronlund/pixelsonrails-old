@@ -1,8 +1,7 @@
-source 'http://rubygems.org'
-
-gem 'rails', '3.1.0'
+source 'http://rubygems.org' 
+gem 'rails', '~> 3.1.0'
 gem 'rails-i18n'
-	
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
@@ -21,17 +20,18 @@ gem 'kaminari'
 gem 'has_scope'
 gem 'redcarpet'
 gem 'devise'
-#gem 'tiny_mce'
+#gem 'tinymce-rails'
 gem 'simple_form'
 gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
+gem "browser"
 
-
+# JavaScript runtime is required for Tails 3.1; this should work on Ubuntu
+gem 'therubyracer', '>= 0.8.2'
 
 # Use unicorn as the web server
 # gem 'unicorn'
 
-# Deploy with Capistrano
-gem 'capistrano'
+
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -54,19 +54,25 @@ group :test do
   gem 'remarkable_activerecord', '~> 4.0.0.alpha4'
   #gem 'ruby-fsevent'
   #gem 'watchr'
-  gem 'spork'
+  #gem 'spork'
 end
 
 
-# gem "compass", :git => "git://github.com/chriseppstein/compass.git", :branch => "master"
-# gem 'chunky_png' # compass HEAD uses this for sass sprites, but lacks dependency :(
-
 gem "compass", :git => "git://github.com/chriseppstein/compass.git"
+gem 'chunky_png' # compass HEAD uses this for sass sprites, but lacks dependency :(
 gem "compass-960-plugin", :require => "ninesixty"
 
 gem 'carrierwave'
 gem 'mini_magick'
 
+
+
+# Deploy with Capistrano
+gem 'capistrano'
+
+
+
 group :development do
   gem "rails-erd"
 end
+

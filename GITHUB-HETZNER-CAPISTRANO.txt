@@ -79,7 +79,7 @@ $ git remote add template git://github.com/maxgronlund/rails-template-31.git
 21: log out $ ctrl-d
 ---
 22: $ ssh deploy@46.4.64.81 							<-- CHANGE IP ADDRESS
-23: $ cd /var/www/PROJECTNAME/current
+23: $ cd /var/www/pixelsonrails/current
 24: $ RAILS_ENV=production rake db:seed
 ---
 25: $ RAILS_ENV=production  rake ts:conf

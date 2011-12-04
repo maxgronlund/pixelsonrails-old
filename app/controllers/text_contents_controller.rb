@@ -1,7 +1,6 @@
 class TextContentsController < InheritedResources::Base
   has_scope :page, :default => 1
   load_and_authorize_resource
-  uses_tiny_mce :only => [:new, :create, :edit, :update]
   helper_method :sort_column, :sort_direction
   
   def show
