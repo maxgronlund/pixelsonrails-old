@@ -1,1 +1,0 @@
-GibbonAPI = Gibbon::API.new "13d434edcc5319e8aa812d109b2f651e-us2"
