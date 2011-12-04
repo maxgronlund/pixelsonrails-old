@@ -1,4 +1,17 @@
-BELONGS TO application.html.erb
+.grid-3
+  | left column
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+.grid-4
+  - if @welcome
+    h3.c20
+      = @welcome.title
+    
+    = markdown(@welcome.body)
+    br
+    = link_to t('system.edit'), edit_text_content_path(@welcome)
+
+.grid-2
+  
+
+.grid-3
+  | rigth column

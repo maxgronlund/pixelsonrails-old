@@ -1,100 +1,76 @@
 # Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-    time:
-      formats:
-        default: "%e. %B %Y, %H:%M"
-        short: "%e. %b %Y, %H:%M"
-        long: "%A, %e. %B %Y, %H:%M"
-        date_month_and_year: "%d %B %Y"
-        year: "%Y"
-      am: ""
-      pm: ""
-    
-    
-    user:
-        title: "Create account"
-        edit_account: "Edit account"
-        update_password: "Change password"
-        name: "user name"
-        portrait: "portrait"
+  activerecord:
+    models:
+      user: "user"
+      text_content: "text content"
+
+    attributes:
+      user:
+        name: "name"
         email: "email"
-        password: "password"
-        password_new: "New password"
-        password_current: "old password"
-        password_confimation: "Repete password"
-        sign_up: "sign up"
-        log_in: "log in"
-        remember_me: "remember me"
-        leave_blank: "(leave blank if you don't want to change password)"
-        confirm_changes: "(please confirm password)"
-        role: "role"
-        language: "language"
-        users: "Users"
-        create: "create user"
-        
-    password:
-        send_instructions: "send instructions"
-        forgotten: "Forgot your password?"
-        
-        #
-    previous: "<< Previous" 
-        #
-    next: "Next >>"
-         
-    admin:
-        edit: 'edit'
-        show: 'show'
-        delete: 'delete'
-        save: 'save'
-        search: 'search'
-        nothing_found: 'Nothing found'
-        try_again: 'Please try again with another search string'
-        administration: "Administration"
-        users: "users"
-        illustrations: "illustrations"
-        pages: "texts"
-        are_you_sure: 'Are you sure?'
-        created_at: 'created'
-        cases: 'cases'
-        videos: 'videos'
-    blog:
-        posts: 'Posts'
-        new: 'New post'
-        edit: 'Edit post'
-        create: 'create new post'
-    comment:
-        edit: 'RedigerEdit comment'
-        new: 'New comment'
-    system:
+        password: 'password'
+        password_confirmation: 'password confirmation'
+        thumb: 'avatar'
+        role: 'role'
+        grid: ' grid'
+      text_content:
+        identity: "identity"
         title: 'title'
         body: 'body'
-        identity: 'identitet'
-        language: 'language'
-        comments: 'comments'
-    navigation:
-        back: 'back'
-        home: 'home'
-        about: 'about'
-        blog: 'blog'
-        sign_in: 'sign in'
-        sign_out: 'sign out'
-    illustration:
-        title: 'title'
-        image: 'image'
-        edit: 'Edit illustration'
-        new: 'New illustration'
-        create_new: 'create new illustration'
-        headline: 'Illustrations'
-        index: 'all illustrations'
-    page:
-        identification: 'identifikation !DO NOT EDIT'
-        edit_page: 'Edit text'
-        new_page: 'New text'
-        new: 'new text'
-        text:  'Text'
-        all_pages: 'all text'
-    tutorial:
-        type: 'type'
-        new_section: 'New section'
+        
+
+  image:
+    image: 'image'
+    re_crop: 're crop'
+    remove_image: ' remove image'
+    
+  navigation:
+    back: '< back'
+    
+  page:
+    admin: "admin"
+    home: "home"
+
+  session:
+    log_in: "log in"
+    log_out: "log out"
+    sign_up: 'sign up'
+    
+  system:
+    are_you_sure: 'are you sure?'
+    content_management: 'content management'
+    delete: 'delete'
+    do_not_edit: 'do not edit'
+    edit: 'edit'
+    email: "email"
+    remove_image: 'remove image'
+    save: 'save'
+    search: 'search'
+    show: 'show'
+    show_all: 'show all'
+    site_management: 'site management'
+    user_management: 'user management'
+    
+  text_content:
+    index: 'texts'
+    show: 'text'
+    edit: 'edit text'
+    new: 'new text'
+  
+  user:
+    index: 'users'
+    show: 'show user'
+    new: 'create user'
+    edit: 'edit user'
+
+    
+  views:  
+    pagination:  
+      first: 'first'
+      last: 'last'
+      previous: "&lt; prev"  
+      next: "next &gt;"  
+      truncate: "&hellip;"

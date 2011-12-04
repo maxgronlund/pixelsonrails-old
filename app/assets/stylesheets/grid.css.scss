@@ -1,0 +1,75 @@
+// 960gs sample
+@import "960/grid";//, "960/text";
+@import "partials/color";
+
+$ninesixty-columns: 12;
+$ninesixty-grid-width: 1032px; 	// default: 960px
+$ninesixty-gutter-width: 20px; 	// default: 20px
+
+.grid-container {
+	min-height:700px;
+	@include grid-container;
+	margin-top:0px;
+	.menu{	@include grid(12);	min-height:32px; width:992px;}
+	.banner { @include banner-color($color_dark_gray, 100);@include grid(12); min-height:60px;}
+	.headline{	@include grid(12);	min-height:32px;margin-bottom:16px;}	
+	.grid-1{ @include grid(1);min-height:1px; }
+	.grid-2{ @include grid(2);min-height:1px;}
+	.grid-3{ @include grid(3);min-height:1px;}
+	.grid-4{ @include grid(4);min-height:1px;}
+	.grid-5{ @include grid(5);min-height:1px;}
+	.grid-6{ @include grid(6);min-height:1px;}
+	.grid-7{ @include grid(7);min-height:1px;}
+	.grid-8{ @include grid(8);min-height:1px; }
+	.grid-9{ @include grid(9);min-height:1px; }
+	.grid-10{ @include grid(10);min-height:1px; }
+	.grid-11{ @include grid(11);min-height:1px; }
+	.grid-12{ @include grid(12);min-height:1px; }
+	.prefix-1{ @include grid-prefix(1) }
+	.prefix-2{ @include grid-prefix(2) }
+	.prefix-3{ @include grid-prefix(3) }
+	.prefix-4{ @include grid-prefix(4) }
+	.prefix-5{ @include grid-prefix(5) }
+	.prefix-6{ @include grid-prefix(6) }
+	.prefix-7{ @include grid-prefix(7) }
+	.prefix-8{ @include grid-prefix(8) }
+	.prefix-9{ @include grid-prefix(9) }
+	.prefix-10{ @include grid-prefix(10) }
+	.prefix-11{ @include grid-prefix(11) }
+	.prefix-12{ @include grid-prefix(12) }
+	.suffix-1{ @include grid-suffix(1) }
+	.suffix-2{ @include grid-suffix(2) }
+	.suffix-3{ @include grid-suffix(3) }
+	.suffix-4{ @include grid-suffix(4) }
+	.suffix-5{ @include grid-suffix(5) }
+	.suffix-6{ @include grid-suffix(6) }
+	.suffix-7{ @include grid-suffix(7) }
+	.suffix-8{ @include grid-suffix(8) }
+	.suffix-9{ @include grid-suffix(9) }
+	.suffix-10{ @include grid-suffix(10) }
+	.suffix-11{ @include grid-suffix(11) }
+	.suffix-12{ @include grid-suffix(12) }
+	
+	
+	.alpha{ @include alpha; }
+	.omega{@include omega;}
+	
+	.pagination-12{
+		@include grid(12);
+		text-align:center;
+		margin-top:0px;
+		min-height:16px;	
+	}
+	.divider-12{
+		@include grid(12);
+		min-height:16px;
+	}
+	
+	.left-indent{margin-left:4px;}
+	
+}
+
+.background_grid {background-image:url('background_grid.png');}
+
+header { @include grid-container; @include grid(12); }
+footer { @include grid-container; min-height:32px; text-align:center; }

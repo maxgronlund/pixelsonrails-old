@@ -1,14 +1,15 @@
 # RVM bootstrap
 $:.unshift(File.expand_path("~/.rvm/lib"))
 require 'rvm/capistrano'
-set :rvm_ruby_string, '1.9.2-p136'
+set :rvm_ruby_string, '1.9.3-p0'
 set :rvm_type, :user
 
 # bundler bootstrap
 require 'bundler/capistrano'
+load 'deploy/assets'
 
 # main details
-set :application, "pixelsonrails"                                       # <<< change name
+set :application, "pixelsonrails"                                # <<< change name
 server "46.4.64.81", :app, :web, :db, :primary => true
 
 # server details
@@ -43,7 +44,19 @@ namespace :deploy do
   desc "Symlink shared resources on each release - not used"
   task :symlink_shared, :roles => :app do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads"
   end
 end
 
 after 'deploy:update_code', 'deploy:symlink_shared'
+
+
+desc "Tail all or a single remote file"
+task :tail do
+  ENV["LOGFILE"] ||= "*.log"
+  run "tail -f #{shared_path}/log/#{ENV["LOGFILE"]}" do |channel, stream, data|
+    puts "#{data}"
+    break if stream == :err
+  end
+end
+

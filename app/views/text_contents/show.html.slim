@@ -1,0 +1,15 @@
+.headline
+  h1 
+    = @text_content.title
+  = @text_content.identity
+
+.grid-12
+  p#notice = notice
+.grid-4
+  = markdown(@text_content.body)
+.grid-4
+
+.grid-4
+
+.grid-12
+  = link_to t('system.edit'), edit_text_content_path(@text_content)

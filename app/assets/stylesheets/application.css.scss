@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require kontrapunkt
+ *= require normalize
+ *= require clearfix
+ *= require grid
+ *= require_self
+ * require_tree . 
+ *= require_directory . 
+*/
+
+@import "compass/css3";
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "partials/color";
+@import "partials/font";
+@import "partials/dimentions";
+@import "partials/fancy-buttons";
+
+
+body{
+  margin:0px;
+  @include font-plain;
+}
+
+// set link color
+a, a:hover, a:active, a:visited, a:link {
+  //@include link-font;
+  color: $link-color;
+  text-decoration: none;
+  &.fancy {
+		@include fancy-button($template-color-base, 14px 0.5em);
+	}
+}
+
+
+
+/* JCrop preview */
+.preview {
+    width:100px;
+    height:100px;
+    overflow:hidden;
+}
+
+
+.row-flip
+{
+	background-color:#ddd;
+}
+
+.row-flop
+{
+	background-color:#ccc;
+}
+
+.sort-list-header {
+	background-color:#aaa;
+	color:#000;
+	.asc {
+		padding-right:20px;
+		background-image:url('arrow_down.png');
+		background-repeat:no-repeat;
+		background-color:transparent;
+		background-position:right top;
+	}
+	.desc {
+		padding-right:20px;
+		background-image:url('arrow_up.png');
+		background-repeat:no-repeat;
+		background-color:transparent;
+		background-position:right top;
+	}
+}
+
+/* FIXME where is this used? */
+.current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* FIXME where is this used? */
+.edit{
+	text-align:right;
+}
+
+.notice{
+	color:#0a0;
+	background-color:#efe;
+	@include border-radius(5px, 5px);
+	border-style:solid;
+	border-width:1px;
+	border-color:#888;
+    min-height:32px;
+	.message{
+	  margin:8px;
+	}
+	
+}
+.alert{	
+	color:#e00;
+	background-color:#fee;
+	@include border-radius(5px, 5px);
+	border-style:solid;
+	border-width:1px;
+	border-color:#888;
+    min-height:32px;
+	.message{
+	  margin:8px;
+	}
+}
+
+
+.field{
+	@include input_top_margin;
+}
+
+.label{
+	@include input_top_margin;
+}
+
+
+.headline { 
+	@include template-color; @include font-header; 
+	h1{ margin:8px;}
+}
+
+.body-color{ @include body-color($color_dark_gray, 100);}
+.content-color{ @include content-color($color_gray, 100);}
+
+.top-margin{
+	margin-top:8px;
+}
+
+

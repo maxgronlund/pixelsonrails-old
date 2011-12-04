@@ -1,0 +1,37 @@
+.headline
+  h1
+    = t('text_contents.all_texts')
+
+.grid-12
+  = form_tag text_contents_path, :method => 'get', :id => "products_search" do
+    = text_field_tag :search, params[:search] 
+    = submit_tag t('text_contents.search'), :title => nil
+    '
+    = link_to t('system.show_all'), text_contents_path
+.divider-12
+div class="sort-list-header grid-12"
+  .grid-2.alpha
+    = sortable 'identity', t('text_contents.identity')
+  .grid-2
+    = sortable 'title', t('text_contents.title')
+  .grid-6
+    = sortable 'body', t('text_contents.body')
+  .grid-2.omega
+- @text_contents.each do |text_content|
+  div class="grid-12 #{cycle('row-flip', 'row-flop')}"
+    .grid-2.alpha
+      = link_to text_content.identity, text_content
+    .grid-2
+      = link_to text_content.title, text_content
+    .grid-6
+      = excerpt(text_content.body, '', :radius => 32)
+    .grid-2.omega
+      = link_to t('system.show'), text_content
+      | | 
+      = link_to t('system.edit'), edit_text_content_path(text_content)
+      | | 
+      = link_to t('system.delete'), text_content, :confirm => 'Are you sure?', :method => :delete
+.pagination-12 
+  = paginate @text_contents
+.grid-12.edit
+  = link_to t('text_contents.new_text_content'), new_text_content_path, class: 'fancy'

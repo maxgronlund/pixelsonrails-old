@@ -1,0 +1,45 @@
+= simple_form_for @user, :validate => true do |f| 
+  = render 'shared/error_messages', :taget => @user
+ 
+ 
+  = f.input :name
+  = f.input :email
+  = f.input :password
+  = f.input :password_confirmation
+
+
+
+
+  - if @user.image.present?
+    - @user.image.version_dimensions.keys.each do |version|
+      .label
+        | #{version}:
+        = link_to t('image.re_crop'), crop_user_path(@user, :version => version)
+        br
+        = image_tag(@user.image_url version) if @user.image?
+
+        
+        br
+  br
+  = f.input :image
+  = f.hidden_field :image_cache
+
+  - if @user.image.present?
+    br
+    .field
+      = f.check_box :remove_image
+      = t('image.remove_image')
+  .field
+    - if current_user && current_user.super?
+         = f.check_box :grid
+         = t('activerecord.attributes.user.grid')
+  
+
+
+  - if current_user && current_user.admin_or_super?
+    = f.input :role , :include_blank => false, :collection => User::ROLES unless @user.is_first_user?
+  br
+  .actions
+    = f.submit t('system.save')
+
+= link_to t('navigation.back'), :back

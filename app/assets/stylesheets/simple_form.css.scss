@@ -1,0 +1,10 @@
+@import "partials/dimentions";
+
+label{
+	@include input_top_margin;
+	display:block;
+}
+
+.hint{
+	font-style:italic;
+}

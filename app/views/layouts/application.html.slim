@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Rails 3.1 Template
+
+    /[if lt IE 9]
+      script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+    = include_tiny_mce_if_needed
+
+    javascript:
+      var session_key      = '#{cookies[Rails.application.config.session_options[:key]]}';
+      var session_key_name = '#{Rails.application.config.session_options[:key]}';
+    = yield :head 
+
+  body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}")
+    .grid-container.content-color class=("background_grid" if grid_is_on?)
+      = render "shared/jmenu"
+      = render "shared/banner"
+      = render 'shared/messages'
+      = yield
+      div class="clearfix"
+    footer
+      = render "shared/footer"
+    div class="clearfix"

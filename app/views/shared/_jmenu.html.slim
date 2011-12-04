@@ -1,0 +1,25 @@
+.menu
+
+  #menu
+  
+  
+    ul class="menu"
+      - if can_edit?
+        li  class=("current"  if @menu == 'admin' ) 
+          = link_to( admin_index_path, :class => 'parrent')  do
+            span admin
+          div
+            ul
+              li
+                = link_to(users_path)  do
+                  span = t('user.index')
+              li
+                = link_to(text_contents_path)  do
+                  span = t('text_content.index')
+              li
+
+        
+      
+      li  class=("current"  if @menu == 'home' )
+        = link_to(root_path, :class => 'parrent')  do
+          span home

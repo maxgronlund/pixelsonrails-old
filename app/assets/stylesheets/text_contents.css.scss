@@ -1,0 +1,11 @@
+// Place all the styles related to the text_contents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "partials/color";
+
+body.text_contents {
+  // Place scoped styles here
+  background-color: $body_color;
+}

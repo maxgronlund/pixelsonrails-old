@@ -1,29 +1,25 @@
-# encoding: utf-8
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
-  # :token_authenticatable, :confirmable, :lockable and :timeoutable
-  
-  #!!! if registerable is enabled all can signup and admin can't create accounts
-  #!!! when registeerable is enabled links to signup has to be enabled
-  
-  devise :database_authenticatable, #:registerable,
+  # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :grid, :password, :password_confirmation, :remember_me, :role, :name, :image, :language
-  has_many :blogs
-  has_many :comments
-  
-  validates_presence_of :name
-  
-  has_attached_file :image, :styles => {  :micro => "24x28#",:small => "70x80#", :medium => "200x230#" }, :default_url => "/images/fallback/default_avatar_:style.png"
-  
-  validates_attachment_size :image, :less_than => 800.kilobytes
-  validates_attachment_content_type :image, :content_type => ['image/jpeg','image/jpg','image/png']
-  
+  attr_accessible :email, :grid,:password, :password_confirmation, :remember_me
+
+
+  # Avatar image
+  attr_accessible :image, :image_cache, :remote_image_url, :remove_image
+  serialize :crop_params, Hash
+  mount_uploader :image, AvatarUploader
+  include ImageCrop
+
+
+  # Roles etc
+  attr_accessible :name, :role
+  # validate :name, :presence => true
   
   ROLES = %w[member admin super]
-  LANGUAGE = [['Dansk', 'dk'], ['English','en']]
   
   def admin_or_super?
     admin? || super?
@@ -38,8 +34,18 @@ class User < ActiveRecord::Base
   end
   
   def member?
-    role == 'member'
+    role == 'member' || role.nil? # Until role is set to :member by default
   end
-  
-  
+
+  def self.search(search)
+    if search
+      where('name LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
+  end
+  def is_first_user?
+    id == 1
+  end
+
 end

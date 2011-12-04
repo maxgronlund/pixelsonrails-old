@@ -11,3 +11,8 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+# NoMethodError: undefined method `authenticate' for nil:NilClass
+class ActionController::TestCase
+  include Devise::TestHelpers
+end

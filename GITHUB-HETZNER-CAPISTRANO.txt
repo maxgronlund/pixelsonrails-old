@@ -1,0 +1,136 @@
+#####################################################
+			GETTING STARTED
+#####################################################
+1: Clone the project
+2: Set up the  config/database.yml file
+3: Edit the db/seed.rb file 
+4: $ db:create db:migrate db:seed
+5: $ bundle install
+---
+6: Remove the .git file *1
+7: Add to git $ git init
+8: $ git add ..
+9: git commit
+
+*1 If the .git file is invisible 
+$ defaults write com.apple.finder AppleShowAllFiles TRUE
+$ killall Finder
+
+#####################################################
+			CREATE A PROJECT ON GITHUB
+#####################################################
+1: make a new project 
+2: $ git remote add origin git@github.com:YOURNAME/PROJECTNAME-.git
+---
+3: If you want to keep the project in sync with the template
+$ git remote add template git://github.com/maxgronlund/rails-template-31.git
+
+#####################################################
+			PREPARE HETZNER AND GITHUP 
+			FOR DEPLOYMENT WITH CAPISTRANO
+#####################################################
+1: edit line 11 and 24 in the config/deploy.rb file
+2: $ cap deploy:setup
+3: $ ssh deploy@46.4.64.81 								<-- CHANGE IP ADDRESS
+4: $ mysqladmin -u root create project_name
+5: $ mkdir /var/www/PROJECTNAME/shared/config
+6: $ mkdir /var/www/PROJECTNAME/shared/uploads
+7: $ cat > /var/www/PROJECTNAME/shared/config/database.yml
+---
+8: $ production:
+ adapter: mysql2
+ encoding: utf8
+ reconnect: false
+ database: PROJECTNAME
+ pool: 5
+ username: root
+ password:
+ socket: /var/run/mysqld/mysqld.sock
+
+8b: hit return
+9: end cat $ ctrl-d
+10: log out $ ctrl-d 
+---
+11: $ ssh root@46.4.64.81 								<-- CHANGE IP ADDRESS
+12: type password
+13: $ cat > /etc/apache2/sites-available/haxecasts
+
+14: $<VirtualHost *:80>
+     ServerName PROJECTNAME.org
+     ServerAlias *.PROJECTNAME.org
+     XSendfile on
+     XSendFilePath /var/www/PROJECTNAME
+     DocumentRoot /var/www/PROJECTNAME/current/public
+     <Directory /var/www/PROJECTNAME/current/public>
+       ExpiresActive On
+       <FilesMatch "\.(ico|gif|jpe?g|png|js|css)$">
+         ExpiresDefault "access plus 1 year"
+       </FilesMatch>
+     </Directory>
+</VirtualHost>
+
+15: end cat $ ctrl-d
+16: $ a2ensite PROJECTNAME
+17: $ /etc/init.d/apache2 restart
+18: log out $ ctrl-d 
+---
+19: upload code $ cap deploy
+20: migrate db $ cap deploy:migrations
+21: log out $ ctrl-d
+---
+22: $ ssh deploy@46.4.64.81 							<-- CHANGE IP ADDRESS
+23: $ cd /var/www/PROJECTNAME/current
+24: $ RAILS_ENV=production rake db:seed
+---
+25: $ RAILS_ENV=production  rake ts:conf
+26: $ RAILS_ENV=production rake ts:index
+27: $ RAILS_ENV=production rake ts:start 
+28: log out $ ctrl-d
+--- 
+
+
+#####################################################
+			POINT THE DNS SERVER TO HETZNER
+#####################################################
+1: Open the DNS editor
+2: Set up the host records         
+
+A (Host)
+Host Record	|	Points to 		|	TTL
+-------------------------------------------
+@			|	46.4.64.81		|	14400	
+localhost	|	127.0.0.1		|	14400	
+local		|	46.4.64.81		|	14400	
+
+
+CNAME
+Host Record	|	Points to 		|	TTL
+-------------------------------------------
+www			|	domain_name.com	|	14400	
+ftp			|	domain_name.com	|	14400	
+mail		|	domain_name.com	|	14400
+
+
+MX (MailExchanger)
+Priority	|	Host Record 			|	TTL
+---------------------------------------------------
+0			|	mail.domain_name.com	|	14400	
+
+
+
+TXT
+Host Record	|				TXT Value 						|	TTL
+-----------------------------------------------------------------------
+@			|	"v=spf1 a mx ptr include:bluehost.com ?all"	|	14400	
+_domainkey	|	"o=~"										|	14400
+
+
+
+
+
+
+
+
+
+
+

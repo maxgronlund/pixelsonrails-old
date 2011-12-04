@@ -6,45 +6,29 @@ class Ability
       if user.super?
         can :manage, :all
       elsif user.admin?
-        can :manage, Blog
-        can :manage, Comment
-        can :manage, Casestorry
-        can :manage, Illustration
-        can :manage, Page
-        can :manage, Tutorial
-        can :manage, TutorialPost
         can :manage, User
-        can :manage, Video
+        can :manage, TextContent
+        
+        # add application-specific changes below
         
         
-      elsif user.member?#ordinary user
+      elsif user.member?
+        # Ordinary user
+        can :manage, User, :id => user.id # <--- Allow user to manage self
+        can :read, TextContent
         
-        can :read, Blog
-        can :create, Blog
-        can :manage, Blog, :user_id => user.id
-        can :read, Casestorry
-        can :create, Comment
-        can :manage, Comment, :user_id => user.id  
-        can :read, Illustration
-        can :read, Page
-        can :read, Tutorial
-        can :manage, TutorialPost, :user_id => user.id 
-        can :read, User
-        can :manage, User, :id => user.id
-        can :read, Video
-       
+        # add application-specific changes below
+        
+        
       end
-    # When not logged in
-   else
-     can :read, Blog
-     can :read, Casestorry
-     can :read, Comment
-     can :read, Illustration
-     can :read, Page
-     can :read, Tutorial
-     can :read, User
-     can :read, Video
-     #can :create, User# <----------- Uncomment this to alow users to signup by them self 
+    else
+      # When not logged in
+      can :create, User # <----------- Uncomment this to alow users to signup by them self
+      can :read, TextContent
+      
+      # add application-specific changes below
+      
+      
     end
   end
 end

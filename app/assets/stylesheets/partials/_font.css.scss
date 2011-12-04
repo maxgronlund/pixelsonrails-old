@@ -1,0 +1,17 @@
+//@import "compass/css3/font-face";
+//@include font-face("KontrapunktBold", font-files("Kontrapunkt-Bold-webfont.woff", woff, "Kontrapunkt-Bold-webfont.ttf", truetype, "Kontrapunkt-Bold-webfont.svg#KontrapunktBold", svg, "Kontrapunkt-Bold-webfont.otf", opentype), "Kontrapunkt-Bold-webfont.eot");
+//@include font-face("KontrapunktLightItalics", font-files("Kontrapunkt-LightItalics-webfont.woff", woff, "Kontrapunkt-LightItalics-webfont.ttf", truetype, "Kontrapunkt-LightItalics-webfont.svg#KontrapunktBold", svg, "Kontrapunkt-LightItalics-webfont.otf", opentype), "Kontrapunkt-LightItalics-webfont.eot");
+//@include font-face("KontrapunktLight", font-files("Kontrapunkt-Light-webfont.woff", woff, "Kontrapunkt-Light-webfont.ttf", truetype, "Kontrapunkt-Light-webfont.svg#KontrapunktBold", svg, "Kontrapunkt-Light-webfont.otf", opentype), "Kontrapunkt-Light-webfont.eot");
+
+// define fonts from design_parts
+@mixin font-header($size: 18px) {
+  font: $size 'KontrapunktBold', Arial, sans-serif;
+}
+
+@mixin font-plain($size: 12px, $bold: normal) {
+  font: $bold $size Arial, sans-serif;
+}
+
+@mixin link-font {
+  @include font-plain(12px);
+}

@@ -1,0 +1,14 @@
+.field_with_errors {
+  display: inline; 
+  padding: 1px;
+  background-color:#d00;
+  display: table; 
+  padding-right:4px;
+} 
+
+.field_with_errors .message {  
+  color:#fff;  
+  padding-left: 5px;  
+  font-size: 12px;  
+}
+

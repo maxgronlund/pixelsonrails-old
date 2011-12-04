@@ -1,0 +1,38 @@
+.headline
+  h1
+    = t('user.all_users')
+
+.grid-12
+  = form_tag users_path, :method => 'get', :id => "products_search" do
+    = text_field_tag :search, params[:search] 
+    = submit_tag t('user.search_user'), :name => nil
+    '
+    = link_to t('system.show_all'), users_path
+.divider-12
+div class="sort-list-header grid-12"
+  .grid-3.alpha
+    = sortable 'name', t('user.name')
+  .grid-3
+    = sortable 'email', t('user.email')
+  .grid-3
+    = sortable 'role', t('user.role')
+  .grid-3.omega
+.grid-12  
+  - @users.each do |user|
+    div class="grid-12 alpha omega #{cycle('row-flip', 'row-flop')}"
+      .grid-3.alpha
+        =user.name
+      .grid-3
+        =user.email
+      .grid-3
+        =user.role
+      .grid-3.omega
+        = link_to t('system.show'), user
+        | | 
+        = link_to t('system.edit'), edit_user_path(user)
+        - unless user.is_first_user?
+          | | 
+          = link_to t('system.delete'), user, :confirm => 'Are you sure?', :method => :delete
+  = link_to t('user.create_user'), new_user_path
+      
+  
