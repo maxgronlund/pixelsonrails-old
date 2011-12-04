@@ -32,16 +32,16 @@ $ git remote add template git://github.com/maxgronlund/rails-template-31.git
 1: edit line 11 and 24 in the config/deploy.rb file
 2: $ cap deploy:setup
 3: $ ssh deploy@46.4.64.81 								<-- CHANGE IP ADDRESS
-4: $ mysqladmin -u root create project_name
-5: $ mkdir /var/www/PROJECTNAME/shared/config
-6: $ mkdir /var/www/PROJECTNAME/shared/uploads
-7: $ cat > /var/www/PROJECTNAME/shared/config/database.yml
+4: $ mysqladmin -u root create pixelsonrails
+5: $ mkdir /var/www/pixelsonrails/shared/config
+6: $ mkdir /var/www/pixelsonrails/shared/uploads
+7: $ cat > /var/www/pixelsonrails/shared/config/database.yml
 ---
 8: $ production:
  adapter: mysql2
  encoding: utf8
  reconnect: false
- database: PROJECTNAME
+ database: pixelsonrails
  pool: 5
  username: root
  password:
@@ -56,12 +56,12 @@ $ git remote add template git://github.com/maxgronlund/rails-template-31.git
 13: $ cat > /etc/apache2/sites-available/haxecasts
 
 14: $<VirtualHost *:80>
-     ServerName PROJECTNAME.org
-     ServerAlias *.PROJECTNAME.org
+     ServerName pixelsonrails.com
+     ServerAlias *.pixelsonrails.com
      XSendfile on
-     XSendFilePath /var/www/PROJECTNAME
-     DocumentRoot /var/www/PROJECTNAME/current/public
-     <Directory /var/www/PROJECTNAME/current/public>
+     XSendFilePath /var/www/pixelsonrails
+     DocumentRoot /var/www/pixelsonrails/current/public
+     <Directory /var/www/pixelsonrails/current/public>
        ExpiresActive On
        <FilesMatch "\.(ico|gif|jpe?g|png|js|css)$">
          ExpiresDefault "access plus 1 year"
@@ -70,7 +70,7 @@ $ git remote add template git://github.com/maxgronlund/rails-template-31.git
 </VirtualHost>
 
 15: end cat $ ctrl-d
-16: $ a2ensite PROJECTNAME
+16: $ a2ensite pixelsonrails
 17: $ /etc/init.d/apache2 restart
 18: log out $ ctrl-d 
 ---

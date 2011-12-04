@@ -21,7 +21,7 @@ gem 'kaminari'
 gem 'has_scope'
 gem 'redcarpet'
 gem 'devise'
-gem 'tiny_mce'
+#gem 'tiny_mce'
 gem 'simple_form'
 gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
 
