@@ -14,3 +14,42 @@ maybe an example on how to pass
 
 
 note: cropping belongs on individual page since it's saved immediately   
+
+rails g scaffold gallery_image title:string body:text image:string crop_params:text
+
+<li>
+  	<a href="images/scottwills_plant.jpg" rel="scroller"><img src="images/thumbs/scottwills_plant.jpg" alt=""/></a>    
+   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus nunc, tempus sed porta et.</p>
+	</li>
+  <li>                        	
+      <a href="images/madness_arch2.jpg" rel="scroller"><img src="images/thumbs/madness_arch2.jpg" alt=""/></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id sollicitudin lorem.</p>
+	</li>
+  <li>
+  	<a href="images/triworks_abstract27.jpg" rel="scroller"><img src="images/thumbs/triworks_abstract27.jpg" alt=""/></a>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis enim non magna bibendum malesuada.</p>    
+	</li>
+  <li>                    
+      <a href="images/scottwills_building2.jpg" rel="scroller"><img src="images/thumbs/scottwills_building2.jpg" alt=""/></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus nunc, tempus sed porta et.</p>                  
+	</li>              
+  <li>
+  	<a href="images/triworks_abstract32.jpg" rel="scroller"><img src="images/thumbs/triworks_abstract32.jpg" alt=""/></a>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis enim non magna bibendum malesuada.</p>    
+	</li>
+  <li>
+      <a href="images/kariminal_mountain.jpg" rel="scroller"><img src="images/thumbs/kariminal_mountain.jpg" alt=""/></a>                           
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id sollicitudin lorem.</p>                    
+</li>
+  <li>
+  	<a href="images/moo10.jpg" rel="scroller"><img src="images/thumbs/moo10.jpg" alt=""/></a>                 	
+     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus nunc, tempus sed porta et.</p>                        	                   
+	</li>
+  <li>                        
+      <a href="images/triworks_abstract17.jpg" rel="scroller"><img src="images/thumbs/triworks_abstract17.jpg" alt=""/></a>
+     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus nunc, tempus sed porta et.</p>
+	</li>
+  <li>   
+  	<a href="images/triworks_arch1.jpg" rel="scroller"><img src="images/thumbs/triworks_arch1.jpg" alt=""/></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis enim non magna bibendum malesuada.</p>                    
+	</li>

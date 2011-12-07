@@ -35,7 +35,10 @@ a, a:hover, a:active, a:visited, a:link {
 	}
 }
 
-
+.banner { 
+	min-height:200px;
+/*	background-color:#f00;*/
+}
 
 /* JCrop preview */
 .preview {
@@ -134,4 +137,15 @@ a, a:hover, a:active, a:visited, a:link {
 	margin-top:8px;
 }
 
-
+/*
+section.overview .slider .caption{display:none;}
+*/
+.container {
+	/*
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-117px;
+	margin-left:-486px;
+	*/
+}

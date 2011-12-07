@@ -11,7 +11,6 @@ $ninesixty-gutter-width: 20px; 	// default: 20px
 	@include grid-container;
 	margin-top:0px;
 	.menu{	@include grid(12);	min-height:32px; width:992px;}
-	.banner { @include banner-color($color_dark_gray, 100);@include grid(12); min-height:60px;}
 	.headline{	@include grid(12);	min-height:32px;margin-bottom:16px;}	
 	.grid-1{ @include grid(1);min-height:1px; }
 	.grid-2{ @include grid(2);min-height:1px;}

@@ -1,0 +1,30 @@
+= simple_form_for @gallery_image, :validate => true do |f| 
+  = render 'shared/error_messages', :taget => @gallery_image
+
+
+  = f.input :title
+  = f.input :body
+
+
+  - if @gallery_image.image.present?
+    - @gallery_image.image.version_dimensions.keys.each do |version|
+      .label
+        | #{version}:
+        = link_to t('image.re_crop'), crop_gallery_image_path(@gallery_image, :version => version)
+        br
+        = image_tag(@gallery_image.image_url version) if @gallery_image.image?
+
+
+        br
+  br
+  = f.input :image
+  = f.hidden_field :image_cache
+
+  - if @gallery_image.image.present?
+    br
+    .field
+      = f.check_box :remove_image
+      = t('image.remove_image')
+  br
+  .actions
+    = f.submit t('system.save')

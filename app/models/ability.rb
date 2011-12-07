@@ -8,6 +8,7 @@ class Ability
       elsif user.admin?
         can :manage, User
         can :manage, TextContent
+        can :manage, GalleryImages
         
         # add application-specific changes below
         
@@ -16,6 +17,7 @@ class Ability
         # Ordinary user
         can :manage, User, :id => user.id # <--- Allow user to manage self
         can :read, TextContent
+        can :read, GalleryImage
         
         # add application-specific changes below
         
@@ -25,7 +27,7 @@ class Ability
       # When not logged in
       can :create, User # <----------- Uncomment this to alow users to signup by them self
       can :read, TextContent
-      
+      can :read, GalleryImages
       # add application-specific changes below
       
       

@@ -1,0 +1,25 @@
+h1 Listing gallery_images
+
+table
+  tr
+    th Title
+    th Body
+    th Image
+    th Crop params
+    th
+    th
+    th
+
+  - @gallery_images.each do |gallery_image|
+    tr
+      td= gallery_image.title
+      td= gallery_image.body
+      td= gallery_image.image
+      td= gallery_image.crop_params
+      td= link_to 'Show', gallery_image
+      td= link_to 'Edit', edit_gallery_image_path(gallery_image)
+      td= link_to 'Destroy', gallery_image, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Gallery image', new_gallery_image_path

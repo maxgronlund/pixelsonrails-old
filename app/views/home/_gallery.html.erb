@@ -1,0 +1,72 @@
+<% content_for :head do %>
+	
+	<script type="text/javascript">
+	$(document).ready(	
+		function() {
+			//initialize scroller
+			$(".container").wtScroller({
+				num_display:1,
+				slide_width:754,
+				slide_height:320,
+				slide_margin:1,
+				button_width:35,
+				ctrl_height:25,
+				margin:0,	
+				auto_scroll:true,
+				delay:4000,
+				scroll_speed:1000,
+				easing:"",
+				auto_scale:true,
+				move_one:false,
+				ctrl_type:"none",
+				display_buttons:true,
+				mouseover_buttons:true,
+				display_caption:false,
+				mouseover_caption:false,
+				caption_align:"bottom",
+				caption_position:"inside",					
+				cont_nav:true,
+				shuffle:false
+			});
+			
+			//initialize lightbox for scroller
+			$("a[rel='scroller']").wtLightBox({
+				rotate:true,
+				delay:4000,
+				transition_speed:600,
+				display_number:true,
+				display_dbuttons:true,
+				mouseover_buttons:true,
+				display_timer:true,
+				display_caption:false,
+				caption_align:"bottom",					
+				cont_nav:true,
+				auto_fit:true,
+				easing:""
+			});
+		}
+		
+	);
+	</script>
+	
+<% end %>
+
+
+<div class="container">
+	<div class="wt-scroller">
+        <div class="prev-btn"></div>          
+  		<div class="slides">
+            <ul>
+							<% @images.each do |image|%>
+								<li>
+									<%= link_to image_tag(image.image_url(:large)),image.image_url, :rel => "scroller"%>
+									<%= image.body%>
+								</li>
+							<%end%>
+            	
+            </ul>
+        </div>          	
+     	<div class="next-btn"></div>
+        <div class="lower-panel"></div>
+	</div>
+</div>

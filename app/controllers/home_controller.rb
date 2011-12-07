@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @menu = 'home'
     session[:go_to_after_edit] = root_path
     @welcome = TextContent.welcome
+    @images = GalleryImage.all
   end
 
 end

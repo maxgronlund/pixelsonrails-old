@@ -11,6 +11,11 @@
 //= require_directory .
 //= require rails.validations
 
+//= require jquery-ui-1.8.10.custom.min
+//= jquery.wt-lightbox
+//= jquery.wt-lightbox.min
+//= jquery.wt-scroller
+//= jquery.wt-scroller.min.js
 
 $(function() {
 	$('form.upload').bind('submit', function() {
