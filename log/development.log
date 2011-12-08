@@ -7308,3 +7308,2305 @@ Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
 
 Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:08:38 +0100
 Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/3/edit" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (42.4ms)
+Rendered gallery_images/edit.html.slim within layouts/application (43.5ms)
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 54.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:16:37 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/gallery_images" for 127.0.0.1 at 2011-12-07 23:17:05 +0100
+  Processing by GalleryImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXzI1x3fEFNCQNwhvLjm0P9NKEbUiUjXS6VY1PifH3k=", "gallery_image"=>{"title"=>"aksljhd", "body"=>"lsdkajdf ", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f81eef01aa0 @original_filename="4_studio( pop-ups).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"4_studio(+pop-ups).jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111207-4942-1i3xk2k>>, "image_cache"=>""}, "commit"=>"save"}
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `gallery_images` (`body`, `created_at`, `crop_params`, `image`, `title`, `updated_at`) VALUES (NULL, '2011-12-07 22:17:08', '--- {}\n\n', '4_studio__pop-ups_.jpg', NULL, '2011-12-07 22:17:08')[0m
+  [1m[35m (71.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/4/crop
+Completed 302 Found in 2532ms
+
+
+Started GET "/gallery_images/4/crop" for 127.0.0.1 at 2011-12-07 23:17:08 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (180.8ms)
+Rendered shared/_banner.html.slim (1.6ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 244ms (Views: 190.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:17:08 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:17:08 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:17:09 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:17:09 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:17:09 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/4/crop_update" for 127.0.0.1 at 2011-12-07 23:17:23 +0100
+  Processing by GalleryImagesController#crop_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXzI1x3fEFNCQNwhvLjm0P9NKEbUiUjXS6VY1PifH3k=", "gallery_image"=>{"crop_x"=>"0", "crop_y"=>"0", "crop_h"=>"275", "crop_w"=>"648", "crop_version"=>"large"}, "commit"=>"Crop", "id"=>"4"}
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` =   LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE `gallery_images` SET `updated_at` = '2011-12-07 22:17:23', `crop_params` = '--- \n:large: \n :crop_x: 0\n :crop_y: 0\n :crop_w: 648\n :crop_h: 275\n' WHERE `gallery_images`.`id` = 4[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/4/edit
+Completed 302 Found in 867ms
+
+
+Started GET "/gallery_images/4/edit" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (19.3ms)
+Rendered gallery_images/edit.html.slim within layouts/application (20.7ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 108ms (Views: 28.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:17:24 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/4" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+  Processing by GalleryImagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXzI1x3fEFNCQNwhvLjm0P9NKEbUiUjXS6VY1PifH3k=", "gallery_image"=>{"title"=>"", "body"=>"", "image_cache"=>"", "remove_image"=>"0"}, "commit"=>"save", "id"=>"4"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35m (0.4ms)[0m  UPDATE `gallery_images` SET `updated_at` = '2011-12-07 22:17:27', `crop_params` = '--- \n:large: \n :crop_x: 0\n :crop_y: 0\n :crop_w: 648\n :crop_h: 275\n' WHERE `gallery_images`.`id` = 4
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images/4
+Completed 302 Found in 83ms
+
+
+Started GET "/gallery_images/4" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+  Processing by GalleryImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered gallery_images/show.html.slim within layouts/application (6.3ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 82ms (Views: 12.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:17:27 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (7.1ms)
+Rendered home/index.html.slim within layouts/application (7.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 98ms (Views: 73.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:17:31 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:17:36 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-07 23:17:48 +0100
+Served asset /lightbox/loader.gif - 200 OK (2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:19:43 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:20:00 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (6.7ms)
+Rendered home/index.html.slim within layouts/application (7.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 100ms (Views: 75.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Compiled jquery.wt-lightbox.js  (0ms)  (pid 4942)
+Compiled application.js  (8ms)  (pid 4942)
+Served asset /application.js - 200 OK (21ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (1.0ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (7.3ms)
+Rendered home/index.html.slim within layouts/application (7.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 109ms (Views: 80.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:21:06 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (7.0ms)
+Rendered home/index.html.slim within layouts/application (7.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 103ms (Views: 48.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:21:16 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:21:21 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (6.9ms)
+Rendered home/index.html.slim within layouts/application (7.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 98ms (Views: 72.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Compiled jquery.wt-lightbox.js  (0ms)  (pid 4942)
+Compiled application.js  (8ms)  (pid 4942)
+Served asset /application.js - 200 OK (20ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:24:21 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-07 23:24:25 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:24:25 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:24:40 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.4ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (14.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (6.7ms)
+Rendered home/index.html.slim within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 155ms
+
+ActionView::Template::Error (Version original doesn't exist!):
+    59:             <ul>
+    60: 							<% @images.each do |image|%>
+    61: 								<li>
+    62: 									<%= link_to image_tag(image.image_url(:large)),image.image_url(:original), :rel => "scroller"%>
+    63: 									<%= image.body%>
+    64: 								</li>
+    65: 							<%end%>
+  app/views/home/_gallery.html.erb:62:in `block in _app_views_home__gallery_html_erb___2030560430830667331_70098009573340'
+  app/views/home/_gallery.html.erb:60:in `each'
+  app/views/home/_gallery.html.erb:60:in `_app_views_home__gallery_html_erb___2030560430830667331_70098009573340'
+  app/views/home/index.html.slim:6:in `_app_views_home_index_html_slim___3462476970380761222_70098017155600'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.5ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (7.0ms)
+Rendered home/index.html.slim within layouts/application (7.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 98ms (Views: 46.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:24:51 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-07 23:24:52 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:24:52 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:25:16 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (32.5ms)
+Rendered home/index.html.slim within layouts/application (33.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 102ms (Views: 73.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Compiled application.js  (8ms)  (pid 4942)
+Compiled xjquery.wt-lightbox.min.js  (0ms)  (pid 4942)
+Served asset /application.js - 200 OK (20ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:25:17 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:25:18 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.4ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (31.4ms)
+Rendered home/index.html.slim within layouts/application (31.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 71.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Compiled jquery.wt-lightbox.js  (0ms)  (pid 4942)
+Compiled application.js  (8ms)  (pid 4942)
+Served asset /application.js - 200 OK (19ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:25:50 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:25:51 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.7ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (31.5ms)
+Rendered home/index.html.slim within layouts/application (32.0ms)
+Rendered shared/_banner.html.slim (0.5ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 113ms (Views: 56.1ms | ActiveRecord: 39.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /prev.png - 200 OK (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /next.png - 200 OK (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /lightbox/loader.gif - 200 OK (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /lightbox/spacer.png - 200 OK (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-07 23:26:16 +0100
+Served asset /lightbox/d_arrows.png - 200 OK (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-07 23:26:18 +0100
+Served asset /lightbox/icons.png - 200 OK (0ms)
+
+
+Started GET "/galleries/3?locale=dk" for 127.0.0.1 at 2011-12-08 01:18:33 +0100
+
+ActionController::RoutingError (No route matches [GET] "/galleries/3"):
+  
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/galleries/" for 127.0.0.1 at 2011-12-08 01:18:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/galleries"):
+  
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+  Processing by AdminController#index as HTML
+Rendered admin/index.html.slim within layouts/application (1.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Kontrapunkt-Bold-webfont.woff" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /Kontrapunkt-Bold-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:18:57 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.6ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (12.8ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 85ms (Views: 17.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:18:59 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/gallery_images/2" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+  Processing by GalleryImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uXzI1x3fEFNCQNwhvLjm0P9NKEbUiUjXS6VY1PifH3k=", "id"=>"2"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `gallery_images` WHERE `gallery_images`.`id` = 2
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images
+Completed 302 Found in 54ms
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered gallery_images/index.html.slim within layouts/application (15.7ms)
+Rendered shared/_banner.html.slim (1.7ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 78ms (Views: 24.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:19:05 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/gallery_images/3" for 127.0.0.1 at 2011-12-08 01:19:07 +0100
+  Processing by GalleryImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uXzI1x3fEFNCQNwhvLjm0P9NKEbUiUjXS6VY1PifH3k=", "id"=>"3"}
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `gallery_images` WHERE `gallery_images`.`id` = 3[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images
+Completed 302 Found in 81ms
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 01:19:07 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (9.8ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 94ms (Views: 16.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:19:08 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:19:08 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:19:08 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:19:08 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:19:08 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 01:19:11 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (9.4ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 84ms (Views: 15.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:19:11 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:19:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:19:12 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:19:12 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:19:12 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (5.7ms)
+Rendered home/index.html.slim within layouts/application (6.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 97ms (Views: 46.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 01:19:20 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-08 01:19:21 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 01:19:21 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:11:39 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.4ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (28.2ms)
+Rendered home/index.html.slim within layouts/application (67.1ms)
+Rendered shared/_banner.html.slim (2.3ms)
+Rendered shared/_messages.html.slim (1.3ms)
+Rendered shared/_footer.html.slim (0.6ms)
+Completed 200 OK in 310ms (Views: 147.1ms | ActiveRecord: 76.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Served asset /application.css - 304 Not Modified (222ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Compiled jquery.wt-lightbox.js  (0ms)  (pid 723)
+Compiled application.js  (15ms)  (pid 723)
+Served asset /application.js - 200 OK (161ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Served asset /prev.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Served asset /next.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (16ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:11:40 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-12-08 08:11:48 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.slim (2.9ms)
+Rendered devise/sessions/new.html.slim within layouts/application (36.2ms)
+Rendered shared/_banner.html.slim (0.4ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 116ms (Views: 59.2ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:11:48 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Kontrapunkt-Bold-webfont.woff" for 127.0.0.1 at 2011-12-08 08:11:48 +0100
+Served asset /Kontrapunkt-Bold-webfont.woff - 304 Not Modified (23ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:11:48 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:11:48 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "user"=>{"email"=>"max@synthmax.dk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'max@synthmax.dk' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2011-12-07 18:19:45', `current_sign_in_at` = '2011-12-08 07:11:57', `sign_in_count` = 4, `updated_at` = '2011-12-08 07:11:57', `crop_params` = '--- \n:large: \n :crop_x: 158\n :crop_y: 5\n :crop_w: 176\n :crop_h: 197\n' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/index
+Completed 302 Found in 188ms
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+  Processing by AdminController#index as HTML
+Rendered admin/index.html.slim within layouts/application (27.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 110ms (Views: 105.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+Served asset /background_grid.png - 304 Not Modified (29ms)
+
+
+Started GET "/assets/Kontrapunkt-Bold-webfont.woff" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+Served asset /Kontrapunkt-Bold-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:11:57 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 08:12:01 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered gallery_images/index.html.slim within layouts/application (13.1ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 95ms (Views: 26.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:12:02 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:12:02 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:12:02 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:12:02 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/new" for 127.0.0.1 at 2011-12-08 08:13:42 +0100
+  Processing by GalleryImagesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (1.3ms)
+Rendered gallery_images/_form.html.slim (124.2ms)
+Rendered gallery_images/new.html.slim within layouts/application (143.9ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 255ms (Views: 190.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:13:42 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:13:42 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:13:42 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:13:42 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/gallery_images" for 127.0.0.1 at 2011-12-08 08:14:18 +0100
+  Processing by GalleryImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"title"=>"large", "body"=>"Year right", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff56bc644f0 @original_filename="Web_forside.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"Web_forside.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111208-723-mj02fm>>, "image_cache"=>""}, "commit"=>"save"}
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `gallery_images` (`body`, `created_at`, `crop_params`, `image`, `title`, `updated_at`) VALUES (NULL, '2011-12-08 07:14:22', '--- {}\n\n', 'Web_forside.jpg', NULL, '2011-12-08 07:14:22')[0m
+  [1m[35m (22.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/5/crop
+Completed 302 Found in 3804ms
+
+
+Started GET "/gallery_images/5/crop" for 127.0.0.1 at 2011-12-08 08:14:22 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (150.7ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 297ms (Views: 192.0ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:14:23 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:14:23 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:14:23 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:14:23 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/5/crop_update" for 127.0.0.1 at 2011-12-08 08:14:57 +0100
+  Processing by GalleryImagesController#crop_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"crop_x"=>"91", "crop_y"=>"79", "crop_h"=>"331", "crop_w"=>"473", "crop_version"=>"large"}, "commit"=>"Crop", "id"=>"5"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` =   LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `gallery_images` SET `updated_at` = '2011-12-08 07:14:57', `crop_params` = '--- \n:large: \n :crop_x: 91\n :crop_y: 79\n :crop_w: 473\n :crop_h: 331\n' WHERE `gallery_images`.`id` = 5[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/5/edit
+Completed 302 Found in 1275ms
+
+
+Started GET "/gallery_images/5/edit" for 127.0.0.1 at 2011-12-08 08:14:59 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (3.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (17.7ms)
+Rendered gallery_images/edit.html.slim within layouts/application (20.4ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 150ms (Views: 62.5ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:14:59 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:14:59 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:14:59 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:14:59 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.6ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (7.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 114ms (Views: 90.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:15:06 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-08 08:15:42 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 08:15:42 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (16ms)
+
+
+Started GET "/gallery_images/5/crop?version=large" for 127.0.0.1 at 2011-12-08 08:18:55 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"version"=>"large", "id"=>"5"}
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 5 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered application/crop.html.slim within layouts/application (303.6ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 383ms (Views: 311.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:18:56 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:18:56 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:18:56 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:18:56 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/" for 127.0.0.1 at 2011-12-08 08:21:00 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered gallery_images/index.html.slim within layouts/application (12.1ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 60ms (Views: 17.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:00 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:00 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:00 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:00 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/gallery_images/4" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+  Processing by GalleryImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "id"=>"4"}
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM `gallery_images` WHERE `gallery_images`.`id` = 4[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images
+Completed 302 Found in 82ms
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (9.9ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 88ms (Views: 16.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:04 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/gallery_images/5" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+  Processing by GalleryImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "id"=>"5"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `gallery_images` WHERE `gallery_images`.`id` = 5
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images
+Completed 302 Found in 55ms
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered gallery_images/index.html.slim within layouts/application (1.4ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 75ms (Views: 33.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:07 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/new" for 127.0.0.1 at 2011-12-08 08:21:08 +0100
+  Processing by GalleryImagesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (15.5ms)
+Rendered gallery_images/new.html.slim within layouts/application (16.2ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 93ms (Views: 21.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:08 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:08 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:08 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:08 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started POST "/gallery_images" for 127.0.0.1 at 2011-12-08 08:21:22 +0100
+  Processing by GalleryImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"title"=>"cocesy", "body"=>"d", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff56baef408 @original_filename="Web_forside.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"Web_forside.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111208-723-sc61gt>>, "image_cache"=>""}, "commit"=>"save"}
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `gallery_images` (`body`, `created_at`, `crop_params`, `image`, `title`, `updated_at`) VALUES (NULL, '2011-12-08 07:21:24', '--- {}\n\n', 'Web_forside.jpg', NULL, '2011-12-08 07:21:24')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/6/crop
+Completed 302 Found in 2152ms
+
+
+Started GET "/gallery_images/6/crop" for 127.0.0.1 at 2011-12-08 08:21:24 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (144.3ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 227ms (Views: 153.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:25 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:25 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:25 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:25 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/6/crop_update" for 127.0.0.1 at 2011-12-08 08:21:50 +0100
+  Processing by GalleryImagesController#crop_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"crop_x"=>"76", "crop_y"=>"41", "crop_h"=>"355", "crop_w"=>"507", "crop_version"=>"large"}, "commit"=>"Crop", "id"=>"6"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` =   LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `gallery_images` SET `updated_at` = '2011-12-08 07:21:50', `crop_params` = '--- \n:large: \n :crop_x: 76\n :crop_y: 41\n :crop_w: 507\n :crop_h: 355\n' WHERE `gallery_images`.`id` = 6[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/6/edit
+Completed 302 Found in 911ms
+
+
+Started GET "/gallery_images/6/edit" for 127.0.0.1 at 2011-12-08 08:21:51 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (44.3ms)
+Rendered gallery_images/edit.html.slim within layouts/application (45.6ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 52.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:51 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:51 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:51 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:51 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.9ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (33.3ms)
+Rendered home/index.html.slim within layouts/application (33.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 102ms (Views: 77.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:21:54 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 08:21:55 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.6ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (42.2ms)
+Rendered shared/_banner.html.slim (2.6ms)
+Rendered shared/_messages.html.slim (1.4ms)
+Rendered shared/_footer.html.slim (0.6ms)
+Completed 200 OK in 118ms (Views: 65.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+Served asset /background_grid.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:22:49 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/6/edit" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (1.3ms)
+Rendered gallery_images/_form.html.slim (23.8ms)
+Rendered gallery_images/edit.html.slim within layouts/application (26.1ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 97ms (Views: 32.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:22:52 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/officelab.ico" for 127.0.0.1 at 2011-12-08 08:22:56 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/officelab.ico"):
+  
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started DELETE "/gallery_images/6" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+  Processing by GalleryImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "id"=>"6"}
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM `gallery_images` WHERE `gallery_images`.`id` = 6
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images
+Completed 302 Found in 87ms
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered gallery_images/index.html.slim within layouts/application (1.2ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 77ms (Views: 8.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:23:01 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/new" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+  Processing by GalleryImagesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (15.4ms)
+Rendered gallery_images/new.html.slim within layouts/application (17.1ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 89ms (Views: 22.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:23:03 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/gallery_images" for 127.0.0.1 at 2011-12-08 08:23:12 +0100
+  Processing by GalleryImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"title"=>"co", "body"=>"d", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8c0dca1a98 @original_filename="Web_forside.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"Web_forside.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111208-1230-13dly1x>>, "image_cache"=>""}, "commit"=>"save"}
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `gallery_images` (`body`, `created_at`, `crop_params`, `image`, `title`, `updated_at`) VALUES (NULL, '2011-12-08 07:23:14', '--- {}\n\n', 'Web_forside.jpg', NULL, '2011-12-08 07:23:14')[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/7/crop
+Completed 302 Found in 1995ms
+
+
+Started GET "/gallery_images/7/crop" for 127.0.0.1 at 2011-12-08 08:23:14 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (175.8ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 233ms (Views: 184.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:23:15 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:23:15 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:23:15 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:23:15 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:23:15 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered users/show.html.slim within layouts/application (4.3ms)
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 34ms (Views: 11.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Kontrapunkt-Bold-webfont.woff" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /Kontrapunkt-Bold-webfont.woff - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:24:33 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/crop?version=large" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+  Processing by UsersController#crop as HTML
+  Parameters: {"version"=>"large", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (141.7ms)
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 172ms (Views: 150.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:24:37 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/" for 127.0.0.1 at 2011-12-08 08:29:24 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (33.4ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 81ms (Views: 38.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:29:25 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:29:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:29:25 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:29:25 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:29:25 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/new" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+  Processing by GalleryImagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (15.4ms)
+Rendered gallery_images/new.html.slim within layouts/application (16.4ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 88ms (Views: 21.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:29:27 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/gallery_images" for 127.0.0.1 at 2011-12-08 08:29:45 +0100
+  Processing by GalleryImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"title"=>"s", "body"=>"s", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8c0dd45c38 @original_filename="4_Help.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"4_Help.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111208-1230-b0czog>>, "image_cache"=>""}, "commit"=>"save"}
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `gallery_images` (`body`, `created_at`, `crop_params`, `image`, `title`, `updated_at`) VALUES (NULL, '2011-12-08 07:29:47', '--- {}\n\n', '4_Help.jpg', NULL, '2011-12-08 07:29:47')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images/8/crop
+Completed 302 Found in 2026ms
+
+
+Started GET "/gallery_images/8/crop" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 8 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered application/crop.html.slim within layouts/application (151.5ms)
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 244ms (Views: 159.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:29:47 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/8/crop_update" for 127.0.0.1 at 2011-12-08 08:29:53 +0100
+  Processing by GalleryImagesController#crop_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"crop_x"=>"0", "crop_y"=>"0", "crop_h"=>"702", "crop_w"=>"1002", "crop_version"=>"large"}, "commit"=>"Crop", "id"=>"8"}
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 8 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` =   LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  UPDATE `gallery_images` SET `updated_at` = '2011-12-08 07:29:53', `crop_params` = '--- \n:large: \n :crop_x: 0\n :crop_y: 0\n :crop_w: 1002\n :crop_h: 702\n' WHERE `gallery_images`.`id` = 8
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gallery_images/8/edit
+Completed 302 Found in 1166ms
+
+
+Started GET "/gallery_images/8/edit" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 8 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (44.0ms)
+Rendered gallery_images/edit.html.slim within layouts/application (45.3ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 51.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:29:55 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:30:01 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (6.9ms)
+Rendered home/index.html.slim within layouts/application (8.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 101ms (Views: 49.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /prev.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:30:02 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 08:30:05 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-08 08:30:39 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (1ms)
+
+
+Started GET "/gallery_images/" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered gallery_images/index.html.slim within layouts/application (10.7ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 57ms (Views: 16.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:30:53 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/7/edit" for 127.0.0.1 at 2011-12-08 08:30:55 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (41.6ms)
+Rendered gallery_images/edit.html.slim within layouts/application (42.7ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 91ms (Views: 48.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:30:56 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:30:56 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:30:56 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:30:56 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:30:56 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/7" for 127.0.0.1 at 2011-12-08 08:31:33 +0100
+  Processing by GalleryImagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"title"=>"", "body"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8c0dd84de8 @original_filename="4_studio( pop-ups).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"gallery_image[image]\"; filename=\"4_studio(+pop-ups).jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/var/folders/5l/ysvwffm965z5ljqntzb6wr200000gn/T/RackMultipart20111208-1230-hf7y2o>>, "image_cache"=>"", "remove_image"=>"0"}, "commit"=>"save", "id"=>"7"}
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: title, body
+  [1m[35mGalleryImage Load (0.6ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE `gallery_images` SET `image` = '4_studio__pop-ups_.jpg', `updated_at` = '2011-12-08 07:31:34', `crop_params` = '--- {}\n\n' WHERE `gallery_images`.`id` = 7[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/7
+Completed 302 Found in 1130ms
+
+
+Started GET "/gallery_images/7" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+  Processing by GalleryImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered gallery_images/show.html.slim within layouts/application (9.3ms)
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 99ms (Views: 16.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:31:34 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/7" for 127.0.0.1 at 2011-12-08 08:31:40 +0100
+  Processing by GalleryImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered gallery_images/show.html.slim within layouts/application (6.2ms)
+Rendered shared/_banner.html.slim (1.2ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 82ms (Views: 12.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:31:41 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:31:41 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:31:41 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:31:41 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:31:41 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/7/edit" for 127.0.0.1 at 2011-12-08 08:31:42 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (43.7ms)
+Rendered gallery_images/edit.html.slim within layouts/application (45.0ms)
+Rendered shared/_banner.html.slim (0.9ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 51.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:31:43 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:31:43 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:31:43 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:31:43 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:31:43 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/7/crop?version=large" for 127.0.0.1 at 2011-12-08 08:31:49 +0100
+  Processing by GalleryImagesController#crop as HTML
+  Parameters: {"version"=>"large", "id"=>"7"}
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered application/crop.html.slim within layouts/application (146.7ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 228ms (Views: 154.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:31:50 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:31:50 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:31:50 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:31:50 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:31:50 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started PUT "/gallery_images/7/crop_update" for 127.0.0.1 at 2011-12-08 08:32:15 +0100
+  Processing by GalleryImagesController#crop_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/crqnaO5u2km0DZLizqYa0zi0pSV2/6wlBwJypl/55E=", "gallery_image"=>{"crop_x"=>"0", "crop_y"=>"0", "crop_h"=>"564", "crop_w"=>"805", "crop_version"=>"large"}, "commit"=>"Crop", "id"=>"7"}
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` =   LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE `gallery_images` SET `updated_at` = '2011-12-08 07:32:16', `crop_params` = '--- \n:large: \n :crop_x: 0\n :crop_y: 0\n :crop_w: 805\n :crop_h: 564\n' WHERE `gallery_images`.`id` = 7[0m
+  [1m[35m (3.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/gallery_images/7/edit
+Completed 302 Found in 1108ms
+
+
+Started GET "/gallery_images/7/edit" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+  Processing by GalleryImagesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` WHERE `gallery_images`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (17.8ms)
+Rendered gallery_images/edit.html.slim within layouts/application (19.0ms)
+Rendered shared/_banner.html.slim (1.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 99ms (Views: 26.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:32:17 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (7.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 95ms (Views: 70.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:32:18 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-08 08:32:24 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 08:32:24 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered home/_gallery.html.erb (6.6ms)
+Rendered home/index.html.slim within layouts/application (7.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_footer.html.slim (0.0ms)
+Completed 200 OK in 96ms (Views: 46.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-08 08:33:12 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-08 08:33:17 +0100
+Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/loader.gif" for 127.0.0.1 at 2011-12-08 08:33:20 +0100
+Served asset /lightbox/loader.gif - 304 Not Modified (0ms)

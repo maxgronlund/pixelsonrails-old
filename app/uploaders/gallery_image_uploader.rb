@@ -21,16 +21,14 @@ class GalleryImageUploader < CarrierWave::Uploader::Base
 
   # Process files as they are uploaded:
   process :convert => 'jpg'
-  process :resize_to_limit => [648, 716]
+  process :resize_to_limit => [1028, 880]
 
   # Create different versions of your uploaded files:  
   cattr_accessor :version_dimensions
   self.version_dimensions = {
-    :xsmall => [32, 36],
     :small => [66, 72],
-    :medium => [152, 170],
-    :large => [754, 320]
-
+    :medium => [754, 320],
+    :large => [1028, 720]
   }
 
   RESIZE_GRAVITY = 'NorthWest'
