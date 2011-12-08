@@ -15,7 +15,7 @@ RailsTemplateR31::Application.routes.draw do
   
 
  
-  devise_for :users
+  
   
   resources :users do
     member do
@@ -23,6 +23,8 @@ RailsTemplateR31::Application.routes.draw do
       put 'crop_update'
     end
   end
+  
+  devise_for :users
   
 #  get "home/index"
   root :to => "home#index"
