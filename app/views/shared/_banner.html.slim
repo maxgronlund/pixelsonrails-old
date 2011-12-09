@@ -1,16 +1,25 @@
-.grid-12
-  .banner
-    'logo goes here
-  .edit
-    - if user_signed_in?
-      = link_to current_user.email, current_user
-      |  |
-      = link_to t('session.log_out'), destroy_user_session_path, :method => :delete
-    
-    
-    - else
-      -#= link_to 'opret konto', new_user_registration_path # uncomment this if users can sign-up themself
-      = link_to t('session.log_in'), user_session_path
-  
-  .div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"
+.banner
+  .grid-12
+
+    .grid-3.alpha
+      = link_to image_tag('logo_100perc.png'), root_path
+    .grid-9.omega.edit.login
+      - if user_signed_in?
+        = link_to 'admin', admin_index_path
+        '&nbsp;&nbsp;
+        = link_to current_user.email, current_user
+        '&nbsp;&nbsp;
+        = link_to t('session.log_out'), destroy_user_session_path, :method => :delete
+      
+      
+      - else
+        -#= link_to 'opret konto', new_user_registration_path # uncomment this if users can sign-up themself
+        = link_to image_tag('login.png'), user_session_path
+  .grid-12.edit  
+    = render 'shared/twitter'  
+    .div class="fb-like" data-send="true" data-layout="button_count" data-width="200" data-show-faces="true"
+
+
+
+
     

@@ -149,3 +149,20 @@ section.overview .slider .caption{display:none;}
 	margin-left:-486px;
 	*/
 }
+.login{
+	margin-top:22px;
+}
+
+.links{
+	@include template-color; @include font-links; 
+
+	a{
+		@include font-links;
+		line-height:30px;
+		color:#5c5c5c;
+		
+	}
+	a:hover{
+		color:#000;
+	}
+}

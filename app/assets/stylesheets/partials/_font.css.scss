@@ -12,6 +12,10 @@
   font: $bold $size Arial, sans-serif;
 }
 
+@mixin font-links($size: 18px) {
+  font: $size 'dinpro', Arial, sans-serif;
+}
+
 @mixin link-font {
   @include font-plain(12px);
 }

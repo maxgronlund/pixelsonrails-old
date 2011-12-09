@@ -1,0 +1,30 @@
+= simple_form_for @case_study, :validate => true do |f| 
+  = render 'shared/error_messages', :taget => @case_study
+
+
+  = f.input :title
+  = f.input :body
+
+
+  - if @case_study.image.present?
+    - @case_study.image.version_dimensions.keys.each do |version|
+      .label
+        | #{version}:
+        = link_to t('image.re_crop'), crop_case_study_path(@case_study, :version => version)
+        br
+        = image_tag(@case_study.image_url version) if @case_study.image?
+
+
+        br
+  br
+  = f.input :image
+  = f.hidden_field :image_cache
+
+  - if @case_study.image.present?
+    br
+    .field
+      = f.check_box :remove_image
+      = t('image.remove_image')
+  br
+  .actions
+    = f.submit t('system.save')

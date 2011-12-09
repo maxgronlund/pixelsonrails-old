@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  b Title:
+  = @case_study.title
+p
+  b Body:
+  = @case_study.body
+p
+  b Image:
+  = @case_study.image
+p
+  b Crop params:
+  = @case_study.crop_params
+
+= link_to 'Edit', edit_case_study_path(@case_study)
+'|
+= link_to 'Back', case_studies_path

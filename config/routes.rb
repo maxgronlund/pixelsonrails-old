@@ -1,11 +1,12 @@
 RailsTemplateR31::Application.routes.draw do
 
- # resources :gallery_images
+
+
 
   get "no_access/index"
   get "admin/index"
 
-#  resources :images
+
   resources :gallery_images do
     member do
       get 'crop'
@@ -13,7 +14,12 @@ RailsTemplateR31::Application.routes.draw do
     end
   end
   
-
+  resources :case_studies do
+    member do
+      get 'crop'
+      put 'crop_update'
+    end
+  end
  
   devise_for :users
   

@@ -9,6 +9,7 @@ class Ability
         can :manage, User
         can :manage, TextContent
         can :manage, GalleryImages
+        can :manage, CaseStudy
         
         # add application-specific changes below
         
@@ -18,6 +19,7 @@ class Ability
         can :manage, User, :id => user.id # <--- Allow user to manage self
         can :read, TextContent
         can :read, GalleryImage
+        can :read, CaseStudy
         
         # add application-specific changes below
         
@@ -28,6 +30,7 @@ class Ability
       can :create, User # <----------- Uncomment this to alow users to signup by them self
       can :read, TextContent
       can :read, GalleryImages
+      can :read, CaseStudy
       # add application-specific changes below
       
       

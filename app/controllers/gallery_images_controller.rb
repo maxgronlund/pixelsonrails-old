@@ -5,9 +5,9 @@ class GalleryImagesController < InheritedResources::Base
     @gallery_image = GalleryImage.new(params[:gallery_image])  
     if @gallery_image.save  
       if params[:gallery_image][:image]
-        redirect_to crop_gallery_image_path(@gallery_image), :notice => "Signed up!"
+        redirect_to crop_gallery_image_path(@gallery_image), :notice => "Image created!"
       else
-        redirect_to gallery_image_path(@gallery_image), :notice => "Signed up!"
+        redirect_to gallery_image_path(@gallery_image), :notice => "Image created!"
       end
     else  
       render "new"  
