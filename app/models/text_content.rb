@@ -10,8 +10,6 @@ class TextContent < ActiveRecord::Base
     end
   end
   
-  
-  
   def self.with_identity(identity)
     where(:identity => identity).first
   end

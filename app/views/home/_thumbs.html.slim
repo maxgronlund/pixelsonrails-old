@@ -1,0 +1,8 @@
+.grid-9.alpha.omega.social-media
+
+.grid-9.alpha.omega.image
+  - thumbs.each_with_index do |thumb, index|
+    = link_to image_tag(thumb.image_url :thumb), edit_gallery_image_path(thumb)
+    - if index == 1
+	    .grid-9.alpha.omega.thumbs-divider
+	      

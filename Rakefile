@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsTemplateR31::Application.load_tasks
+Pixelsonrails::Application.load_tasks

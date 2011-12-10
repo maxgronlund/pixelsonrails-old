@@ -1,8 +1,13 @@
 doctype html
 html
   head
-    title Pixels on rails
+    = yield :page_title
+    = yield :meta_description
+    = yield :meta_keywords
+    /title Pixelsonrails
 
+
+    
     link href="https://plus.google.com/{b/103576590846499031371/103576590846499031371/about}" rel="publisher"
 
     /[if lt IE 9]
@@ -15,14 +20,14 @@ html
       var session_key      = '#{cookies[Rails.application.config.session_options[:key]]}';
       var session_key_name = '#{Rails.application.config.session_options[:key]}';
     = yield :head 
+    = yield :meta_description
     = render "shared/googleplushead"
+    = render "shared/google_analytics"
 
   body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}")
     = render "shared/facebook"
     .grid-container.content-color class=("background_grid" if grid_is_on?)
-      /= render "shared/jmenu"
       = render "shared/banner"
-      = render 'shared/messages'
       = yield
       div class="clearfix"
     footer

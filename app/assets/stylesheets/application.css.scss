@@ -109,7 +109,8 @@ a:hover{
 	border-style:solid;
 	border-width:1px;
 	border-color:#888;
-    min-height:32px;
+  min-height:32px;
+	margin-top:70px;
 	.message{
 	  margin:8px;
 	}
@@ -143,6 +144,11 @@ a:hover{
 	h1{ 
 		margin:8px 0px 8px 0px;
 	}
+}
+
+h2 { 
+	@include template-color; @include font-header(22px); 
+	margin:8px 0px 8px 0px;
 }
 
 .body-color{ @include body-color($color_white, 100);}
@@ -180,3 +186,42 @@ section.overview .slider .caption{display:none;}
 	margin-top:50px;
 }
 
+
+.admin, .admin-hover{
+	@include border-radius(5px, 5px);
+	background-color:#eee;
+	border-style:solid;
+	border-width:1px;
+	border-color:#888;
+	margin-bottom:6px;
+	.content{
+		margin:8px;
+	}
+	h4{
+		@include font-header(20px);
+		margin:8px 0px 8px 0px;
+	}
+	li{
+		margin-top:8px;
+	}
+}
+
+.admin-hover:hover{
+	background-color:#dadada;
+}
+
+.thumbs-divider{
+  margin-top:19px;
+  min-height:1px;
+}
+
+.image{
+	a{
+		background-color:#fff;
+	}
+	img:hover{
+	 @include opacity(0.85);
+		background-color:#fff;
+		color:#fff;
+	}
+}

@@ -1,5 +1,9 @@
+= render :partial => "shared/meta", :locals => { 	:title =>  'Pixelsonrails professional graphic design. Development of easy to use custom build CMS',:meta_description => 'Integration Ruby on Rails web applicaitons flash widgets. javascript galleries. Calendars and Mobile apps iOs and Android',:meta_keywords => '"logo design" "corporate identity" "color pallet" database "ruby on rails" mysql cms" custom build""easy to use" development web2 "web 2.0"' }
 /= render 'vimeo'
 .grid-3.links
   = render 'shared/navigation'
 .grid-9
   = render 'gallery'
+  = render 'thumbs', :thumbs => @thumbs
+
+

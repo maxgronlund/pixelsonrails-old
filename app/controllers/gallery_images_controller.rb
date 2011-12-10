@@ -2,7 +2,8 @@ class GalleryImagesController < InheritedResources::Base
   load_and_authorize_resource
   
   def index
-    @gallery_images = GalleryImage.order('sorting asc').limit(10)
+    #@gallery_images = GalleryImage.order('sorting asc').offset(1).limit(10)
+    @gallery_images = GalleryImage.order('sorting asc')
   end
   
   def create

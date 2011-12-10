@@ -5,8 +5,9 @@
 .grid-12
   = form_tag users_path, :method => 'get', :id => "products_search" do
     = text_field_tag :search, params[:search] 
-    = submit_tag t('user.search_user'), :name => nil
-    '
+    '&nbsp;
+    = submit_tag 'Search', :name => nil
+    '&nbsp;
     = link_to t('system.show_all'), users_path
 .divider-12
 div class="sort-list-header grid-12"

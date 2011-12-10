@@ -55,8 +55,8 @@ en:
     search: 'search'
     show: 'show'
     show_all: 'show all'
-    site_management: 'site management'
-    user_management: 'user management'
+    site_management: 'Site management'
+    user_management: 'User management'
     
   text_content:
     index: 'texts'

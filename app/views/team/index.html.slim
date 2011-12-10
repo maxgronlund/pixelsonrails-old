@@ -1,0 +1,21 @@
+.grid-3.links
+  = render 'shared/navigation'
+
+.grid-9
+  -@users.each do |user|
+    .grid-9.alpha.omega
+      .grid-3.alpha
+        =image_tag(user.image_url(:large)) if user.image?
+      .grid-6.omega
+        h2 =user.name
+        =user.title
+        br
+        = user.email
+        br
+        = user.phone
+        br
+        = markdown(user.body) if user.body?
+        - if can_edit?
+          .edit
+            =link_to 'edit', edit_user_path(user), class: 'fancy'
+      

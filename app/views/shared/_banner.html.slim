@@ -1,8 +1,10 @@
 .banner
   .grid-12
-    .grid-3.alpha
+    .grid-3.alpha.image
       = link_to image_tag('logo_100perc.png'), root_path
-    .grid-9.omega.edit.login
+    .grid-6
+      = render 'shared/messages'
+    .grid-3.omega.edit.login
       - if user_signed_in?
         .light-links
           = link_to 'admin', admin_index_path

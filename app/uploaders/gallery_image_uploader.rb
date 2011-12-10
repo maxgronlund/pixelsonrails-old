@@ -27,6 +27,7 @@ class GalleryImageUploader < CarrierWave::Uploader::Base
   cattr_accessor :version_dimensions
   self.version_dimensions = {
     :small => [153, 181],
+    :thumb => [250,136],
     :medium => [754, 320],
     :large => [1028, 720]
   }

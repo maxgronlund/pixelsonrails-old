@@ -1,7 +1,9 @@
-RailsTemplateR31::Application.routes.draw do
+Pixelsonrails::Application.routes.draw do
 
 
 
+
+  get "team/index"
 
   get "no_access/index"
   get "admin/index"

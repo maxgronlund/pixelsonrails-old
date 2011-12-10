@@ -1,18 +1,36 @@
-.headline
-  h1
-    = t('page.admin')
-.grid-4
-  = t('system.user_management')
-  br
-  = link_to t('user.index'), users_path
-.grid-4
-  = t('system.site_management')
-  br
-  = link_to t('text_content.index'), text_contents_path
+.grid-12
+  .grid-6.alpha
+    .content
+      h1 = t('system.site_management')
+      'Administrate: Users. Translations. Bugs. Sites and all the stuff not related to content
+  .grid-6.omega
+    .content
+      h1 = t('system.content_management')
+      'Set up of content: Products. Catalogs. Designs. Services
 
-.grid-4
-  = t('system.content_management')
-  br
-  = link_to 'gallery', gallery_images_path
-  br
-  = link_to 'case studies', case_studies_path
+
+.grid-6.top-margin
+  .admin-hover
+    .content
+      h4 = link_to t('user.index'), users_path
+      'Create and delete users, reset passwords, assign roles, show user creations, addresses and all the stuff related to a user
+
+  .admin-hover
+    .content
+      h4 = link_to t('text_content.index'), text_contents_path
+      'Create and edit dynamic content on the site, take cate not to delete texts in use
+
+
+
+.grid-6.top-margin
+  .admin-hover
+    .content
+      h4 = link_to 'gallery', gallery_images_path
+      'Create edit and delete images for the gallery shown on the frontpage
+
+  .admin-hover
+    .content
+      h4 = link_to 'case studies', case_studies_path
+      'Create edit and delete examples of cases developed by Pixelsonrails
+
+

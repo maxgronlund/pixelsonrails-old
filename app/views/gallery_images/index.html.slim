@@ -3,15 +3,16 @@
     = t('gallery_image.index')
 .grid-12
   - @gallery_images.each_with_index do |gallery_image, index|
-    - if (index % 4) == 0
-			.grid-4.alpha
-				= render 'thumb', :gallery_image => gallery_image
-    - elsif (index % 4) == 3
-      .grid-4.omega
+    - if (index % 3) == 0
+      .grid-4.alpha.top-margin
+        = render 'thumb', :gallery_image => gallery_image
+    - elsif (index % 3) == 1
+      .grid-4.top-margin
         = render 'thumb', :gallery_image => gallery_image
     - else
-      .grid-4
+      .grid-4.omega.top-margin
         = render 'thumb', :gallery_image => gallery_image
+        
       
     /= gallery_image.title
     /= gallery_image.sorting
@@ -22,6 +23,6 @@
     /= link_to 'Edit', edit_gallery_image_path(gallery_image)
     /= link_to 'Destroy', gallery_image, :confirm => 'Are you sure?', :method => :delete
 
-.grid-12.top-margin
+.grid-12.top-margin.edit
 
   = link_to 'New Gallery image', new_gallery_image_path, class: 'fancy'

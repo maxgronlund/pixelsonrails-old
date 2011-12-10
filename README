@@ -20,3 +20,7 @@ rails g scaffold gallery_image title:string body:text image:string crop_params:t
 rails g scaffold case_study title:string body:text image:string crop_params:text
 
 rails g migration AddOrderToGalleryImage order:integer
+
+rails g controller team index
+
+rails g migration AddBodyToUser title:string body:text email:string phone:string
