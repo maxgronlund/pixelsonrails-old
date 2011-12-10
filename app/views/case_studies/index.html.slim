@@ -1,6 +1,3 @@
-.headline
-  h1 Portefolio
-
 .grid-3
   = render 'shared/navigation'
 
@@ -22,6 +19,6 @@
           '&nbsp;
           = link_to 'Destroy', case_study, :confirm => 'Are you sure?', :method => :delete
     
-
-  .grid-9.alpha.omega.edit.top-margin
-    = link_to 'New Case study', new_case_study_path, class: 'fancy'
+  -if can_edit?
+    .grid-9.alpha.omega.edit.top-margin
+      = link_to 'New Case study', new_case_study_path, class: 'fancy'
