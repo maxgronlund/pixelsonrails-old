@@ -1,18 +1,26 @@
-p#notice = notice
+.grid-3
+  = render 'shared/navigation'
 
-p
-  b Title:
-  = @case_study.title
-p
-  b Body:
-  = @case_study.body
-p
-  b Image:
-  = @case_study.image
-p
-  b Crop params:
-  = @case_study.crop_params
 
-= link_to 'Edit', edit_case_study_path(@case_study)
-'|
-= link_to 'Back', case_studies_path
+.grid-9
+  h2  = @case_study.title
+  .grid-3.alpha
+    'Task:
+    = @case_study.task
+    br
+    'Year:
+    = @case_study.year
+    br
+    'Client:
+    = @case_study.client
+    br
+  .grid-6.omega
+    = @case_study.body
+    -if can_edit?
+      .grid-6.alpha.omega.edit
+        = link_to 'Edit', edit_case_study_path(@case_study)
+  .grid-9.alpha.omega.top-margin
+    = image_tag @case_study.image_url(:medium)
+
+
+

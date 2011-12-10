@@ -38,3 +38,39 @@
 
 }
 
+@font-face {
+    font-family: 'DINProBlack';
+    src: url('/dinpro-black-webfont.eot');
+    src: url('/dinpro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/dinpro-black-webfont.woff') format('woff'),
+         url('/dinpro-black-webfont.ttf') format('truetype'),
+         url('/dinpro-black-webfont.svg#DINProBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINProBlack';
+    src: url('dinpro-black-webfont.eot');
+    src: url('dinpro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dinpro-black-webfont.woff') format('woff'),
+         url('dinpro-black-webfont.ttf') format('truetype'),
+         url('dinpro-black-webfont.svg#DINProBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('dinpro-regular-webfont.eot');
+    src: url('dinpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dinpro-regular-webfont.woff') format('woff'),
+         url('dinpro-regular-webfont.ttf') format('truetype'),
+         url('dinpro-regular-webfont.svg#DINProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

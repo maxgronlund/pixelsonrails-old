@@ -147,7 +147,8 @@ a:hover{
 }
 
 h2 { 
-	@include template-color; @include font-header(22px); 
+	@include template-color($header_color, 100); 
+	@include font-header(16px); 
 	margin:8px 0px 8px 0px;
 }
 
@@ -175,9 +176,9 @@ section.overview .slider .caption{display:none;}
 }
 
 .links{
-	@include template-color; @include font-links; 
+
 	a{
-		@include font-links;
+		@include font-links(16px);
 		line-height:30px;
 	}
 }

@@ -24,3 +24,5 @@ rails g migration AddOrderToGalleryImage order:integer
 rails g controller team index
 
 rails g migration AddBodyToUser title:string body:text email:string phone:string
+
+rails g migration AddTaskToCaseStudy task:text year:string client:string order:integer
