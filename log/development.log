@@ -42744,3 +42744,144 @@ Served asset /lightbox/loader.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/lightbox/icons.png" for 127.0.0.1 at 2011-12-10 20:01:40 +0100
 Served asset /lightbox/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/team/index" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+  Processing by TeamController#index as HTML
+Rendered shared/_navigation.html.slim (0.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` ORDER BY name asc
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered team/index.html.slim within layouts/application (24.8ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.3ms)
+Completed 200 OK in 69ms (Views: 28.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 20:03:17 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2011-12-10 20:11:14 +0100
+  Processing by AdminController#index as HTML
+Rendered admin/index.html.slim within layouts/application (1.3ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.6ms)
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 20:11:14 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 20:11:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 20:11:15 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 20:11:15 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 20:11:15 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+  Processing by GalleryImagesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.7ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` ORDER BY sorting asc
+Rendered gallery_images/_thumb.slim (10.3ms)
+Rendered gallery_images/_thumb.slim (1.9ms)
+Rendered gallery_images/_thumb.slim (1.7ms)
+Rendered gallery_images/_thumb.slim (28.1ms)
+Rendered gallery_images/index.html.slim within layouts/application (49.4ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.3ms)
+Completed 200 OK in 95ms (Views: 56.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 20:11:17 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/gallery_images/new" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+  Processing by GalleryImagesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.slim (0.0ms)
+Rendered gallery_images/_form.html.slim (17.6ms)
+Rendered gallery_images/new.html.slim within layouts/application (19.7ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.3ms)
+Completed 200 OK in 90ms (Views: 26.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 20:11:19 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
