@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111209222549) do
+ActiveRecord::Schema.define(:version => 20111210013608) do
 
   create_table "case_studies", :force => true do |t|
     t.string   "title"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20111209222549) do
     t.text     "crop_params"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sorting"
   end
 
   create_table "images", :force => true do |t|

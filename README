@@ -18,3 +18,5 @@ note: cropping belongs on individual page since it's saved immediately
 rails g scaffold gallery_image title:string body:text image:string crop_params:text
 
 rails g scaffold case_study title:string body:text image:string crop_params:text
+
+rails g migration AddOrderToGalleryImage order:integer

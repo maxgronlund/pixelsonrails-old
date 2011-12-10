@@ -35,6 +35,19 @@ a, a:hover, a:active, a:visited, a:link {
 	}
 }
 
+.light-links{
+	a, a:hover, a:active, a:visited, a:link {
+	  margin-right:5px;
+		padding:3px;
+		@include border-radius(3px, 3px);
+	}
+}
+
+a:hover{
+	color:#000;
+	background-color:$color_light_gray;
+}
+
 .banner { 
 	min-height:200px;
 /*	background-color:#f00;*/
@@ -127,7 +140,9 @@ a, a:hover, a:active, a:visited, a:link {
 
 .headline { 
 	@include template-color; @include font-header; 
-	h1{ margin:8px;}
+	h1{ 
+		margin:8px 0px 8px 0px;
+	}
 }
 
 .body-color{ @include body-color($color_white, 100);}
@@ -155,14 +170,13 @@ section.overview .slider .caption{display:none;}
 
 .links{
 	@include template-color; @include font-links; 
-
 	a{
 		@include font-links;
 		line-height:30px;
-		color:#5c5c5c;
-		
-	}
-	a:hover{
-		color:#000;
 	}
 }
+
+.social-media{
+	margin-top:50px;
+}
+

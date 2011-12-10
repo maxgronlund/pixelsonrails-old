@@ -4,17 +4,18 @@
       = link_to image_tag('logo_100perc.png'), root_path
     .grid-9.omega.edit.login
       - if user_signed_in?
-        = link_to 'admin', admin_index_path
-        '&nbsp;&nbsp;
-        = link_to current_user.email, current_user
-        '&nbsp;&nbsp;
-        = link_to t('session.log_out'), destroy_user_session_path, :method => :delete
+        .light-links
+          = link_to 'admin', admin_index_path
+          '&nbsp;&nbsp;
+          = link_to current_user.email, current_user
+          '&nbsp;&nbsp;
+          = link_to t('session.log_out'), destroy_user_session_path, :method => :delete
       
       
       - else
         -#= link_to 'opret konto', new_user_registration_path # uncomment this if users can sign-up themself
         = link_to image_tag('login.png'), user_session_path
-  .grid-12
+  .grid-12.social-media
     .grid-3.alpha.prefix-5
       g:plusone size="small" annotation="inline"
     .grid-1

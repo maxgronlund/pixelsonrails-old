@@ -1,25 +1,27 @@
-h1 Listing gallery_images
+.headline
+  h1
+    = t('gallery_image.index')
+.grid-12
+  - @gallery_images.each_with_index do |gallery_image, index|
+    - if (index % 4) == 0
+			.grid-4.alpha
+				= render 'thumb', :gallery_image => gallery_image
+    - elsif (index % 4) == 3
+      .grid-4.omega
+        = render 'thumb', :gallery_image => gallery_image
+    - else
+      .grid-4
+        = render 'thumb', :gallery_image => gallery_image
+      
+    /= gallery_image.title
+    /= gallery_image.sorting
+    /= gallery_image.body
+    /= link_to image_tag(gallery_image.image_url :small), edit_gallery_image_path(gallery_image)
+    /
+    /= link_to 'Show', gallery_image
+    /= link_to 'Edit', edit_gallery_image_path(gallery_image)
+    /= link_to 'Destroy', gallery_image, :confirm => 'Are you sure?', :method => :delete
 
-table
-  tr
-    th Title
-    th Body
-    th Image
-    th Crop params
-    th
-    th
-    th
+.grid-12.top-margin
 
-  - @gallery_images.each do |gallery_image|
-    tr
-      td= gallery_image.title
-      td= gallery_image.body
-      td = link_to image_tag(gallery_image.image_url :small), edit_gallery_image_path(gallery_image)
-
-      td= link_to 'Show', gallery_image
-      td= link_to 'Edit', edit_gallery_image_path(gallery_image)
-      td= link_to 'Destroy', gallery_image, :confirm => 'Are you sure?', :method => :delete
-
-br
-
-= link_to 'New Gallery image', new_gallery_image_path
+  = link_to 'New Gallery image', new_gallery_image_path, class: 'fancy'

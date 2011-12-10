@@ -26,7 +26,7 @@ class GalleryImageUploader < CarrierWave::Uploader::Base
   # Create different versions of your uploaded files:  
   cattr_accessor :version_dimensions
   self.version_dimensions = {
-    :small => [66, 72],
+    :small => [153, 181],
     :medium => [754, 320],
     :large => [1028, 720]
   }

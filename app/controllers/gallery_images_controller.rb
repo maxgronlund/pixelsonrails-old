@@ -1,6 +1,10 @@
 class GalleryImagesController < InheritedResources::Base
   load_and_authorize_resource
   
+  def index
+    @gallery_images = GalleryImage.order('sorting asc').limit(10)
+  end
+  
   def create
     @gallery_image = GalleryImage.new(params[:gallery_image])  
     if @gallery_image.save  

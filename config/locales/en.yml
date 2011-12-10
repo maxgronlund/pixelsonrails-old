@@ -21,7 +21,11 @@ en:
         title: 'title'
         body: 'body'
         
-
+  gallery_image:
+    index: 'Images for the gallery on the front page'
+    show: 'show image'
+    new: 'create image'
+    edit: 'edit image'
   image:
     image: 'image'
     re_crop: 're crop'

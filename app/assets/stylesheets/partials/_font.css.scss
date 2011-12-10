@@ -4,8 +4,9 @@
 //@include font-face("KontrapunktLight", font-files("Kontrapunkt-Light-webfont.woff", woff, "Kontrapunkt-Light-webfont.ttf", truetype, "Kontrapunkt-Light-webfont.svg#KontrapunktBold", svg, "Kontrapunkt-Light-webfont.otf", opentype), "Kontrapunkt-Light-webfont.eot");
 
 // define fonts from design_parts
-@mixin font-header($size: 18px) {
-  font: $size 'KontrapunktBold', Arial, sans-serif;
+@mixin font-header($size: 14px) {
+  /*font: $size 'KontrapunktBold', Arial, sans-serif;*/
+  font: $size 'dinpro', Arial, sans-serif;
 }
 
 @mixin font-plain($size: 12px, $bold: normal) {
