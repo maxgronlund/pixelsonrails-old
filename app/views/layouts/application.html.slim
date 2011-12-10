@@ -15,6 +15,7 @@ html
       var session_key      = '#{cookies[Rails.application.config.session_options[:key]]}';
       var session_key_name = '#{Rails.application.config.session_options[:key]}';
     = yield :head 
+    = render "shared/googleplushead"
 
   body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}")
     = render "shared/facebook"

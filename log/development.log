@@ -15330,3 +15330,1689 @@ Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
 
 Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 00:28:08 +0100
 Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:35:25 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.1ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.5ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321665058580'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:36:32 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.9ms)
+Rendered home/index.html.slim within layouts/application (8.6ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.5ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321666608100'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:36:33 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.4ms)
+Rendered home/index.html.slim within layouts/application (8.2ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321666608100'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:36:46 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.9ms)
+Rendered home/index.html.slim within layouts/application (8.8ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321666608100'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:36:53 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.0ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321666608100'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:37:32 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (28.1ms)
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (35.6ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321663202740'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:37:35 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (33.4ms)
+Rendered home/index.html.slim within layouts/application (35.1ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321663202740'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:38:03 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (33.1ms)
+Rendered home/index.html.slim within layouts/application (34.8ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (negative argument):
+    21:     = render "shared/facebook"
+    22:     .grid-container.content-color class=("background_grid" if grid_is_on?)
+    23:       /= render "shared/jmenu"
+    24:       = render "shared/banner"
+    25:       = render 'shared/messages'
+    26:       = yield
+    27:       div class="clearfix"
+  app/views/layouts/application.html.slim:24:in `_app_views_layouts_application_html_slim__4062594101795779821_70321663202740'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.2ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (8.4ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (4.4ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 88ms (Views: 66.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 00:38:11 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.4ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.6ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.2ms)
+Rendered home/index.html.slim within layouts/application (7.9ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (4.3ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 86ms (Views: 63.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 00:38:24 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.5ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.1ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.4ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 89ms (Views: 38.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 00:38:33 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.6ms)
+Rendered home/index.html.slim within layouts/application (8.3ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.5ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 55ms (Views: 33.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 00:38:40 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 01:58:10 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.5ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (2.4ms)
+Rendered home/_gallery.html.erb (22.6ms)
+Rendered home/index.html.slim within layouts/application (76.3ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.3ms)
+Rendered shared/_twitter.html.erb (0.3ms)
+Rendered shared/_banner.html.slim (43.3ms)
+Rendered shared/_messages.html.slim (1.5ms)
+Completed 200 OK in 427ms (Views: 204.1ms | ActiveRecord: 126.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /application.css - 304 Not Modified (138ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /application.js - 304 Not Modified (113ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /logo_100perc.png - 304 Not Modified (12ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /login.png - 304 Not Modified (18ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /prev.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /next.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (12ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 01:58:11 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 01:58:31 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.8ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.0ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (4.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 928ms (Views: 37.7ms | ActiveRecord: 871.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 01:58:32 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (8.2ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.4ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 89ms (Views: 36.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 01:58:52 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:00:25 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.9ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (0.8ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 53ms (Views: 31.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:00:25 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:00:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:00:25 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:00:25 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:00:26 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:00:26 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:00:26 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:00:26 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.6ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.1ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 81ms (Views: 58.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:00:48 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (1.7ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.4ms)
+Rendered home/index.html.slim within layouts/application (8.3ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.3ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 86ms (Views: 35.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:03:18 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:03:38 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.8ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.5ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 80ms (Views: 57.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:03:38 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:03:38 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:03:39 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.5ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (31.0ms)
+Rendered home/index.html.slim within layouts/application (32.7ms)
+Rendered shared/_googleplushead.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_googleplus.html.erb (0.2ms)
+Rendered shared/_banner.html.slim (3.9ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 87ms (Views: 65.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:05:34 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.5ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.4ms)
+Rendered home/index.html.slim within layouts/application (8.1ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 55ms (Views: 32.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:05:39 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:06:00 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (8.0ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.6ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 80ms (Views: 59.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:06:00 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:06:00 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:06:01 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.2ms)
+Rendered home/index.html.slim within layouts/application (7.8ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_googleplus.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (3.9ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 80ms (Views: 34.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:06:14 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.4ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.7ms)
+Rendered shared/_googleplushead.html.erb (0.2ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (25.6ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 78ms (Views: 57.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:10:12 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.2ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (30.1ms)
+Rendered home/index.html.slim within layouts/application (31.8ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (4.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 80ms (Views: 59.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:13:21 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:14:09 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.5ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.7ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (4.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 82ms (Views: 34.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:09 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:09 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:10 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.slim (2.7ms)
+Rendered devise/sessions/new.html.slim within layouts/application (12.6ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 142ms (Views: 57.0ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:29 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-12-10 02:14:40 +0100
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"te5DSZn/XecdUzigqu408Tun+2Rrnr6MKNfTxeRVqCg=", "user"=>{"email"=>"max@synthmax.dk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'max@synthmax.dk' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2011-12-09 21:46:04', `current_sign_in_at` = '2011-12-10 01:14:40', `sign_in_count` = 8, `updated_at` = '2011-12-10 01:14:40', `crop_params` = '--- \n:large: \n :crop_x: 476\n :crop_y: 1\n :crop_w: 172\n :crop_h: 192\n' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/index
+Completed 302 Found in 176ms
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2011-12-10 02:14:40 +0100
+  Processing by AdminController#index as HTML
+Rendered admin/index.html.slim within layouts/application (3.7ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:41 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:41 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:41 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-12-10 02:14:45 +0100
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/show.html.slim within layouts/application (4.1ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.1ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 56ms (Views: 26.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:46 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:46 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:46 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:46 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2011-12-10 02:14:49 +0100
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.slim (1.2ms)
+Rendered users/_form.html.slim (49.8ms)
+Rendered users/edit.html.slim within layouts/application (52.1ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.8ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 81ms (Views: 60.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:50 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:50 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:50 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:50 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/validators/uniqueness?case_sensitive=true&id=1&user%5Bemail%5D=max%40synthmax.dk" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM `users` WHERE (`users`.`email` = 'max@synthmax.dk' AND `users`.`id` != 1) LIMIT 1
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"te5DSZn/XecdUzigqu408Tun+2Rrnr6MKNfTxeRVqCg=", "user"=>{"name"=>"Max Grønlund", "email"=>"max@synthmax.dk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_cache"=>"", "remove_image"=>"0", "grid"=>"1"}, "commit"=>"save", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `grid` = 1, `updated_at` = '2011-12-10 01:14:54', `crop_params` = '--- \n:large: \n :crop_x: 476\n :crop_y: 1\n :crop_w: 172\n :crop_h: 192\n' WHERE `users`.`id` = 1
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 56ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/show.html.slim within layouts/application (1.7ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 55ms (Views: 9.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:14:54 +0100
+Served asset /background_grid.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:55 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:55 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:14:57 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (30.4ms)
+Rendered home/index.html.slim within layouts/application (32.1ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.2ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 98ms (Views: 73.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:14:58 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:16:43 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.6ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (5.7ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.6ms)
+Rendered home/index.html.slim within layouts/application (8.5ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.4ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 228ms (Views: 77.1ms | ActiveRecord: 133.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:16:44 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.9ms)
+Rendered home/_gallery.html.erb (6.2ms)
+Rendered home/index.html.slim within layouts/application (8.2ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.3ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Completed 200 OK in 101ms (Views: 77.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:17:01 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.8ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.2ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 100ms (Views: 76.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:17:11 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:17:40 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.3ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.5ms)
+Rendered home/index.html.slim within layouts/application (8.2ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.7ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 104ms (Views: 53.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:17:40 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:17:40 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:17:41 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.8ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.8ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 102ms (Views: 77.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:17:52 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.4ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.1ms)
+Rendered home/index.html.slim within layouts/application (7.7ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.7ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 101ms (Views: 76.6ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:18:04 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.3ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+  [1m[35mGalleryImage Load (0.4ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` 
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (32.6ms)
+Rendered home/index.html.slim within layouts/application (34.2ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.3ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 103ms (Views: 77.9ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:18:20 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.2ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+  [1m[36mGalleryImage Load (0.3ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` [0m
+Rendered shared/_navigation.html.slim (0.8ms)
+Rendered home/_gallery.html.erb (6.3ms)
+Rendered home/index.html.slim within layouts/application (7.9ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (5.4ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Completed 200 OK in 99ms (Views: 75.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background_grid.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /background_grid.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 02:18:36 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)

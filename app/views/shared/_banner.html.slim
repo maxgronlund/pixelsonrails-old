@@ -1,6 +1,5 @@
 .banner
   .grid-12
-
     .grid-3.alpha
       = link_to image_tag('logo_100perc.png'), root_path
     .grid-9.omega.edit.login
@@ -15,10 +14,14 @@
       - else
         -#= link_to 'opret konto', new_user_registration_path # uncomment this if users can sign-up themself
         = link_to image_tag('login.png'), user_session_path
-  .grid-12.edit  
-    = render 'shared/twitter'  
-    .div class="fb-like" data-send="true" data-layout="button_count" data-width="200" data-show-faces="true"
-
+  .grid-12
+    .grid-3.alpha.prefix-5
+      g:plusone size="small" annotation="inline"
+    .grid-1
+      = render 'shared/twitter'  
+    .grid-3.omega.edit
+      .div class="fb-like" data-send="true" data-layout="button_count" data-width="200" data-show-faces="true"
+    
 
 
 
