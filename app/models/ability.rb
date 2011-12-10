@@ -8,7 +8,7 @@ class Ability
       elsif user.admin?
         can :manage, User
         can :manage, TextContent
-        can :manage, GalleryImages
+        can :manage, GalleryImage
         can :manage, CaseStudy
         
         # add application-specific changes below
@@ -29,7 +29,7 @@ class Ability
       # When not logged in
       can :create, User # <----------- Uncomment this to alow users to signup by them self
       can :read, TextContent
-      can :read, GalleryImages
+      can :read, GalleryImage
       can :read, CaseStudy
       # add application-specific changes below
       

@@ -50470,3 +50470,249 @@ Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
 
 Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 22:54:07 +0100
 Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/case_studies" for 127.0.0.1 at 2011-12-10 23:00:10 +0100
+  Processing by CaseStudiesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered shared/_navigation.html.slim (0.9ms)
+  [1m[35mCaseStudy Load (0.5ms)[0m  SELECT `case_studies`.* FROM `case_studies` 
+Rendered case_studies/index.html.slim within layouts/application (14.2ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (2.3ms)
+Completed 200 OK in 88ms (Views: 21.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:11 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2011-12-10 23:00:47 +0100
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WH6QpDUbDw7gjxIfYBR8x1zsAGyDvCaJMvoF9tPEN2s="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE `users` SET `updated_at` = '2011-12-10 22:00:47', `crop_params` = '--- \n:large: \n :crop_x: 0\n :crop_y: 0\n :crop_w: 477\n :crop_h: 533\n' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 23:00:47 +0100
+  Processing by HomeController#index as HTML
+  [1m[36mTextContent Load (0.2ms)[0m  [1mSELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1[0m
+Rendered shared/_meta.html.erb (0.2ms)
+Rendered shared/_navigation.html.slim (0.9ms)
+  [1m[35mGalleryImage Load (0.3ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` ORDER BY sorting asc
+Rendered home/_gallery.html.erb (11.8ms)
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` ORDER BY sorting asc LIMIT 6[0m
+Rendered home/_thumbs.html.slim (3.9ms)
+Rendered home/index.html.slim within layouts/application (45.4ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.1ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.9ms)
+Completed 200 OK in 85ms (Views: 62.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /login.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:48 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+  Processing by HomeController#index as HTML
+  [1m[35mTextContent Load (0.5ms)[0m  SELECT `text_contents`.* FROM `text_contents` WHERE `text_contents`.`identity` = 'welcome' LIMIT 1
+Rendered shared/_meta.html.erb (0.1ms)
+Rendered shared/_navigation.html.slim (0.8ms)
+  [1m[36mGalleryImage Load (0.5ms)[0m  [1mSELECT `gallery_images`.* FROM `gallery_images` ORDER BY sorting asc[0m
+Rendered home/_gallery.html.erb (12.1ms)
+  [1m[35mGalleryImage Load (0.6ms)[0m  SELECT `gallery_images`.* FROM `gallery_images` ORDER BY sorting asc LIMIT 6
+Rendered home/_thumbs.html.slim (4.0ms)
+Rendered home/index.html.slim within layouts/application (18.9ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.7ms)
+Completed 200 OK in 88ms (Views: 35.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prev.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /prev.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/next.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /next.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:00:50 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/case_studies" for 127.0.0.1 at 2011-12-10 23:00:54 +0100
+  Processing by CaseStudiesController#index as HTML
+Completed 500 Internal Server Error in 17ms
+
+NameError (uninitialized constant Ability::GalleryImages):
+  app/models/ability.rb:32:in `initialize'
+
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/synthmax/.rvm/gems/ruby-1.9.3-p0@template/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.1ms)
+
+
+Started GET "/case_studies" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+  Processing by CaseStudiesController#index as HTML
+Rendered shared/_navigation.html.slim (0.9ms)
+  [1m[36mCaseStudy Load (0.3ms)[0m  [1mSELECT `case_studies`.* FROM `case_studies` [0m
+Rendered case_studies/index.html.slim within layouts/application (13.1ms)
+Rendered shared/_googleplushead.html.erb (0.0ms)
+Rendered shared/_google_analytics.html.erb (0.0ms)
+Rendered shared/_facebook.html.erb (0.0ms)
+Rendered shared/_messages.html.slim (0.0ms)
+Rendered shared/_twitter.html.erb (0.0ms)
+Rendered shared/_banner.html.slim (1.6ms)
+Completed 200 OK in 78ms (Views: 19.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo_100perc.png" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /logo_100perc.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/login.png" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-regular-webfont.woff" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /dinpro-regular-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dinpro-black-webfont.woff" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /dinpro-black-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/d_arrows.png" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /lightbox/d_arrows.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lightbox/spacer.png" for 127.0.0.1 at 2011-12-10 23:01:15 +0100
+Served asset /lightbox/spacer.png - 304 Not Modified (0ms)
