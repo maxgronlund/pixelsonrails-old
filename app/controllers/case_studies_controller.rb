@@ -23,7 +23,7 @@ class CaseStudiesController < InheritedResources::Base
     def crop
       @crop_version = (params[:version] || :medium).to_sym
       @case_study.get_crop_version! @crop_version
-      @version_geometry_width, @version_geometry_height = CaseImageUploader.version_dimensions[@crop_version]
+      @version_geometry_width, @version_geometry_height = CaseStudyImageUploader.version_dimensions[@crop_version]
     end
 
     def crop_update
