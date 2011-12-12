@@ -1,22 +1,23 @@
-= form_for @case_image do |f|
-  -if @case_image.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@case_image.errors.count, "error")} prohibited this case_image from being saved:"
-      ul
-        - @case_image.errors.full_messages.each do |msg|
-          li= msg
-
-  .field
-    = f.label :image
-    = f.text_field :image
-  .field
-    = f.label :crop_params
-    = f.text_area :crop_params
-  .field
-    = f.label :case_study
-    = f.text_field :case_study
-  .field
-    = f.label :sub_title
-    = f.text_area :sub_title
+= simple_form_for [@case_study, @case_image], :validate => true do |f| 
+  = render 'shared/error_messages', :taget => @case_image
+  - if @case_image.image.present?
+    = image_tag @case_image.image_url
+  
+  br
+  = f.input :image
+  i maximum width: 754 pixels
+  br
+  br
+  'Image text
+  br
+  = f.text_area  :image_text, :rows =>'1', :cols =>'120'
+  = f.hidden_field :image_cache
+  = f.input :border
+  - if @case_image.image.present?
+    br
+    .field
+      = f.check_box :remove_image
+      = t('image.remove_image')
+  
   .actions
-    = f.submit 'Save'
+    = f.submit t('system.save')

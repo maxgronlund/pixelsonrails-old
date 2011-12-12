@@ -15,7 +15,7 @@ table
       td= case_image.image
       td= case_image.crop_params
       td= case_image.case_study
-      td= case_image.sub_title
+      td= case_image.image_text
       td= link_to 'Show', case_image
       td= link_to 'Edit', edit_case_image_path(case_image)
       td= link_to 'Destroy', case_image, :confirm => 'Are you sure?', :method => :delete

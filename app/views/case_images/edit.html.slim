@@ -1,8 +1,10 @@
-h1 Editing case_image
-
-== render 'form'
-
-= link_to 'Show', @case_image
-'|
-= link_to 'Back', case_images_path
+.headline
+  h2 Edit Image
+  /= @case_image.case_study.id
+.grid-12
+  = render 'form'
+  
+  = link_to 'Show', @case_image
+  '|
+  = link_to 'Back', case_images_path
 

@@ -1,18 +1,17 @@
-p#notice = notice
+.grid-12
 
-p
-  b Image:
-  = @case_image.image
-p
-  b Crop params:
-  = @case_image.crop_params
-p
-  b Case study:
-  = @case_image.case_study
-p
-  b Sub title:
-  = @case_image.sub_title
 
-= link_to 'Edit', edit_case_image_path(@case_image)
-'|
-= link_to 'Back', case_images_path
+  = image_tag @case_image.image_url
+  
+    /= @case_image.crop_params
+  p
+    b Case study:
+    = @case_image.case_study
+  p
+    b Sub title:
+    = @case_image.image_text
+  
+  = link_to 'Edit', edit_case_image_path(@case_image)
+  '|
+  = link_to 'Back', case_images_path
+  

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111212204642) do
+ActiveRecord::Schema.define(:version => 20111212223652) do
 
   create_table "case_images", :force => true do |t|
     t.string   "image"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20111212204642) do
     t.text     "image_text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "border"
   end
 
   add_index "case_images", ["case_study_id"], :name => "index_case_images_on_case_study_id"

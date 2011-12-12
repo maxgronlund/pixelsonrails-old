@@ -1,8 +1,6 @@
 Pixelsonrails::Application.routes.draw do
 
 
-
-
   resources :case_images
 
   get "team/index"
@@ -22,6 +20,7 @@ Pixelsonrails::Application.routes.draw do
       get 'crop'
       put 'crop_update'
     end
+    resources :case_images
   end
  
   devise_for :users

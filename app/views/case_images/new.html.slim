@@ -1,5 +1,8 @@
-h1 New case_image
+.headline
+  h2 New Image
+  = @case_image.case_study.id
+.grid-12
 
-== render 'form'
+  = render 'form'
 
-= link_to 'Back', case_images_path
+  = link_to '< Back', case_images_path

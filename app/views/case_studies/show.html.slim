@@ -19,9 +19,24 @@
     -if can_edit?
       .grid-6.alpha.omega.edit
         = link_to 'Edit', edit_case_study_path(@case_study)
-  .grid-9.alpha.omega.top-margin
+  .grid-9.alpha.omega.top-margin-16
     = image_tag @case_study.image_url(:medium)
     i = @case_study.image_text
+  
+  - @case_study.case_images.each do |image|
+    .grid-9.alpha.omega.top-margin
+      -if image.border
+        = image_tag image.image_url, :class => 'image-borders'
+      - else 
+        = image_tag image.image_url
+      i = image.image_text
+      -if can_edit?
+        .grid-9.alpha.omega.edit
+          = link_to 'edit image', edit_case_study_case_image_path(@case_study, image)
+          '&nbsp;|&nbsp;
+          = link_to 'delete image', image, :confirm => 'Are you sure?', :method => :delete
+  .grid-9.alpha.omega.top-margin.edit
+    = link_to 'add image', new_case_study_case_image_path(@case_study), class: 'fancy'
 
 
 

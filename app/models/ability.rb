@@ -10,6 +10,7 @@ class Ability
         can :manage, TextContent
         can :manage, GalleryImage
         can :manage, CaseStudy
+        can :manage, CaseImage
         
         # add application-specific changes below
         
@@ -20,7 +21,7 @@ class Ability
         can :read, TextContent
         can :read, GalleryImage
         can :read, CaseStudy
-        
+        can :read, CaseImage
         # add application-specific changes below
         
         
@@ -31,6 +32,7 @@ class Ability
       can :read, TextContent
       can :read, GalleryImage
       can :read, CaseStudy
+      can :read, CaseImage
       # add application-specific changes below
       
       
