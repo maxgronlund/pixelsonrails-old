@@ -1,19 +1,22 @@
 = simple_form_for @case_study, :validate => true do |f| 
   = render 'shared/error_messages', :taget => @case_study
 
-  .grid-4.alpha
+  .grid-3.alpha
     = f.input :title
     'Tasks
     br
-    = f.text_area  :task, :rows => 6
+    = f.text_area  :task, :rows =>'6', :cols =>'30'
     = f.input :year
     = f.input :client
-    = f.input :body
-    = f.input :order
+    br
+    'Text
+    br
+    = f.text_area  :body, :rows =>'18', :cols =>'30'
+    = f.input :sorting
     br
 	  .actions
 	    = f.submit t('system.save')
-  .grid-8.omega
+  .grid-9.omega
     - if @case_study.image.present?
       - @case_study.image.version_dimensions.keys.each do |version|
         .label
@@ -26,6 +29,10 @@
           br
     br
     = f.input :image
+    br
+    'Image text
+    br
+    = f.text_area  :image_text, :rows =>'1', :cols =>'120'
     = f.hidden_field :image_cache
     
     - if @case_study.image.present?

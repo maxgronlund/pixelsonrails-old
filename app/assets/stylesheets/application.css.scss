@@ -44,12 +44,19 @@ a, a:hover, a:active, a:visited, a:link {
 }
 
 a:hover{
-	color:#000;
+	
 	background-color:$color_light_gray;
 }
 
+hr{
+	height:1px;
+	border: 0;
+	color:#d8d8d8;
+	background-color:#d8d8d8;
+}
+
 .banner { 
-	min-height:200px;
+	min-height:190px;
 /*	background-color:#f00;*/
 }
 
@@ -90,14 +97,14 @@ a:hover{
 	}
 }
 
-/* FIXME where is this used? */
+/* FIXME where is this used? 
 .current {
   padding-right: 12px;
   background-repeat: no-repeat;
   background-position: right center;
 }
+*/
 
-/* FIXME where is this used? */
 .edit{
 	text-align:right;
 }
@@ -176,17 +183,16 @@ section.overview .slider .caption{display:none;}
 }
 
 .links{
-
 	a{
 		@include font-links(16px);
 		line-height:30px;
+		@include links-color;
 	}
 }
 
 .social-media{
 	margin-top:50px;
 }
-
 
 .admin, .admin-hover{
 	@include border-radius(5px, 5px);
@@ -224,5 +230,18 @@ section.overview .slider .caption{display:none;}
 	 @include opacity(0.85);
 		background-color:#fff;
 		color:#fff;
+	}
+}
+
+.pagination{
+	text-align:right;
+	margin-top:0px;
+	min-height:16px;	
+	.current {
+	    background-position: right center;
+	    background-repeat: no-repeat;
+	    padding-right: 1px;
+			padding-left: 3px;
+	    background-color:#ddd;
 	}
 }

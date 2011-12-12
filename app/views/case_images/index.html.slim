@@ -1,0 +1,25 @@
+h1 Listing case_images
+
+table
+  tr
+    th Image
+    th Crop params
+    th Case study
+    th Sub title
+    th
+    th
+    th
+
+  - @case_images.each do |case_image|
+    tr
+      td= case_image.image
+      td= case_image.crop_params
+      td= case_image.case_study
+      td= case_image.sub_title
+      td= link_to 'Show', case_image
+      td= link_to 'Edit', edit_case_image_path(case_image)
+      td= link_to 'Destroy', case_image, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Case image', new_case_image_path

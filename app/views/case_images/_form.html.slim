@@ -1,0 +1,22 @@
+= form_for @case_image do |f|
+  -if @case_image.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@case_image.errors.count, "error")} prohibited this case_image from being saved:"
+      ul
+        - @case_image.errors.full_messages.each do |msg|
+          li= msg
+
+  .field
+    = f.label :image
+    = f.text_field :image
+  .field
+    = f.label :crop_params
+    = f.text_area :crop_params
+  .field
+    = f.label :case_study
+    = f.text_field :case_study
+  .field
+    = f.label :sub_title
+    = f.text_area :sub_title
+  .actions
+    = f.submit 'Save'

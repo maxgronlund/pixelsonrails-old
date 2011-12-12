@@ -1,5 +1,10 @@
 class CaseStudiesController < InheritedResources::Base
     load_and_authorize_resource
+    
+    def index
+      session[:go_to_after_edit] = case_studies_path
+      @case_studies = CaseStudy.order('sorting desc').page(params[:page]).per(8)
+    end
 
     def create
       @case_study = CaseStudy.new(params[:case_study])  
@@ -16,7 +21,7 @@ class CaseStudiesController < InheritedResources::Base
 
 
     def crop
-      @crop_version = (params[:version] || :large).to_sym
+      @crop_version = (params[:version] || :medium).to_sym
       @case_study.get_crop_version! @crop_version
       @version_geometry_width, @version_geometry_height = CaseImageUploader.version_dimensions[@crop_version]
     end

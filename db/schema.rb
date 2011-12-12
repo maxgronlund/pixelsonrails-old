@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111210194128) do
+ActiveRecord::Schema.define(:version => 20111212204642) do
+
+  create_table "case_images", :force => true do |t|
+    t.string   "image"
+    t.text     "crop_params"
+    t.integer  "case_study_id"
+    t.text     "image_text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "case_images", ["case_study_id"], :name => "index_case_images_on_case_study_id"
 
   create_table "case_studies", :force => true do |t|
     t.string   "title"
@@ -23,7 +34,8 @@ ActiveRecord::Schema.define(:version => 20111210194128) do
     t.text     "task"
     t.string   "year"
     t.string   "client"
-    t.integer  "order"
+    t.string   "sorting"
+    t.text     "image_text"
   end
 
   create_table "gallery_images", :force => true do |t|

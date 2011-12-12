@@ -3,8 +3,9 @@ Pixelsonrails::Application.routes.draw do
 
 
 
-  get "team/index"
+  resources :case_images
 
+  get "team/index"
   get "no_access/index"
   get "admin/index"
 
@@ -31,9 +32,7 @@ Pixelsonrails::Application.routes.draw do
       put 'crop_update'
     end
   end
-  
-  
-  
+
 #  get "home/index"
   root :to => "home#index"
   

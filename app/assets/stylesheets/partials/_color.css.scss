@@ -28,6 +28,10 @@ $color_red_algae: #B64D62;
 	background-color:mix($color, white, $color-mix);
 }
 
+@mixin links-color($color: $header_color, $color-mix: 100){
+	color:mix($color, white, $color-mix);
+}
+
 
 // set default colors for color mixin
 $template-color-base: $color_grey_eminence;

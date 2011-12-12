@@ -26,3 +26,5 @@ rails g controller team index
 rails g migration AddBodyToUser title:string body:text email:string phone:string
 
 rails g migration AddTaskToCaseStudy task:text year:string client:string order:integer
+
+rails g scaffold case_image image:string crop_params:text case_study:belongs_to sub_title:text

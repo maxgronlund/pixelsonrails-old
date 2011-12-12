@@ -3,22 +3,37 @@
 
 .grid-9
   - @case_studies.each do |case_study|
-    .grid-3.alpha
-      = link_to image_tag(case_study.image_url(:thumb)) , case_study
-    .grid-6.omega  
-      h2 = case_study.title
-      .grid-1.alpha
-        = case_study.year
-      .grid-5.omega
-        = case_study.body
-        -if can_edit?
+    .grid-9.alpha.omega.top-margin
+      .grid-3.alpha
+        = link_to image_tag(case_study.image_url(:thumb)) , case_study, :title => 'Click to read more'
+      .grid-6.omega  
+        h2 = case_study.title
+        .grid-2.alpha
+          i Year:
+          i = case_study.year
           br
-          = link_to 'Show', case_study
-          '&nbsp;
-          = link_to 'Edit', edit_case_study_path(case_study)
-          '&nbsp;
-          = link_to 'Destroy', case_study, :confirm => 'Are you sure?', :method => :delete
-    
+          'Task:
+          = case_study.task
+          br
+          'Client:
+          = case_study.client
+          -if can_edit?
+            br
+            'Sorting: 
+            = case_study.sorting
+        .grid-4.omega 
+          = excerpt(case_study.body, '', :radius => 220)
+          
+          = link_to 'read more', case_study, title: 'read more'
+          -if can_edit?
+            '&nbsp;
+            = link_to 'edit', edit_case_study_path(case_study)
+            '&nbsp;
+            = link_to 'delete', case_study, :confirm => 'Are you sure?', :method => :delete
+    .grid-9.alpha.omega 
+      hr
+  .pagination
+    = paginate @case_studies
   -if can_edit?
     .grid-9.alpha.omega.edit.top-margin
       = link_to 'New Case study', new_case_study_path, class: 'fancy'

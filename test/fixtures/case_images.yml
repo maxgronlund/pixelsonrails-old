@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  image: MyString
+  crop_params: MyText
+  case_study: 
+  sub_title: MyText
+
+two:
+  image: MyString
+  crop_params: MyText
+  case_study: 
+  sub_title: MyText
