@@ -11,9 +11,9 @@
         .grid-2.alpha
           i Year:
           i = case_study.year
-          br
-          'Task:
-          = case_study.task
+          br 
+          = markdown('Task: ' + case_study.task)
+          /= case_study.task
           br
           'Client:
           = case_study.client
@@ -22,7 +22,7 @@
             'Sorting: 
             = case_study.sorting
         .grid-4.omega 
-          = excerpt(case_study.body, '', :radius => 220)
+          = markdown(excerpt(case_study.body, '', :radius => 220))
           
           = link_to 'read more', case_study, title: 'read more'
           -if can_edit?

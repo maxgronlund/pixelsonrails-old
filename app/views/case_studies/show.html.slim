@@ -15,7 +15,7 @@
     = @case_study.client
     br
   .grid-6.omega
-    = @case_study.body
+    = markdown(@case_study.body)
     -if can_edit?
       .grid-6.alpha.omega.edit
         = link_to 'Edit', edit_case_study_path(@case_study)
@@ -37,6 +37,4 @@
           = link_to 'delete image', image, :confirm => 'Are you sure?', :method => :delete
   .grid-9.alpha.omega.top-margin.edit
     = link_to 'add image', new_case_study_case_image_path(@case_study), class: 'fancy'
-
-
 

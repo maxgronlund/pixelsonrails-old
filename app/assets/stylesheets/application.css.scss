@@ -34,6 +34,9 @@ a, a:hover, a:active, a:visited, a:link {
 		@include fancy-button($template-color-base, 14px 0.5em);
 	}
 }
+p{
+	margin:0px;
+}
 
 .light-links{
 	a, a:hover, a:active, a:visited, a:link {
