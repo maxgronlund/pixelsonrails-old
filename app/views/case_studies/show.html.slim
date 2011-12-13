@@ -5,12 +5,9 @@
 .grid-9
   h2  = @case_study.title
   .grid-3.alpha
-    'Task:
-    = @case_study.task
-    br
     'Year:
     = @case_study.year
-    br
+    = markdown( 'Task: ' + @case_study.task)
     'Client:
     = @case_study.client
     br

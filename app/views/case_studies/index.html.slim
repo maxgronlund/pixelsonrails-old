@@ -13,8 +13,6 @@
           i = case_study.year
           br 
           = markdown('Task: ' + case_study.task)
-          /= case_study.task
-          br
           'Client:
           = case_study.client
           -if can_edit?
