@@ -53,7 +53,7 @@ $ git remote add template git://github.com/maxgronlund/rails-template-31.git
 ---
 11: $ ssh root@46.4.64.81 								<-- CHANGE IP ADDRESS
 12: type password
-13: $ cat > /etc/apache2/sites-available/haxecasts
+13: $ cat > /etc/apache2/sites-available/pixelsonrails
 
 14: $<VirtualHost *:80>
      ServerName pixelsonrails.com
