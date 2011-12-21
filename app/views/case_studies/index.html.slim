@@ -21,16 +21,15 @@
               'Sorting: 
               = case_study.sorting
           .grid-4.omega 
-            = markdown(excerpt(case_study.body, '', :radius => 140))
-            
-            
+            = markdown(excerpt(case_study.body, '', :radius => 300))
+        .grid-6.alpha.omega
+          .grid-4.alpha
             -if can_edit?
-              '&nbsp;
               = link_to 'edit', edit_case_study_path(case_study)
               '&nbsp;
               = link_to 'delete', case_study, :confirm => 'Are you sure?', :method => :delete
-        .grid-6.alpha.omega.edit
-          = link_to image_tag('read_more_icon.png'), case_study, title: 'show more'
+          .grid-2.omega.edit
+            = link_to image_tag('read_more_icon.png'), case_study, title: 'show more'
     .grid-9.alpha.omega 
       hr
   .pagination
