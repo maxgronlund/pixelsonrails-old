@@ -269,3 +269,9 @@ section.overview .slider .caption{display:none;}
 .case_study_text{
 	height:150px;
 }
+
+.case_study_info{
+	p{
+		@include font-plain(12px);
+	} 
+}

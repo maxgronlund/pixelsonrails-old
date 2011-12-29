@@ -17,26 +17,17 @@
       .grid-6.omega  
         .grid-6.alpha.omega.case_study_text
           h2 = case_study.title
-          .grid-2.alpha
+          .grid-2.alpha.case_study_info
             i Year:
             i = case_study.year
-            br 
-            = markdown('Task: ' + case_study.task)
-            'Client:
-            = case_study.client
-            /-if can_edit?
-            /  br
-            /  'Sorting: 
-            /  = case_study.sorting
+            hr 
+            = markdown('Task:' + case_study.task)
+            br
+            = markdown('Client: ' + case_study.client)
+
           .grid-4.omega 
             = markdown(excerpt(case_study.body, '', :radius => 300))
         .grid-6.alpha.omega.edit
-          /.grid-4.alpha
-          /  -if can_edit?
-          /    = link_to 'edit', edit_case_study_path(case_study)
-          /    '&nbsp;
-          /    = link_to 'delete', case_study, :confirm => 'Are you sure?', :method => :delete
-          /.grid-2.omega.edit
           = link_to image_tag('read_more_icon.png'), case_study, title: 'show more'
     .grid-9.alpha.omega 
       hr
