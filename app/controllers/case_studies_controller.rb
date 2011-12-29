@@ -3,7 +3,7 @@ class CaseStudiesController < InheritedResources::Base
     
     def index
       session[:go_to_after_edit] = case_studies_path
-      @case_studies = CaseStudy.order('sorting desc').page(params[:page]).per(8)
+      @case_studies = CaseStudy.order('sorting desc').where("section = 'portfolio'").page(params[:page]).per(8)
     end
 
     def create

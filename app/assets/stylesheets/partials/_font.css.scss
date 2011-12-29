@@ -6,7 +6,7 @@
  /* font: bold, $size 'dinpro', Arial, sans-serif;*/
 }
 
-@mixin font-plain($size: 12px, $bold: normal) {
+@mixin font-plain($size: 13px, $bold: normal) {
   //font: $bold $size 'dinpro' ,Arial, sans-serif;
 	font: $size 'DINProRegular', Arial, sans-serif;
 }

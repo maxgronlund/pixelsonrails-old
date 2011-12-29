@@ -14,8 +14,10 @@
     = f.text_area  :body, :rows =>'18', :cols =>'30'
     = f.input :sorting
     br
-	  .actions
-	    = f.submit t('system.save')
+    = f.input :section , :include_blank => false, :collection => CaseStudy::SECTIONS
+    br
+    .actions
+      = f.submit t('system.save')
   .grid-9.omega
     - if @case_study.image.present?
       - @case_study.image.version_dimensions.keys.each do |version|

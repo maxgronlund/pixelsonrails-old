@@ -1,6 +1,8 @@
 Pixelsonrails::Application.routes.draw do
 
 
+  get "development/index"
+
   resources :case_images
 
   get "team/index"
