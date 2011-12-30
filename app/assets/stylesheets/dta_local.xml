@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<koblo file_type="mini_studio" studio_version="0" file_format_version="0">
+	<song>
+		<itunes_tags>
+			<key>Name</key><string>DTAP</string>
+			<key>Artist</key><string>Jorgen Orehoj Erichsen</string>
+			<key>Total Time</key><integer>7000</integer>
+			<key>Original Text</key><string> </string>
+			<key>neverSaved</key><string>true</string>
+
+			
+			
+		</itunes_tags>
+		<mixdown_url>http://beta.koblo.com/system/mixdowns/242/original/mixdown9954-0.mp3</mixdown_url>
+		<song_thumbnail_url>images/dta/essense.png</song_thumbnail_url>
+		<shop_url>http://beta.koblo.com/songs/242/buy</shop_url>
+		<studio_url>http://beta.koblo.com/songs/242/studio</studio_url>
+		
+		<remix_price>$ 2.0</remix_price>
+		<original_price>$ 13.44</original_price>
+		<multitracks_price>$ 0.01</multitracks_price>
+		
+		<rating>3.0</rating>
+		<bpm>120</bpm>
+		<duration>3:36</duration>
+		<track>
+			<url>http://synthmax.dk/dta/audio/vocal1.mp3</url>
+			<name>Vocal 1</name>
+			<waveform_url>http://synthmax.dk/dta/images/Vocal1.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/vocal3.mp3</url>
+			<name>Vocal 3</name>
+			<waveform_url>http://synthmax.dk/dta/images/Vocal3.png</waveform_url>
+			<fx1>0.5859375</fx1>
+			<fx2>0.28125</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.2578125</pan>
+			<vol>0.7421875</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/vocal2.mp3</url>
+			<name>Vocal 2</name>
+			<waveform_url>http://synthmax.dk/dta/images/Vocal2.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/synth3.mp3</url>
+			<name>Synth 3</name>
+			<waveform_url>http://synthmax.dk/dta/images/Synth3.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/synth2.mp3</url>
+			<name>Synth 2</name>
+			<waveform_url>http://synthmax.dk/dta/images/Synth2.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/synth1.mp3</url>
+			<name>Synth 1</name>
+			<waveform_url>http://synthmax.dk/dta/images/Synth1.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/bass.mp3</url>
+			<name>Bass</name>
+			<waveform_url>http://synthmax.dk/dta/images/Bass.png</waveform_url>
+			<fx1>0</fx1>
+			<fx2>0</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+		<track>
+			<url>http://synthmax.dk/dta/audio/drums.mp3</url>
+			<name>Drums</name>
+			<waveform_url>http://synthmax.dk/dta/images/Drums.png</waveform_url>
+			<fx1>0.9</fx1>
+			<fx2>0.9</fx2>
+			<solo>0</solo>
+			<mute>0</mute>
+			<pan>0.5</pan>
+			<vol>0.5</vol>
+		</track>
+<echo>
+			<on>1</on>
+			<time>0.5</time>
+			<feedback>0.5</feedback>
+	  		<volume>0.5</volume>
+		</echo>
+		
+		<reverb>
+			<on>1</on>
+			<size>0.75</size>
+			<damp>0.75</damp>
+	  		<volume>0.75</volume>
+		</reverb>
+		
+		<filter>
+			<on>0</on>
+			<resonance>0.5</resonance>
+			<cutoff>0.7</cutoff>
+		</filter>
+		
+		<master>
+			<pan>0.5</pan>
+			<volume>0.71</volume>
+		</master>	</song>
+</koblo>

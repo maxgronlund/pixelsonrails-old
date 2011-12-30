@@ -1,6 +1,10 @@
 Pixelsonrails::Application.routes.draw do
 
 
+  get "koblo_studio/index"
+
+  resources :flash_files
+
   get "development/index"
 
   resources :case_images
@@ -23,6 +27,7 @@ Pixelsonrails::Application.routes.draw do
       put 'crop_update'
     end
     resources :case_images
+    resources :flash_files
   end
  
   devise_for :users

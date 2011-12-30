@@ -1,0 +1,16 @@
+.code_box
+  .header
+    =flash_file.title
+  .swf-file
+    #altContent
+      h1 output
+      p Alternative content
+      = link_to image_tag("http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"), "http://www.adobe.com/go/getflashplayer", :alt => "Get Adobe Flash player"
+
+br
+-if can_edit?
+  .grid-9.alpha.omega
+    .edit
+      =  link_to 'edit', edit_video_cast_flash_file_path(flash_file.video_cast, flash_file)
+      '&nbsp;|&nbsp;
+      = link_to 'delete', flash_file, :confirm => 'Are you sure?', :method => :delete

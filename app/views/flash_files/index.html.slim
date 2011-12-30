@@ -1,0 +1,32 @@
+h1 Listing flash_files
+
+table
+  tr
+    th Swf
+    th Size x
+    th Size y
+    th Title
+    th Case study
+    th Comment
+    th
+    th
+    th
+
+  - @flash_files.each do |flash_file|
+    tr
+      td= flash_file.swf
+      td= flash_file.size_x
+      td= flash_file.size_y
+      td= flash_file.title
+
+      td= flash_file.comment
+      td= link_to 'Show', flash_file
+      td= link_to 'Edit', edit_flash_file_path(flash_file)
+      td= link_to 'Destroy', flash_file, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Flash file', new_flash_file_path
+
+
+/      td= flash_file.case_study

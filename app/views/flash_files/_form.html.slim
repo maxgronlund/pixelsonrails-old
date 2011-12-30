@@ -1,0 +1,12 @@
+= simple_form_for @flash_file do |f|
+  = render 'shared/error_messages', :taget => @flash_file
+  = f.input :title
+  = f.input :swf
+  = f.input :size_x
+  = f.input :size_y
+  = f.input :comment
+
+  .actions
+    = f.submit 'Save'
+
+

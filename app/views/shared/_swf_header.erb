@@ -1,0 +1,20 @@
+<%= content_for :head do %>
+  <script type="text/javascript">
+    var flashvars = {
+    };
+    var params = {
+      menu: "false",
+      scale: "noScale",
+      allowFullscreen: "true",
+      allowScriptAccess: "always",
+      bgcolor: "#000"
+    };
+    var attributes = {
+      id:"ouput"
+    };
+    swfobject.embedSWF("<%=flash_file.swf%>", "altContent", "<%=flash_file.size_x%>", "<%=flash_file.size_y%>", "10.0.0", "<%=asset_path 'expressInstall.swf' %>", flashvars, params, attributes);
+  </script>
+	<style>
+		object { outline:none}
+	</style>
+<%end%>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  swf: MyString
+  size_x: 1
+  size_y: 1
+  title: MyString
+  case_study: 
+  comment: MyString
+
+two:
+  swf: MyString
+  size_x: 1
+  size_y: 1
+  title: MyString
+  case_study: 
+  comment: MyString

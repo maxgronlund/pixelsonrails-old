@@ -32,6 +32,16 @@
           = link_to 'edit image', edit_case_study_case_image_path(@case_study, image)
           '&nbsp;|&nbsp;
           = link_to 'delete image', image, :confirm => 'Are you sure?', :method => :delete
-  .grid-9.alpha.omega.top-margin.edit
-    = link_to 'add image', new_case_study_case_image_path(@case_study), class: 'fancy'
+  - if can_edit?
+    .grid-9.alpha.omega.top-margin.edit
+      = link_to 'add image', new_case_study_case_image_path(@case_study), class: 'fancy'
+
+  hr
+  -for flash_file in @case_study.flash_files do
+    .grid-9.alpha.omega
+      = render :partial => 'shared/swf_header', :locals => { flash_file: flash_file }
+      = render :partial => 'shared/flash_example', :locals => { flash_file: flash_file }
+  - if can_edit?
+    .edit
+      = link_to 'new flash file', new_case_study_flash_file_path(@case_study)
 

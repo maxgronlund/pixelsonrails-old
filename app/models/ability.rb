@@ -6,6 +6,7 @@ class Ability
       if user.super?
         can :manage, :all
       elsif user.admin?
+        can :manage, FlashFile
         can :manage, User
         can :manage, TextContent
         can :manage, GalleryImage
@@ -18,6 +19,7 @@ class Ability
       elsif user.member?
         # Ordinary user
         can :manage, User, :id => user.id # <--- Allow user to manage self
+        can :read, FlashFile
         can :read, TextContent
         can :read, GalleryImage
         can :read, CaseStudy
@@ -28,7 +30,8 @@ class Ability
       end
     else
       # When not logged in
-      can :create, User # <----------- Uncomment this to alow users to signup by them self
+      #can :create, User # <----------- Uncomment this to alow users to signup by them self
+      can :read, FlashFile
       can :read, TextContent
       can :read, GalleryImage
       can :read, CaseStudy

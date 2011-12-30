@@ -32,3 +32,9 @@ rails g scaffold case_image image:string crop_params:text case_study:belongs_to 
 rails g migration AddSectionToCaseStudy section:string
 
 rails g controller development index
+
+rails g scaffold flash_file video_cast_id:integer  swf:string 
+
+rails g migration AddSizeToFlashFile size_x:integer size_y:integer
+
+rails g scaffold flash_file swf:string size_x:integer size_y:integer title:string case_study:belongs_to comment:string

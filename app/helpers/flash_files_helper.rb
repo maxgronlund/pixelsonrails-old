@@ -1,0 +1,2 @@
+module FlashFilesHelper
+end
