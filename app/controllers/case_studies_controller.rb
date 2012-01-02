@@ -2,9 +2,14 @@ class CaseStudiesController < InheritedResources::Base
   load_and_authorize_resource
   
   def new
-    study = CaseStudy.last
+    studies = CaseStudy.order('sorting asc')
+    study = studies.last
     @case_study = CaseStudy.new
-    @case_study.sorting = study.sorting + 100
+    if study.sorting != nil
+      @case_study.sorting = study.sorting + 100
+    else
+      @case_study.sorting = CaseStudy.last.sorting + 100
+    end
   end
   
   def index
