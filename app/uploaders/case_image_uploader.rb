@@ -21,7 +21,7 @@ class CaseImageUploader < CarrierWave::Uploader::Base
 
   # Process files as they are uploaded:
   process :convert => 'png'
-  process :resize_to_limit => [754, 880]
+  process :resize_to_limit => [754, 6000]
 
 #  # Create different versions of your uploaded files:  
 #  cattr_accessor :version_dimensions
