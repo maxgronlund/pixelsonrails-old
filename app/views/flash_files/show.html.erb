@@ -27,13 +27,17 @@
 <%end%>
 
 
-<div id="altContent">
-	<h1>output</h1>
-	<p>Alternative content</p>
-	<p><a href="http://www.adobe.com/go/getflashplayer"><img 
-		src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" 
-		alt="Get Adobe Flash player" /></a></p>
+<div class='flash-file'>
+	<div id="altContent">
+		<h1>output</h1>
+		<p>Alternative content</p>
+		<p><a href="http://www.adobe.com/go/getflashplayer"><img 
+			src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" 
+			alt="Get Adobe Flash player" /></a></p>
+	</div>
+	<br/>
+	<% if can_edit?%>
+		<%=  link_to 'Edit', edit_flash_file_path(@flash_file) %>
+	<%end%>
 </div>
-<br/>
-<%=  link_to 'Edit', edit_flash_file_path(@flash_file) %>
 

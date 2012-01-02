@@ -2,8 +2,8 @@
 <koblo file_type="mini_studio" studio_version="0" file_format_version="0">
 	<song>
 		<itunes_tags>
-			<key>Name</key><string>DTAP</string>
-			<key>Artist</key><string>Jorgen Orehoj Erichsen</string>
+			<key>Name</key><string>Don't Turn Around</string>
+			<key>Artist</key><string>Ace of Base</string>
 			<key>Total Time</key><integer>7000</integer>
 			<key>Original Text</key><string> </string>
 			<key>neverSaved</key><string>true</string>
@@ -104,8 +104,8 @@
 			<url>http://synthmax.dk/dta/audio/drums.mp3</url>
 			<name>Drums</name>
 			<waveform_url>http://synthmax.dk/dta/images/Drums.png</waveform_url>
-			<fx1>0.9</fx1>
-			<fx2>0.9</fx2>
+			<fx1>0.0</fx1>
+			<fx2>0.0</fx2>
 			<solo>0</solo>
 			<mute>0</mute>
 			<pan>0.5</pan>

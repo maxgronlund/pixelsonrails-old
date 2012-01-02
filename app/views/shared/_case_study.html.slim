@@ -5,7 +5,10 @@
   - case_studies.each do |case_study|
     .grid-9.alpha.omega.top-margin
       .grid-3.alpha
-        = link_to image_tag(case_study.image_url(:thumb)) , case_study, :title => 'Click to read more'
+        - if case_study.flashfile_id 
+          = link_to image_tag(case_study.image_url(:thumb)) , flash_file_path(case_study.flashfile_id), :title => 'Click to read more'
+        - else 
+          = link_to image_tag(case_study.image_url(:thumb)) , case_study, :title => 'Click to read more'
         br
         -if can_edit?
           = link_to 'edit', edit_case_study_path(case_study)

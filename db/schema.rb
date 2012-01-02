@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111229225437) do
+ActiveRecord::Schema.define(:version => 20120102112956) do
 
   create_table "case_images", :force => true do |t|
     t.string   "image"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20111229225437) do
     t.text     "image_text"
     t.string   "section"
     t.integer  "sorting"
+    t.integer  "flashfile_id"
   end
 
   create_table "flash_files", :force => true do |t|

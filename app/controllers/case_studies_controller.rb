@@ -1,6 +1,10 @@
 class CaseStudiesController < InheritedResources::Base
   load_and_authorize_resource
   
+#  def new
+#    @case_study = CaseStudy.new(
+#  end
+  
   def index
     session[:go_to_after_edit] = case_studies_path
     @case_studies = CaseStudy.order('sorting desc').where("section = 'portfolio'").page(params[:page]).per(8)

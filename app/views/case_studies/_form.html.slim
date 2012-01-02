@@ -16,6 +16,8 @@
     br
     = f.input :section , :include_blank => false, :collection => CaseStudy::SECTIONS
     br
+    = f.input :flashfile_id
+    br
     .actions
       = f.submit t('system.save')
   .grid-9.omega
