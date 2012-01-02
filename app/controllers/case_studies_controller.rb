@@ -1,9 +1,11 @@
 class CaseStudiesController < InheritedResources::Base
   load_and_authorize_resource
   
-#  def new
-#    @case_study = CaseStudy.new(
-#  end
+  def new
+    study = CaseStudy.last
+    @case_study = CaseStudy.new
+    @case_study.sorting = study.sorting + 100
+  end
   
   def index
     session[:go_to_after_edit] = case_studies_path

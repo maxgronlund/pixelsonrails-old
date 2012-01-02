@@ -3,6 +3,6 @@
 .grid-9.alpha.omega.image
   - thumbs.each_with_index do |thumb, index|
     = link_to image_tag(thumb.image_url :front), case_study_path(thumb)
-    - if index == 1
+    - if (index % 3 == 0)
 	    .grid-9.alpha.omega.thumbs-divider
 	      
